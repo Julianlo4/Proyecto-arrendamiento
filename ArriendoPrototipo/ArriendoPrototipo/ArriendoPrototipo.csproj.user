@@ -10,7 +10,13 @@
     <Compile Update="Apariencia\CustomTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="Interfaces\IniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Interfaces\PaginaPrincipalTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Interfaces\RegistroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

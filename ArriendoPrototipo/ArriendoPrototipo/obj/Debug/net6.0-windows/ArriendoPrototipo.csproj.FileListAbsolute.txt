@@ -18,3 +18,24 @@ C:\Users\Equipo\source\repos\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.
 C:\Users\Equipo\source\repos\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Properties.Resources.resources
 C:\Users\Equipo\source\repos\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Apariencia.CustomComboBox.resources
 C:\Users\Equipo\source\repos\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Apariencia.CustomTextBox.resources
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\bin\Debug\net6.0-windows\ArriendoPrototipo.exe
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\bin\Debug\net6.0-windows\ArriendoPrototipo.deps.json
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\bin\Debug\net6.0-windows\ArriendoPrototipo.runtimeconfig.json
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\bin\Debug\net6.0-windows\ArriendoPrototipo.dll
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\bin\Debug\net6.0-windows\ArriendoPrototipo.pdb
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Apariencia.CustomComboBox.resources
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Apariencia.CustomTextBox.resources
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Properties.Resources.resources
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.csproj.GenerateResource.cache
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.AssemblyInfoInputs.cache
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.AssemblyInfo.cs
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.csproj.CoreCompileInputs.cache
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.dll
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\refint\ArriendoPrototipo.dll
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.pdb
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.genruntimeconfig.cache
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ref\ArriendoPrototipo.dll
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.RegistroUsuario.resources
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Interfaces.PaginaPrincipalTodos.resources
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Interfaces.IniciarSesion.resources

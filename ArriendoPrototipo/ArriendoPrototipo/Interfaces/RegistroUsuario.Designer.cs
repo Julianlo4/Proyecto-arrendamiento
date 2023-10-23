@@ -35,16 +35,16 @@
             panel5 = new Panel();
             panel4 = new Panel();
             label1 = new Label();
-            customComboBox1 = new Apariencia.CustomComboBox();
-            dateTimePicker1 = new DateTimePicker();
-            customTextBox8 = new Apariencia.CustomTextBox();
-            customTextBox7 = new Apariencia.CustomTextBox();
-            customTextBox6 = new Apariencia.CustomTextBox();
-            customTextBox5 = new Apariencia.CustomTextBox();
-            customTextBox4 = new Apariencia.CustomTextBox();
-            customTextBox3 = new Apariencia.CustomTextBox();
-            customTextBox2 = new Apariencia.CustomTextBox();
-            customTextBox1 = new Apariencia.CustomTextBox();
+            cbxGenero = new Apariencia.CustomComboBox();
+            dtpFechaNac = new DateTimePicker();
+            txtContraseña = new Apariencia.CustomTextBox();
+            txtIdentificacion = new Apariencia.CustomTextBox();
+            txtCorreo = new Apariencia.CustomTextBox();
+            txtTelefono = new Apariencia.CustomTextBox();
+            txtSegundoApellido = new Apariencia.CustomTextBox();
+            txtPrimerApellido = new Apariencia.CustomTextBox();
+            txtSegundoNombre = new Apariencia.CustomTextBox();
+            txtPrimerNombre = new Apariencia.CustomTextBox();
             lblCorreo = new Label();
             lblContraseña = new Label();
             lblFechaNacimiento = new Label();
@@ -69,6 +69,8 @@
             lblQueSomos = new Label();
             lblPaginaPrincipal = new Label();
             panel1 = new Panel();
+            lblNombreUsuario = new Label();
+            txtNombreUsuario = new Apariencia.CustomTextBox();
             pnlPrincipal.SuspendLayout();
             pnlInicioSuperior.SuspendLayout();
             panel2.SuspendLayout();
@@ -79,21 +81,23 @@
             // 
             // pnlPrincipal
             // 
+            pnlPrincipal.Controls.Add(txtNombreUsuario);
+            pnlPrincipal.Controls.Add(lblNombreUsuario);
             pnlPrincipal.Controls.Add(btn_volverMenuPrincipal);
             pnlPrincipal.Controls.Add(btn_RegistrarUsuario);
             pnlPrincipal.Controls.Add(panel5);
             pnlPrincipal.Controls.Add(panel4);
             pnlPrincipal.Controls.Add(label1);
-            pnlPrincipal.Controls.Add(customComboBox1);
-            pnlPrincipal.Controls.Add(dateTimePicker1);
-            pnlPrincipal.Controls.Add(customTextBox8);
-            pnlPrincipal.Controls.Add(customTextBox7);
-            pnlPrincipal.Controls.Add(customTextBox6);
-            pnlPrincipal.Controls.Add(customTextBox5);
-            pnlPrincipal.Controls.Add(customTextBox4);
-            pnlPrincipal.Controls.Add(customTextBox3);
-            pnlPrincipal.Controls.Add(customTextBox2);
-            pnlPrincipal.Controls.Add(customTextBox1);
+            pnlPrincipal.Controls.Add(cbxGenero);
+            pnlPrincipal.Controls.Add(dtpFechaNac);
+            pnlPrincipal.Controls.Add(txtContraseña);
+            pnlPrincipal.Controls.Add(txtIdentificacion);
+            pnlPrincipal.Controls.Add(txtCorreo);
+            pnlPrincipal.Controls.Add(txtTelefono);
+            pnlPrincipal.Controls.Add(txtSegundoApellido);
+            pnlPrincipal.Controls.Add(txtPrimerApellido);
+            pnlPrincipal.Controls.Add(txtSegundoNombre);
+            pnlPrincipal.Controls.Add(txtPrimerNombre);
             pnlPrincipal.Controls.Add(lblCorreo);
             pnlPrincipal.Controls.Add(lblContraseña);
             pnlPrincipal.Controls.Add(lblFechaNacimiento);
@@ -111,7 +115,7 @@
             pnlPrincipal.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             pnlPrincipal.Location = new Point(0, 0);
             pnlPrincipal.Name = "pnlPrincipal";
-            pnlPrincipal.Size = new Size(800, 524);
+            pnlPrincipal.Size = new Size(800, 600);
             pnlPrincipal.TabIndex = 0;
             pnlPrincipal.Paint += pnlPrincipal_Paint;
             // 
@@ -122,7 +126,7 @@
             btn_volverMenuPrincipal.BackgroundImageLayout = ImageLayout.Stretch;
             btn_volverMenuPrincipal.Cursor = Cursors.Hand;
             btn_volverMenuPrincipal.ImageAlign = ContentAlignment.TopCenter;
-            btn_volverMenuPrincipal.Location = new Point(131, 482);
+            btn_volverMenuPrincipal.Location = new Point(128, 534);
             btn_volverMenuPrincipal.Name = "btn_volverMenuPrincipal";
             btn_volverMenuPrincipal.Size = new Size(48, 42);
             btn_volverMenuPrincipal.TabIndex = 27;
@@ -135,7 +139,7 @@
             btn_RegistrarUsuario.Cursor = Cursors.Hand;
             btn_RegistrarUsuario.Font = new Font("Franklin Gothic Demi", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btn_RegistrarUsuario.ForeColor = Color.White;
-            btn_RegistrarUsuario.Location = new Point(397, 487);
+            btn_RegistrarUsuario.Location = new Point(397, 542);
             btn_RegistrarUsuario.Name = "btn_RegistrarUsuario";
             btn_RegistrarUsuario.Size = new Size(171, 34);
             btn_RegistrarUsuario.TabIndex = 26;
@@ -146,7 +150,7 @@
             // panel5
             // 
             panel5.BackColor = Color.Cyan;
-            panel5.Location = new Point(131, 471);
+            panel5.Location = new Point(128, 518);
             panel5.Name = "panel5";
             panel5.Size = new Size(672, 10);
             panel5.TabIndex = 25;
@@ -169,199 +173,199 @@
             label1.TabIndex = 23;
             label1.Text = "Los campos con * son obligatorios.";
             // 
-            // customComboBox1
+            // cbxGenero
             // 
-            customComboBox1.BackColor = Color.WhiteSmoke;
-            customComboBox1.BorderColor = Color.Black;
-            customComboBox1.BorderSize = 1;
-            customComboBox1.DropDownStyle = ComboBoxStyle.DropDown;
-            customComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            customComboBox1.ForeColor = Color.DimGray;
-            customComboBox1.IconColor = Color.MediumSlateBlue;
-            customComboBox1.ListBackColor = Color.FromArgb(230, 228, 245);
-            customComboBox1.ListTextColor = Color.DimGray;
-            customComboBox1.Location = new Point(556, 330);
-            customComboBox1.MinimumSize = new Size(200, 30);
-            customComboBox1.Name = "customComboBox1";
-            customComboBox1.Padding = new Padding(1);
-            customComboBox1.Size = new Size(200, 33);
-            customComboBox1.TabIndex = 22;
-            customComboBox1.Texts = "";
+            cbxGenero.BackColor = Color.WhiteSmoke;
+            cbxGenero.BorderColor = Color.Black;
+            cbxGenero.BorderSize = 1;
+            cbxGenero.DropDownStyle = ComboBoxStyle.DropDown;
+            cbxGenero.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            cbxGenero.ForeColor = Color.DimGray;
+            cbxGenero.IconColor = Color.MediumSlateBlue;
+            cbxGenero.ListBackColor = Color.FromArgb(230, 228, 245);
+            cbxGenero.ListTextColor = Color.DimGray;
+            cbxGenero.Location = new Point(556, 330);
+            cbxGenero.MinimumSize = new Size(200, 30);
+            cbxGenero.Name = "cbxGenero";
+            cbxGenero.Padding = new Padding(1);
+            cbxGenero.Size = new Size(200, 33);
+            cbxGenero.TabIndex = 22;
+            cbxGenero.Texts = "";
             // 
-            // dateTimePicker1
+            // dtpFechaNac
             // 
-            dateTimePicker1.Location = new Point(268, 330);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 22);
-            dateTimePicker1.TabIndex = 21;
+            dtpFechaNac.Location = new Point(268, 330);
+            dtpFechaNac.Name = "dtpFechaNac";
+            dtpFechaNac.Size = new Size(200, 22);
+            dtpFechaNac.TabIndex = 21;
             // 
-            // customTextBox8
+            // txtContraseña
             // 
-            customTextBox8.BackColor = SystemColors.Window;
-            customTextBox8.BorderColor = Color.Black;
-            customTextBox8.BorderFocusColor = Color.HotPink;
-            customTextBox8.BorderRadius = 0;
-            customTextBox8.BorderSize = 2;
-            customTextBox8.Cursor = Cursors.IBeam;
-            customTextBox8.ForeColor = Color.DimGray;
-            customTextBox8.Location = new Point(590, 436);
-            customTextBox8.Multiline = false;
-            customTextBox8.Name = "customTextBox8";
-            customTextBox8.Padding = new Padding(7);
-            customTextBox8.PasswordChar = false;
-            customTextBox8.PlaceholderColor = Color.DarkGray;
-            customTextBox8.PlaceholderText = "";
-            customTextBox8.Size = new Size(181, 29);
-            customTextBox8.TabIndex = 20;
-            customTextBox8.Texts = "";
-            customTextBox8.UnderlinedStyle = false;
+            txtContraseña.BackColor = SystemColors.Window;
+            txtContraseña.BorderColor = Color.Black;
+            txtContraseña.BorderFocusColor = Color.HotPink;
+            txtContraseña.BorderRadius = 0;
+            txtContraseña.BorderSize = 2;
+            txtContraseña.Cursor = Cursors.IBeam;
+            txtContraseña.ForeColor = Color.DimGray;
+            txtContraseña.Location = new Point(590, 436);
+            txtContraseña.Multiline = false;
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Padding = new Padding(7);
+            txtContraseña.PasswordChar = false;
+            txtContraseña.PlaceholderColor = Color.DarkGray;
+            txtContraseña.PlaceholderText = "";
+            txtContraseña.Size = new Size(181, 29);
+            txtContraseña.TabIndex = 20;
+            txtContraseña.Texts = "";
+            txtContraseña.UnderlinedStyle = false;
             // 
-            // customTextBox7
+            // txtIdentificacion
             // 
-            customTextBox7.BackColor = SystemColors.Window;
-            customTextBox7.BorderColor = Color.Black;
-            customTextBox7.BorderFocusColor = Color.HotPink;
-            customTextBox7.BorderRadius = 0;
-            customTextBox7.BorderSize = 2;
-            customTextBox7.Cursor = Cursors.IBeam;
-            customTextBox7.ForeColor = Color.DimGray;
-            customTextBox7.Location = new Point(255, 436);
-            customTextBox7.Multiline = false;
-            customTextBox7.Name = "customTextBox7";
-            customTextBox7.Padding = new Padding(7);
-            customTextBox7.PasswordChar = false;
-            customTextBox7.PlaceholderColor = Color.DarkGray;
-            customTextBox7.PlaceholderText = "";
-            customTextBox7.Size = new Size(181, 29);
-            customTextBox7.TabIndex = 19;
-            customTextBox7.Texts = "";
-            customTextBox7.UnderlinedStyle = false;
+            txtIdentificacion.BackColor = SystemColors.Window;
+            txtIdentificacion.BorderColor = Color.Black;
+            txtIdentificacion.BorderFocusColor = Color.HotPink;
+            txtIdentificacion.BorderRadius = 0;
+            txtIdentificacion.BorderSize = 2;
+            txtIdentificacion.Cursor = Cursors.IBeam;
+            txtIdentificacion.ForeColor = Color.DimGray;
+            txtIdentificacion.Location = new Point(255, 436);
+            txtIdentificacion.Multiline = false;
+            txtIdentificacion.Name = "txtIdentificacion";
+            txtIdentificacion.Padding = new Padding(7);
+            txtIdentificacion.PasswordChar = false;
+            txtIdentificacion.PlaceholderColor = Color.DarkGray;
+            txtIdentificacion.PlaceholderText = "";
+            txtIdentificacion.Size = new Size(181, 29);
+            txtIdentificacion.TabIndex = 19;
+            txtIdentificacion.Texts = "";
+            txtIdentificacion.UnderlinedStyle = false;
             // 
-            // customTextBox6
+            // txtCorreo
             // 
-            customTextBox6.BackColor = SystemColors.Window;
-            customTextBox6.BorderColor = Color.Black;
-            customTextBox6.BorderFocusColor = Color.HotPink;
-            customTextBox6.BorderRadius = 0;
-            customTextBox6.BorderSize = 2;
-            customTextBox6.Cursor = Cursors.IBeam;
-            customTextBox6.ForeColor = Color.DimGray;
-            customTextBox6.Location = new Point(590, 381);
-            customTextBox6.Multiline = false;
-            customTextBox6.Name = "customTextBox6";
-            customTextBox6.Padding = new Padding(7);
-            customTextBox6.PasswordChar = false;
-            customTextBox6.PlaceholderColor = Color.DarkGray;
-            customTextBox6.PlaceholderText = "";
-            customTextBox6.Size = new Size(181, 29);
-            customTextBox6.TabIndex = 18;
-            customTextBox6.Texts = "";
-            customTextBox6.UnderlinedStyle = false;
+            txtCorreo.BackColor = SystemColors.Window;
+            txtCorreo.BorderColor = Color.Black;
+            txtCorreo.BorderFocusColor = Color.HotPink;
+            txtCorreo.BorderRadius = 0;
+            txtCorreo.BorderSize = 2;
+            txtCorreo.Cursor = Cursors.IBeam;
+            txtCorreo.ForeColor = Color.DimGray;
+            txtCorreo.Location = new Point(590, 381);
+            txtCorreo.Multiline = false;
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Padding = new Padding(7);
+            txtCorreo.PasswordChar = false;
+            txtCorreo.PlaceholderColor = Color.DarkGray;
+            txtCorreo.PlaceholderText = "";
+            txtCorreo.Size = new Size(181, 29);
+            txtCorreo.TabIndex = 18;
+            txtCorreo.Texts = "";
+            txtCorreo.UnderlinedStyle = false;
             // 
-            // customTextBox5
+            // txtTelefono
             // 
-            customTextBox5.BackColor = SystemColors.Window;
-            customTextBox5.BorderColor = Color.Black;
-            customTextBox5.BorderFocusColor = Color.HotPink;
-            customTextBox5.BorderRadius = 0;
-            customTextBox5.BorderSize = 2;
-            customTextBox5.Cursor = Cursors.IBeam;
-            customTextBox5.ForeColor = Color.DimGray;
-            customTextBox5.Location = new Point(226, 381);
-            customTextBox5.Multiline = false;
-            customTextBox5.Name = "customTextBox5";
-            customTextBox5.Padding = new Padding(7);
-            customTextBox5.PasswordChar = false;
-            customTextBox5.PlaceholderColor = Color.DarkGray;
-            customTextBox5.PlaceholderText = "";
-            customTextBox5.Size = new Size(181, 29);
-            customTextBox5.TabIndex = 17;
-            customTextBox5.Texts = "";
-            customTextBox5.UnderlinedStyle = false;
+            txtTelefono.BackColor = SystemColors.Window;
+            txtTelefono.BorderColor = Color.Black;
+            txtTelefono.BorderFocusColor = Color.HotPink;
+            txtTelefono.BorderRadius = 0;
+            txtTelefono.BorderSize = 2;
+            txtTelefono.Cursor = Cursors.IBeam;
+            txtTelefono.ForeColor = Color.DimGray;
+            txtTelefono.Location = new Point(226, 381);
+            txtTelefono.Multiline = false;
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Padding = new Padding(7);
+            txtTelefono.PasswordChar = false;
+            txtTelefono.PlaceholderColor = Color.DarkGray;
+            txtTelefono.PlaceholderText = "";
+            txtTelefono.Size = new Size(181, 29);
+            txtTelefono.TabIndex = 17;
+            txtTelefono.Texts = "";
+            txtTelefono.UnderlinedStyle = false;
             // 
-            // customTextBox4
+            // txtSegundoApellido
             // 
-            customTextBox4.BackColor = SystemColors.Window;
-            customTextBox4.BorderColor = Color.Black;
-            customTextBox4.BorderFocusColor = Color.HotPink;
-            customTextBox4.BorderRadius = 0;
-            customTextBox4.BorderSize = 2;
-            customTextBox4.Cursor = Cursors.IBeam;
-            customTextBox4.ForeColor = Color.DimGray;
-            customTextBox4.Location = new Point(590, 275);
-            customTextBox4.Multiline = false;
-            customTextBox4.Name = "customTextBox4";
-            customTextBox4.Padding = new Padding(7);
-            customTextBox4.PasswordChar = false;
-            customTextBox4.PlaceholderColor = Color.DarkGray;
-            customTextBox4.PlaceholderText = "";
-            customTextBox4.Size = new Size(181, 29);
-            customTextBox4.TabIndex = 16;
-            customTextBox4.Texts = "";
-            customTextBox4.UnderlinedStyle = false;
+            txtSegundoApellido.BackColor = SystemColors.Window;
+            txtSegundoApellido.BorderColor = Color.Black;
+            txtSegundoApellido.BorderFocusColor = Color.HotPink;
+            txtSegundoApellido.BorderRadius = 0;
+            txtSegundoApellido.BorderSize = 2;
+            txtSegundoApellido.Cursor = Cursors.IBeam;
+            txtSegundoApellido.ForeColor = Color.DimGray;
+            txtSegundoApellido.Location = new Point(590, 275);
+            txtSegundoApellido.Multiline = false;
+            txtSegundoApellido.Name = "txtSegundoApellido";
+            txtSegundoApellido.Padding = new Padding(7);
+            txtSegundoApellido.PasswordChar = false;
+            txtSegundoApellido.PlaceholderColor = Color.DarkGray;
+            txtSegundoApellido.PlaceholderText = "";
+            txtSegundoApellido.Size = new Size(181, 29);
+            txtSegundoApellido.TabIndex = 16;
+            txtSegundoApellido.Texts = "";
+            txtSegundoApellido.UnderlinedStyle = false;
             // 
-            // customTextBox3
+            // txtPrimerApellido
             // 
-            customTextBox3.BackColor = SystemColors.Window;
-            customTextBox3.BorderColor = Color.Black;
-            customTextBox3.BorderFocusColor = Color.HotPink;
-            customTextBox3.BorderRadius = 0;
-            customTextBox3.BorderSize = 2;
-            customTextBox3.Cursor = Cursors.IBeam;
-            customTextBox3.ForeColor = Color.DimGray;
-            customTextBox3.Location = new Point(254, 275);
-            customTextBox3.Multiline = false;
-            customTextBox3.Name = "customTextBox3";
-            customTextBox3.Padding = new Padding(7);
-            customTextBox3.PasswordChar = false;
-            customTextBox3.PlaceholderColor = Color.DarkGray;
-            customTextBox3.PlaceholderText = "";
-            customTextBox3.Size = new Size(181, 29);
-            customTextBox3.TabIndex = 15;
-            customTextBox3.Texts = "";
-            customTextBox3.UnderlinedStyle = false;
+            txtPrimerApellido.BackColor = SystemColors.Window;
+            txtPrimerApellido.BorderColor = Color.Black;
+            txtPrimerApellido.BorderFocusColor = Color.HotPink;
+            txtPrimerApellido.BorderRadius = 0;
+            txtPrimerApellido.BorderSize = 2;
+            txtPrimerApellido.Cursor = Cursors.IBeam;
+            txtPrimerApellido.ForeColor = Color.DimGray;
+            txtPrimerApellido.Location = new Point(254, 275);
+            txtPrimerApellido.Multiline = false;
+            txtPrimerApellido.Name = "txtPrimerApellido";
+            txtPrimerApellido.Padding = new Padding(7);
+            txtPrimerApellido.PasswordChar = false;
+            txtPrimerApellido.PlaceholderColor = Color.DarkGray;
+            txtPrimerApellido.PlaceholderText = "";
+            txtPrimerApellido.Size = new Size(181, 29);
+            txtPrimerApellido.TabIndex = 15;
+            txtPrimerApellido.Texts = "";
+            txtPrimerApellido.UnderlinedStyle = false;
             // 
-            // customTextBox2
+            // txtSegundoNombre
             // 
-            customTextBox2.BackColor = SystemColors.Window;
-            customTextBox2.BorderColor = Color.Black;
-            customTextBox2.BorderFocusColor = Color.HotPink;
-            customTextBox2.BorderRadius = 0;
-            customTextBox2.BorderSize = 2;
-            customTextBox2.Cursor = Cursors.IBeam;
-            customTextBox2.ForeColor = Color.DimGray;
-            customTextBox2.Location = new Point(590, 232);
-            customTextBox2.Multiline = false;
-            customTextBox2.Name = "customTextBox2";
-            customTextBox2.Padding = new Padding(7);
-            customTextBox2.PasswordChar = false;
-            customTextBox2.PlaceholderColor = Color.DarkGray;
-            customTextBox2.PlaceholderText = "";
-            customTextBox2.Size = new Size(181, 29);
-            customTextBox2.TabIndex = 14;
-            customTextBox2.Texts = "";
-            customTextBox2.UnderlinedStyle = false;
+            txtSegundoNombre.BackColor = SystemColors.Window;
+            txtSegundoNombre.BorderColor = Color.Black;
+            txtSegundoNombre.BorderFocusColor = Color.HotPink;
+            txtSegundoNombre.BorderRadius = 0;
+            txtSegundoNombre.BorderSize = 2;
+            txtSegundoNombre.Cursor = Cursors.IBeam;
+            txtSegundoNombre.ForeColor = Color.DimGray;
+            txtSegundoNombre.Location = new Point(590, 232);
+            txtSegundoNombre.Multiline = false;
+            txtSegundoNombre.Name = "txtSegundoNombre";
+            txtSegundoNombre.Padding = new Padding(7);
+            txtSegundoNombre.PasswordChar = false;
+            txtSegundoNombre.PlaceholderColor = Color.DarkGray;
+            txtSegundoNombre.PlaceholderText = "";
+            txtSegundoNombre.Size = new Size(181, 29);
+            txtSegundoNombre.TabIndex = 14;
+            txtSegundoNombre.Texts = "";
+            txtSegundoNombre.UnderlinedStyle = false;
             // 
-            // customTextBox1
+            // txtPrimerNombre
             // 
-            customTextBox1.BackColor = SystemColors.Window;
-            customTextBox1.BorderColor = Color.Black;
-            customTextBox1.BorderFocusColor = Color.HotPink;
-            customTextBox1.BorderRadius = 0;
-            customTextBox1.BorderSize = 2;
-            customTextBox1.Cursor = Cursors.IBeam;
-            customTextBox1.ForeColor = Color.DimGray;
-            customTextBox1.Location = new Point(250, 232);
-            customTextBox1.Multiline = false;
-            customTextBox1.Name = "customTextBox1";
-            customTextBox1.Padding = new Padding(7);
-            customTextBox1.PasswordChar = false;
-            customTextBox1.PlaceholderColor = Color.DarkGray;
-            customTextBox1.PlaceholderText = "";
-            customTextBox1.Size = new Size(181, 29);
-            customTextBox1.TabIndex = 13;
-            customTextBox1.Texts = "";
-            customTextBox1.UnderlinedStyle = false;
+            txtPrimerNombre.BackColor = SystemColors.Window;
+            txtPrimerNombre.BorderColor = Color.Black;
+            txtPrimerNombre.BorderFocusColor = Color.HotPink;
+            txtPrimerNombre.BorderRadius = 0;
+            txtPrimerNombre.BorderSize = 2;
+            txtPrimerNombre.Cursor = Cursors.IBeam;
+            txtPrimerNombre.ForeColor = Color.DimGray;
+            txtPrimerNombre.Location = new Point(250, 232);
+            txtPrimerNombre.Multiline = false;
+            txtPrimerNombre.Name = "txtPrimerNombre";
+            txtPrimerNombre.Padding = new Padding(7);
+            txtPrimerNombre.PasswordChar = false;
+            txtPrimerNombre.PlaceholderColor = Color.DarkGray;
+            txtPrimerNombre.PlaceholderText = "";
+            txtPrimerNombre.Size = new Size(181, 29);
+            txtPrimerNombre.TabIndex = 13;
+            txtPrimerNombre.Texts = "";
+            txtPrimerNombre.UnderlinedStyle = false;
             // 
             // lblCorreo
             // 
@@ -608,11 +612,41 @@
             panel1.Size = new Size(676, 332);
             panel1.TabIndex = 0;
             // 
+            // lblNombreUsuario
+            // 
+            lblNombreUsuario.AutoSize = true;
+            lblNombreUsuario.Location = new Point(141, 485);
+            lblNombreUsuario.Name = "lblNombreUsuario";
+            lblNombreUsuario.Size = new Size(106, 13);
+            lblNombreUsuario.TabIndex = 28;
+            lblNombreUsuario.Text = "Nombre de usuario";
+            // 
+            // txtNombreUsuario
+            // 
+            txtNombreUsuario.BackColor = SystemColors.Window;
+            txtNombreUsuario.BorderColor = Color.Black;
+            txtNombreUsuario.BorderFocusColor = Color.HotPink;
+            txtNombreUsuario.BorderRadius = 0;
+            txtNombreUsuario.BorderSize = 2;
+            txtNombreUsuario.Cursor = Cursors.IBeam;
+            txtNombreUsuario.ForeColor = Color.DimGray;
+            txtNombreUsuario.Location = new Point(253, 483);
+            txtNombreUsuario.Multiline = false;
+            txtNombreUsuario.Name = "txtNombreUsuario";
+            txtNombreUsuario.Padding = new Padding(7);
+            txtNombreUsuario.PasswordChar = false;
+            txtNombreUsuario.PlaceholderColor = Color.DarkGray;
+            txtNombreUsuario.PlaceholderText = "";
+            txtNombreUsuario.Size = new Size(181, 29);
+            txtNombreUsuario.TabIndex = 29;
+            txtNombreUsuario.Texts = "";
+            txtNombreUsuario.UnderlinedStyle = false;
+            // 
             // RegistroUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 524);
+            ClientSize = new Size(800, 600);
             Controls.Add(pnlPrincipal);
             Name = "RegistroUsuario";
             Text = "Form1";
@@ -652,16 +686,16 @@
         private Label lblSegundoApellido;
         private Label lblSegundoNombre;
         private Label lblPrimerApellido;
-        private Apariencia.CustomTextBox customTextBox1;
-        private Apariencia.CustomTextBox customTextBox8;
-        private Apariencia.CustomTextBox customTextBox7;
-        private Apariencia.CustomTextBox customTextBox6;
-        private Apariencia.CustomTextBox customTextBox5;
-        private Apariencia.CustomTextBox customTextBox4;
-        private Apariencia.CustomTextBox customTextBox3;
-        private Apariencia.CustomTextBox customTextBox2;
-        private Apariencia.CustomComboBox customComboBox1;
-        private DateTimePicker dateTimePicker1;
+        private Apariencia.CustomTextBox txtPrimerNombre;
+        private Apariencia.CustomTextBox txtContraseña;
+        private Apariencia.CustomTextBox txtIdentificacion;
+        private Apariencia.CustomTextBox txtCorreo;
+        private Apariencia.CustomTextBox txtTelefono;
+        private Apariencia.CustomTextBox txtSegundoApellido;
+        private Apariencia.CustomTextBox txtPrimerApellido;
+        private Apariencia.CustomTextBox txtSegundoNombre;
+        private Apariencia.CustomComboBox cbxGenero;
+        private DateTimePicker dtpFechaNac;
         private Label label1;
         private Panel panel2;
         private Label label2;
@@ -672,5 +706,7 @@
         private Button btn_RegistrarUsuario;
         private Panel panel5;
         private Button btn_volverMenuPrincipal;
+        private Apariencia.CustomTextBox txtNombreUsuario;
+        private Label lblNombreUsuario;
     }
 }

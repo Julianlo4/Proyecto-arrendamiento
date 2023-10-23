@@ -1,9 +1,12 @@
 using ArriendoPrototipo.Interfaces;
+using System.Globalization;
+using ArriendoPrototipo.Logica;
 
 namespace ArriendoPrototipo
 {
     public partial class RegistroUsuario : Form
     {
+        RegistroUsuarioLog nuevoReg = new RegistroUsuarioLog();
         public RegistroUsuario()
         {
             InitializeComponent();
@@ -57,6 +60,37 @@ namespace ArriendoPrototipo
             HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis();
             this.Close();
             homeUsuarioRegis.Show();
+
+            string primerNombre, segundoNombre, primerApellido,
+               segundoApellido, genero, telefono, correo,
+               identiificacion, contraseña, fechaNacimiento, nombreUsuario;
+            DateTime fechaNacimientoP;
+            int result;
+
+
+            primerNombre = txtPrimerNombre.Text;
+            segundoNombre = txtSegundoNombre.Text;
+            primerApellido = txtPrimerApellido.Text;
+            segundoApellido = txtSegundoApellido.Text;
+            genero = cbxGenero.Texts;
+            telefono = txtTelefono.Text;
+            correo = txtCorreo.Text;
+            identiificacion = txtIdentificacion.Text;
+            contraseña = txtContraseña.Text;
+            fechaNacimiento = dtpFechaNac.Value.ToString("dd-MM-yyyy");
+            fechaNacimientoP = DateTime.ParseExact(fechaNacimiento, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+            nombreUsuario = txtNombreUsuario.Text;
+
+            result = nuevoReg.registroDeUsuario(primerNombre, segundoNombre, primerApellido,
+            segundoApellido, genero, telefono, correo,
+            identiificacion, contraseña, fechaNacimientoP, nombreUsuario);
+
+            if (result > 0)
+            {
+                MessageBox.Show("La insercion ha sido correcta", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else { MessageBox.Show("La insercion ha sido fallida", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
         }
     }
 }

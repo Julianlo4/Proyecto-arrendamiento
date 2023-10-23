@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "OrL5/3aUY2oNbnE0vIsZcpXsW4/x1GGiu2z5ZdsJ+axcMmgsPZf4zYQTCS0WX324tAlBKD+pSEHFGa/FuURQTw==",
+  "dgSpecHash": "h61Qc+c01IgTyIHcMINa3Ud+PfsCzVWgqzPZtwcfwhLrIl9vHLxWKkTVppN3NBMc7bDVgmF6AG0FxCxCJfJD5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lopez\\Desktop\\Uni\\5° Semestre\\Proyecto arrendamiento\\ArriendoPrototipo\\ArriendoPrototipo\\ArriendoPrototipo.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "C:\\Users\\Equipo\\Source\\Repos\\Proyecto-arrendamiento\\ArriendoPrototipo\\ArriendoPrototipo\\ArriendoPrototipo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Equipo\\.nuget\\packages\\oracle.manageddataaccess\\21.12.0\\oracle.manageddataaccess.21.12.0.nupkg.sha512",
+    "C:\\Users\\Equipo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Equipo\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\Equipo\\.nuget\\packages\\system.text.json\\6.0.1\\system.text.json.6.0.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Oracle.ManagedDataAccess 21.12.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Oracle.ManagedDataAccess",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

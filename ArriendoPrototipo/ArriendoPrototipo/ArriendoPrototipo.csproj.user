@@ -10,10 +10,16 @@
     <Compile Update="Apariencia\CustomTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Interfaces\HomeUsuarioRegis.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Interfaces\IniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Interfaces\PaginaPrincipalTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Interfaces\RegistroInmueble.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Interfaces\RegistroUsuario.cs">

@@ -9,14 +9,13 @@ namespace ArriendoPrototipo.Datos
 {
     internal class Datos
     {
-        private static string connectionString = @"Data Source=localhost;User ID=ProtectoArren;Password=123";
+        private static string connectionString = @"Data Source=localhost;User ID=ProyectoArren;Password=123";
 
         public static int ejecutarDMl(string query)
         {
             int resultado;
 
             Oracle.ManagedDataAccess.Client.OracleConnection connection = new Oracle.ManagedDataAccess.Client.OracleConnection(connectionString);
-            // te amo mi amor
 
             // Crea el comando de inserción con los parámetros adecuados
 

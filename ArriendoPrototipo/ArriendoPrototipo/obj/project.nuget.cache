@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "h61Qc+c01IgTyIHcMINa3Ud+PfsCzVWgqzPZtwcfwhLrIl9vHLxWKkTVppN3NBMc7bDVgmF6AG0FxCxCJfJD5g==",
+  "dgSpecHash": "lBCY2iubC8+BzI3CUNVE7CCfZHJ5Nx6NDA41bwTtkOh5bBAlvxKnby3SsZLDaGK50+GbcTU694Wo6nDwAeaacg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Equipo\\Source\\Repos\\Proyecto-arrendamiento\\ArriendoPrototipo\\ArriendoPrototipo\\ArriendoPrototipo.csproj",
+  "projectFilePath": "C:\\Users\\lopez\\Desktop\\Uni\\5° Semestre\\Proyecto arrendamiento\\ArriendoPrototipo\\ArriendoPrototipo\\ArriendoPrototipo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Equipo\\.nuget\\packages\\oracle.manageddataaccess\\21.12.0\\oracle.manageddataaccess.21.12.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\system.text.json\\6.0.1\\system.text.json.6.0.1.nupkg.sha512"
+    "C:\\Users\\lopez\\.nuget\\packages\\oracle.manageddataaccess\\21.12.0\\oracle.manageddataaccess.21.12.0.nupkg.sha512",
+    "C:\\Users\\lopez\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\lopez\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\lopez\\.nuget\\packages\\system.text.json\\6.0.1\\system.text.json.6.0.1.nupkg.sha512"
   ],
   "logs": [
     {

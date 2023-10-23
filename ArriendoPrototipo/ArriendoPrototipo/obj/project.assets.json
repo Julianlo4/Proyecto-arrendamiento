@@ -219,19 +219,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Equipo\\.nuget\\packages\\": {}
+    "C:\\Users\\lopez\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Equipo\\Source\\Repos\\Proyecto-arrendamiento\\ArriendoPrototipo\\ArriendoPrototipo\\ArriendoPrototipo.csproj",
+      "projectUniqueName": "C:\\Users\\lopez\\Desktop\\Uni\\5° Semestre\\Proyecto arrendamiento\\ArriendoPrototipo\\ArriendoPrototipo\\ArriendoPrototipo.csproj",
       "projectName": "ArriendoPrototipo",
-      "projectPath": "C:\\Users\\Equipo\\Source\\Repos\\Proyecto-arrendamiento\\ArriendoPrototipo\\ArriendoPrototipo\\ArriendoPrototipo.csproj",
-      "packagesPath": "C:\\Users\\Equipo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Equipo\\Source\\Repos\\Proyecto-arrendamiento\\ArriendoPrototipo\\ArriendoPrototipo\\obj\\",
+      "projectPath": "C:\\Users\\lopez\\Desktop\\Uni\\5° Semestre\\Proyecto arrendamiento\\ArriendoPrototipo\\ArriendoPrototipo\\ArriendoPrototipo.csproj",
+      "packagesPath": "C:\\Users\\lopez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lopez\\Desktop\\Uni\\5° Semestre\\Proyecto arrendamiento\\ArriendoPrototipo\\ArriendoPrototipo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Equipo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lopez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -281,7 +281,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   },

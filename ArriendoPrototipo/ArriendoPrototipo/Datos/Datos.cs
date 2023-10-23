@@ -16,7 +16,7 @@ namespace ArriendoPrototipo.Datos
             int resultado;
 
             Oracle.ManagedDataAccess.Client.OracleConnection connection = new Oracle.ManagedDataAccess.Client.OracleConnection(connectionString);
-
+            // te amo mi amor
 
             // Crea el comando de inserción con los parámetros adecuados
 

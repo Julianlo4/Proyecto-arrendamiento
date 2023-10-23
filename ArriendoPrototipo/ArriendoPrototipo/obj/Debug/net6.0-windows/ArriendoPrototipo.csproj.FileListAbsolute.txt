@@ -39,3 +39,9 @@ C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo
 C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.RegistroUsuario.resources
 C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Interfaces.PaginaPrincipalTodos.resources
 C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Interfaces.IniciarSesion.resources
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\bin\Debug\net6.0-windows\Oracle.ManagedDataAccess.dll
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.csproj.AssemblyReference.cache
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Interfaces.HomeUsuarioRegis.resources
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.Interfaces.RegistroInmueble.resources
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\ArriendoPrototipo\ArriendoPrototipo\obj\Debug\net6.0-windows\ArriendoPrototipo.csproj.CopyComplete

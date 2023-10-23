@@ -28,5 +28,12 @@ namespace ArriendoPrototipo.Interfaces
             paginaPrincipalTodos.Show();
             this.Close();
         }
+
+        private void btn_RegistrarUsuario_Click(object sender, EventArgs e)
+        {
+            HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis();
+            this.Close();
+            homeUsuarioRegis.Show();
+        }
     }
 }

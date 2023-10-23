@@ -28,13 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroInmueble));
             Label lbnAnimales;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroInmueble));
             panel4 = new Panel();
+            label3 = new Label();
+            lblQueSomos = new Label();
+            lblIniciarSesion = new Label();
+            lblAyuda = new Label();
+            MenuRegistroUsuario = new Label();
             panel5 = new Panel();
             lblNombreUsuario = new Label();
             lblBienvenido = new Label();
             panel3 = new Panel();
+            bntRegistrarInmueble = new Button();
+            cbxPrecio = new TextBox();
+            lbnPrecio = new Label();
+            cbxTelefono = new TextBox();
+            lbnTelefono = new Label();
+            cbxParqueadero = new ComboBox();
+            lbnParqueadero = new Label();
+            cbxAnimales = new ComboBox();
+            cbxAmoblado = new ComboBox();
+            lbnAmoblado = new Label();
+            rbGas = new RadioButton();
+            rbLavadora = new RadioButton();
+            rbTv = new RadioButton();
+            rbWifi = new RadioButton();
+            rbLuz = new RadioButton();
+            rbAgua = new RadioButton();
+            lblServiciosInclu = new Label();
+            cbxTipoVivienda = new ComboBox();
+            lblTipoVivienda = new Label();
+            cbxUbicacion = new ComboBox();
+            lblUbicacionInmue = new Label();
+            cbxDescripcionInmueble = new TextBox();
+            lbnDescripcionPublicacion = new Label();
+            cbxNombrePublicacion = new TextBox();
+            lbnTituloPublicacion = new Label();
+            panel6 = new Panel();
+            label4 = new Label();
             label1 = new Label();
             pnlPrincipal = new Panel();
             pnlInicioSuperior = new Panel();
@@ -43,38 +75,6 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             pbxLogo = new PictureBox();
-            lblAyuda = new Label();
-            MenuRegistroUsuario = new Label();
-            lblQueSomos = new Label();
-            lblIniciarSesion = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            panel6 = new Panel();
-            lbnTituloPublicacion = new Label();
-            cbxNombrePublicacion = new TextBox();
-            lbnDescripcionPublicacion = new Label();
-            cbxDescripcionInmueble = new TextBox();
-            lblUbicacionInmue = new Label();
-            cbxUbicacion = new ComboBox();
-            lblTipoVivienda = new Label();
-            cbxTipoVivienda = new ComboBox();
-            lblServiciosInclu = new Label();
-            rbAgua = new RadioButton();
-            rbLuz = new RadioButton();
-            rbWifi = new RadioButton();
-            rbTv = new RadioButton();
-            rbLavadora = new RadioButton();
-            rbGas = new RadioButton();
-            lbnAmoblado = new Label();
-            cbxAmoblado = new ComboBox();
-            cbxAnimales = new ComboBox();
-            lbnParqueadero = new Label();
-            cbxParqueadero = new ComboBox();
-            lbnTelefono = new Label();
-            cbxTelefono = new TextBox();
-            lbnPrecio = new Label();
-            cbxPrecio = new TextBox();
-            bntRegistrarInmueble = new Button();
             lbnAnimales = new Label();
             panel4.SuspendLayout();
             panel3.SuspendLayout();
@@ -85,6 +85,15 @@
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbxLogo).BeginInit();
             SuspendLayout();
+            // 
+            // lbnAnimales
+            // 
+            lbnAnimales.AutoSize = true;
+            lbnAnimales.Location = new Point(437, 241);
+            lbnAnimales.Name = "lbnAnimales";
+            lbnAnimales.Size = new Size(106, 13);
+            lbnAnimales.TabIndex = 44;
+            lbnAnimales.Text = "¿ Permite animales?";
             // 
             // panel4
             // 
@@ -99,6 +108,62 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(124, 426);
             panel4.TabIndex = 24;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(23, 58);
+            label3.Name = "label3";
+            label3.Size = new Size(90, 13);
+            label3.TabIndex = 5;
+            label3.Text = "Página principal";
+            label3.Click += label3_Click;
+            // 
+            // lblQueSomos
+            // 
+            lblQueSomos.AutoSize = true;
+            lblQueSomos.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            lblQueSomos.ForeColor = Color.FromArgb(254, 145, 147);
+            lblQueSomos.Location = new Point(12, 86);
+            lblQueSomos.Name = "lblQueSomos";
+            lblQueSomos.Size = new Size(101, 20);
+            lblQueSomos.TabIndex = 2;
+            lblQueSomos.Text = "¿Qué somos?";
+            // 
+            // lblIniciarSesion
+            // 
+            lblIniciarSesion.AutoSize = true;
+            lblIniciarSesion.Cursor = Cursors.Hand;
+            lblIniciarSesion.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            lblIniciarSesion.ForeColor = Color.FromArgb(254, 145, 147);
+            lblIniciarSesion.Location = new Point(12, 171);
+            lblIniciarSesion.Name = "lblIniciarSesion";
+            lblIniciarSesion.Size = new Size(107, 20);
+            lblIniciarSesion.TabIndex = 1;
+            lblIniciarSesion.Text = "Configuracion";
+            lblIniciarSesion.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblAyuda
+            // 
+            lblAyuda.AutoSize = true;
+            lblAyuda.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            lblAyuda.ForeColor = Color.FromArgb(254, 145, 147);
+            lblAyuda.Location = new Point(37, 127);
+            lblAyuda.Name = "lblAyuda";
+            lblAyuda.Size = new Size(54, 20);
+            lblAyuda.TabIndex = 3;
+            lblAyuda.Text = "Ayuda";
+            // 
+            // MenuRegistroUsuario
+            // 
+            MenuRegistroUsuario.AutoSize = true;
+            MenuRegistroUsuario.Font = new Font("Franklin Gothic Demi Cond", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            MenuRegistroUsuario.ForeColor = Color.FromArgb(254, 145, 147);
+            MenuRegistroUsuario.Location = new Point(34, -8);
+            MenuRegistroUsuario.Name = "MenuRegistroUsuario";
+            MenuRegistroUsuario.Size = new Size(79, 34);
+            MenuRegistroUsuario.TabIndex = 4;
+            MenuRegistroUsuario.Text = "MENÚ";
             // 
             // panel5
             // 
@@ -168,6 +233,258 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(858, 429);
             panel3.TabIndex = 24;
+            // 
+            // bntRegistrarInmueble
+            // 
+            bntRegistrarInmueble.Location = new Point(557, 387);
+            bntRegistrarInmueble.Name = "bntRegistrarInmueble";
+            bntRegistrarInmueble.RightToLeft = RightToLeft.No;
+            bntRegistrarInmueble.Size = new Size(130, 23);
+            bntRegistrarInmueble.TabIndex = 52;
+            bntRegistrarInmueble.Text = "REGISTRAR INMUEBLE";
+            bntRegistrarInmueble.UseVisualStyleBackColor = true;
+            // 
+            // cbxPrecio
+            // 
+            cbxPrecio.Location = new Point(267, 367);
+            cbxPrecio.Name = "cbxPrecio";
+            cbxPrecio.Size = new Size(100, 22);
+            cbxPrecio.TabIndex = 51;
+            // 
+            // lbnPrecio
+            // 
+            lbnPrecio.AutoSize = true;
+            lbnPrecio.Location = new Point(178, 370);
+            lbnPrecio.Name = "lbnPrecio";
+            lbnPrecio.Size = new Size(67, 13);
+            lbnPrecio.TabIndex = 50;
+            lbnPrecio.Text = "* Precio     $";
+            // 
+            // cbxTelefono
+            // 
+            cbxTelefono.Location = new Point(297, 329);
+            cbxTelefono.Name = "cbxTelefono";
+            cbxTelefono.Size = new Size(100, 22);
+            cbxTelefono.TabIndex = 49;
+            // 
+            // lbnTelefono
+            // 
+            lbnTelefono.AutoSize = true;
+            lbnTelefono.Location = new Point(167, 332);
+            lbnTelefono.Name = "lbnTelefono";
+            lbnTelefono.Size = new Size(124, 13);
+            lbnTelefono.TabIndex = 48;
+            lbnTelefono.Text = "* Telefono de contacto";
+            // 
+            // cbxParqueadero
+            // 
+            cbxParqueadero.FormattingEnabled = true;
+            cbxParqueadero.Items.AddRange(new object[] { "Si", "No", "Solo motos" });
+            cbxParqueadero.Location = new Point(297, 280);
+            cbxParqueadero.Name = "cbxParqueadero";
+            cbxParqueadero.Size = new Size(121, 21);
+            cbxParqueadero.TabIndex = 47;
+            // 
+            // lbnParqueadero
+            // 
+            lbnParqueadero.AutoSize = true;
+            lbnParqueadero.Location = new Point(162, 283);
+            lbnParqueadero.Name = "lbnParqueadero";
+            lbnParqueadero.Size = new Size(129, 13);
+            lbnParqueadero.TabIndex = 46;
+            lbnParqueadero.Text = "* ¿ Tiene parqueadero ?";
+            // 
+            // cbxAnimales
+            // 
+            cbxAnimales.FormattingEnabled = true;
+            cbxAnimales.Items.AddRange(new object[] { "Si", "No", "Depende" });
+            cbxAnimales.Location = new Point(592, 241);
+            cbxAnimales.Name = "cbxAnimales";
+            cbxAnimales.Size = new Size(121, 21);
+            cbxAnimales.TabIndex = 45;
+            // 
+            // cbxAmoblado
+            // 
+            cbxAmoblado.FormattingEnabled = true;
+            cbxAmoblado.Items.AddRange(new object[] { "Si", "No", "Parcialmente" });
+            cbxAmoblado.Location = new Point(276, 237);
+            cbxAmoblado.Name = "cbxAmoblado";
+            cbxAmoblado.Size = new Size(121, 21);
+            cbxAmoblado.TabIndex = 43;
+            // 
+            // lbnAmoblado
+            // 
+            lbnAmoblado.AutoSize = true;
+            lbnAmoblado.Location = new Point(162, 240);
+            lbnAmoblado.Name = "lbnAmoblado";
+            lbnAmoblado.Size = new Size(94, 13);
+            lbnAmoblado.TabIndex = 42;
+            lbnAmoblado.Text = "* ¿ Es amoblado?";
+            // 
+            // rbGas
+            // 
+            rbGas.AutoSize = true;
+            rbGas.Location = new Point(730, 203);
+            rbGas.Name = "rbGas";
+            rbGas.Size = new Size(44, 17);
+            rbGas.TabIndex = 41;
+            rbGas.TabStop = true;
+            rbGas.Text = "Gas";
+            rbGas.UseVisualStyleBackColor = true;
+            // 
+            // rbLavadora
+            // 
+            rbLavadora.AutoSize = true;
+            rbLavadora.Location = new Point(642, 201);
+            rbLavadora.Name = "rbLavadora";
+            rbLavadora.Size = new Size(71, 17);
+            rbLavadora.TabIndex = 40;
+            rbLavadora.TabStop = true;
+            rbLavadora.Text = "Lavadora";
+            rbLavadora.UseVisualStyleBackColor = true;
+            // 
+            // rbTv
+            // 
+            rbTv.AutoSize = true;
+            rbTv.Location = new Point(572, 203);
+            rbTv.Name = "rbTv";
+            rbTv.Size = new Size(35, 17);
+            rbTv.TabIndex = 39;
+            rbTv.TabStop = true;
+            rbTv.Text = "Tv";
+            rbTv.UseVisualStyleBackColor = true;
+            // 
+            // rbWifi
+            // 
+            rbWifi.AutoSize = true;
+            rbWifi.Location = new Point(499, 203);
+            rbWifi.Name = "rbWifi";
+            rbWifi.RightToLeft = RightToLeft.No;
+            rbWifi.Size = new Size(46, 17);
+            rbWifi.TabIndex = 38;
+            rbWifi.TabStop = true;
+            rbWifi.Text = "Wifi";
+            rbWifi.UseVisualStyleBackColor = true;
+            // 
+            // rbLuz
+            // 
+            rbLuz.AutoSize = true;
+            rbLuz.Location = new Point(421, 203);
+            rbLuz.Name = "rbLuz";
+            rbLuz.Size = new Size(42, 17);
+            rbLuz.TabIndex = 37;
+            rbLuz.TabStop = true;
+            rbLuz.Text = "Luz";
+            rbLuz.UseVisualStyleBackColor = true;
+            // 
+            // rbAgua
+            // 
+            rbAgua.AutoSize = true;
+            rbAgua.Location = new Point(315, 203);
+            rbAgua.Name = "rbAgua";
+            rbAgua.Size = new Size(52, 17);
+            rbAgua.TabIndex = 36;
+            rbAgua.TabStop = true;
+            rbAgua.Text = "Agua";
+            rbAgua.UseVisualStyleBackColor = true;
+            // 
+            // lblServiciosInclu
+            // 
+            lblServiciosInclu.AutoSize = true;
+            lblServiciosInclu.Location = new Point(147, 203);
+            lblServiciosInclu.Name = "lblServiciosInclu";
+            lblServiciosInclu.Size = new Size(109, 13);
+            lblServiciosInclu.TabIndex = 34;
+            lblServiciosInclu.Text = "*Servicios Inlcuidos:";
+            // 
+            // cbxTipoVivienda
+            // 
+            cbxTipoVivienda.FormattingEnabled = true;
+            cbxTipoVivienda.Items.AddRange(new object[] { "Apartamento", "ApartaEstudio", "Casa de estudiantes" });
+            cbxTipoVivienda.Location = new Point(683, 155);
+            cbxTipoVivienda.Name = "cbxTipoVivienda";
+            cbxTipoVivienda.Size = new Size(121, 21);
+            cbxTipoVivienda.TabIndex = 33;
+            // 
+            // lblTipoVivienda
+            // 
+            lblTipoVivienda.AutoSize = true;
+            lblTipoVivienda.Location = new Point(572, 161);
+            lblTipoVivienda.Name = "lblTipoVivienda";
+            lblTipoVivienda.Size = new Size(86, 13);
+            lblTipoVivienda.TabIndex = 32;
+            lblTipoVivienda.Text = "* Tipo vivienda:";
+            // 
+            // cbxUbicacion
+            // 
+            cbxUbicacion.FormattingEnabled = true;
+            cbxUbicacion.Items.AddRange(new object[] { "Norte", "Sur", "Oriente", "Occidente" });
+            cbxUbicacion.Location = new Point(246, 152);
+            cbxUbicacion.Name = "cbxUbicacion";
+            cbxUbicacion.Size = new Size(121, 21);
+            cbxUbicacion.TabIndex = 31;
+            // 
+            // lblUbicacionInmue
+            // 
+            lblUbicacionInmue.AutoSize = true;
+            lblUbicacionInmue.Location = new Point(147, 155);
+            lblUbicacionInmue.Name = "lblUbicacionInmue";
+            lblUbicacionInmue.Size = new Size(69, 13);
+            lblUbicacionInmue.TabIndex = 30;
+            lblUbicacionInmue.Text = "* Ubicación:";
+            // 
+            // cbxDescripcionInmueble
+            // 
+            cbxDescripcionInmueble.Cursor = Cursors.IBeam;
+            cbxDescripcionInmueble.Location = new Point(249, 108);
+            cbxDescripcionInmueble.Name = "cbxDescripcionInmueble";
+            cbxDescripcionInmueble.Size = new Size(584, 22);
+            cbxDescripcionInmueble.TabIndex = 29;
+            cbxDescripcionInmueble.TextChanged += cbxDescripcionInmueble_TextChanged;
+            // 
+            // lbnDescripcionPublicacion
+            // 
+            lbnDescripcionPublicacion.AutoSize = true;
+            lbnDescripcionPublicacion.Location = new Point(147, 107);
+            lbnDescripcionPublicacion.Name = "lbnDescripcionPublicacion";
+            lbnDescripcionPublicacion.Size = new Size(67, 13);
+            lbnDescripcionPublicacion.TabIndex = 28;
+            lbnDescripcionPublicacion.Text = "Descripción";
+            // 
+            // cbxNombrePublicacion
+            // 
+            cbxNombrePublicacion.Cursor = Cursors.IBeam;
+            cbxNombrePublicacion.Location = new Point(246, 64);
+            cbxNombrePublicacion.Name = "cbxNombrePublicacion";
+            cbxNombrePublicacion.Size = new Size(587, 22);
+            cbxNombrePublicacion.TabIndex = 27;
+            // 
+            // lbnTituloPublicacion
+            // 
+            lbnTituloPublicacion.AutoSize = true;
+            lbnTituloPublicacion.Location = new Point(132, 67);
+            lbnTituloPublicacion.Name = "lbnTituloPublicacion";
+            lbnTituloPublicacion.Size = new Size(108, 13);
+            lbnTituloPublicacion.TabIndex = 26;
+            lbnTituloPublicacion.Text = "* Titulo publicación";
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.Cyan;
+            panel6.Location = new Point(130, 35);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(735, 12);
+            panel6.TabIndex = 6;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(243, 11);
+            label4.Name = "label4";
+            label4.Size = new Size(524, 21);
+            label4.TabIndex = 25;
+            label4.Text = "Llene los siguientes campos para crear una publicación sobre un inmueble";
             // 
             // label1
             // 
@@ -254,322 +571,6 @@
             pbxLogo.SizeMode = PictureBoxSizeMode.Zoom;
             pbxLogo.TabIndex = 1;
             pbxLogo.TabStop = false;
-            // 
-            // lblAyuda
-            // 
-            lblAyuda.AutoSize = true;
-            lblAyuda.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblAyuda.ForeColor = Color.FromArgb(254, 145, 147);
-            lblAyuda.Location = new Point(37, 127);
-            lblAyuda.Name = "lblAyuda";
-            lblAyuda.Size = new Size(54, 20);
-            lblAyuda.TabIndex = 3;
-            lblAyuda.Text = "Ayuda";
-            // 
-            // MenuRegistroUsuario
-            // 
-            MenuRegistroUsuario.AutoSize = true;
-            MenuRegistroUsuario.Font = new Font("Franklin Gothic Demi Cond", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            MenuRegistroUsuario.ForeColor = Color.FromArgb(254, 145, 147);
-            MenuRegistroUsuario.Location = new Point(34, -8);
-            MenuRegistroUsuario.Name = "MenuRegistroUsuario";
-            MenuRegistroUsuario.Size = new Size(79, 34);
-            MenuRegistroUsuario.TabIndex = 4;
-            MenuRegistroUsuario.Text = "MENÚ";
-            // 
-            // lblQueSomos
-            // 
-            lblQueSomos.AutoSize = true;
-            lblQueSomos.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblQueSomos.ForeColor = Color.FromArgb(254, 145, 147);
-            lblQueSomos.Location = new Point(12, 86);
-            lblQueSomos.Name = "lblQueSomos";
-            lblQueSomos.Size = new Size(101, 20);
-            lblQueSomos.TabIndex = 2;
-            lblQueSomos.Text = "¿Qué somos?";
-            // 
-            // lblIniciarSesion
-            // 
-            lblIniciarSesion.AutoSize = true;
-            lblIniciarSesion.Cursor = Cursors.Hand;
-            lblIniciarSesion.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblIniciarSesion.ForeColor = Color.FromArgb(254, 145, 147);
-            lblIniciarSesion.Location = new Point(12, 171);
-            lblIniciarSesion.Name = "lblIniciarSesion";
-            lblIniciarSesion.Size = new Size(107, 20);
-            lblIniciarSesion.TabIndex = 1;
-            lblIniciarSesion.Text = "Configuracion";
-            lblIniciarSesion.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(23, 58);
-            label3.Name = "label3";
-            label3.Size = new Size(90, 13);
-            label3.TabIndex = 5;
-            label3.Text = "Página principal";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(243, 11);
-            label4.Name = "label4";
-            label4.Size = new Size(524, 21);
-            label4.TabIndex = 25;
-            label4.Text = "Llene los siguientes campos para crear una publicación sobre un inmueble";
-            // 
-            // panel6
-            // 
-            panel6.BackColor = Color.Cyan;
-            panel6.Location = new Point(130, 35);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(735, 12);
-            panel6.TabIndex = 6;
-            // 
-            // lbnTituloPublicacion
-            // 
-            lbnTituloPublicacion.AutoSize = true;
-            lbnTituloPublicacion.Location = new Point(132, 67);
-            lbnTituloPublicacion.Name = "lbnTituloPublicacion";
-            lbnTituloPublicacion.Size = new Size(108, 13);
-            lbnTituloPublicacion.TabIndex = 26;
-            lbnTituloPublicacion.Text = "* Titulo publicación";
-            // 
-            // cbxNombrePublicacion
-            // 
-            cbxNombrePublicacion.Cursor = Cursors.IBeam;
-            cbxNombrePublicacion.Location = new Point(246, 64);
-            cbxNombrePublicacion.Name = "cbxNombrePublicacion";
-            cbxNombrePublicacion.Size = new Size(587, 22);
-            cbxNombrePublicacion.TabIndex = 27;
-            // 
-            // lbnDescripcionPublicacion
-            // 
-            lbnDescripcionPublicacion.AutoSize = true;
-            lbnDescripcionPublicacion.Location = new Point(147, 107);
-            lbnDescripcionPublicacion.Name = "lbnDescripcionPublicacion";
-            lbnDescripcionPublicacion.Size = new Size(67, 13);
-            lbnDescripcionPublicacion.TabIndex = 28;
-            lbnDescripcionPublicacion.Text = "Descripción";
-            // 
-            // cbxDescripcionInmueble
-            // 
-            cbxDescripcionInmueble.Cursor = Cursors.IBeam;
-            cbxDescripcionInmueble.Location = new Point(249, 108);
-            cbxDescripcionInmueble.Name = "cbxDescripcionInmueble";
-            cbxDescripcionInmueble.Size = new Size(584, 22);
-            cbxDescripcionInmueble.TabIndex = 29;
-            cbxDescripcionInmueble.TextChanged += cbxDescripcionInmueble_TextChanged;
-            // 
-            // lblUbicacionInmue
-            // 
-            lblUbicacionInmue.AutoSize = true;
-            lblUbicacionInmue.Location = new Point(147, 155);
-            lblUbicacionInmue.Name = "lblUbicacionInmue";
-            lblUbicacionInmue.Size = new Size(69, 13);
-            lblUbicacionInmue.TabIndex = 30;
-            lblUbicacionInmue.Text = "* Ubicación:";
-            // 
-            // cbxUbicacion
-            // 
-            cbxUbicacion.FormattingEnabled = true;
-            cbxUbicacion.Items.AddRange(new object[] { "Norte", "Sur", "Oriente", "Occidente" });
-            cbxUbicacion.Location = new Point(246, 152);
-            cbxUbicacion.Name = "cbxUbicacion";
-            cbxUbicacion.Size = new Size(121, 21);
-            cbxUbicacion.TabIndex = 31;
-            // 
-            // lblTipoVivienda
-            // 
-            lblTipoVivienda.AutoSize = true;
-            lblTipoVivienda.Location = new Point(572, 161);
-            lblTipoVivienda.Name = "lblTipoVivienda";
-            lblTipoVivienda.Size = new Size(86, 13);
-            lblTipoVivienda.TabIndex = 32;
-            lblTipoVivienda.Text = "* Tipo vivienda:";
-            // 
-            // cbxTipoVivienda
-            // 
-            cbxTipoVivienda.FormattingEnabled = true;
-            cbxTipoVivienda.Items.AddRange(new object[] { "Apartamento", "ApartaEstudio", "Casa de estudiantes" });
-            cbxTipoVivienda.Location = new Point(683, 155);
-            cbxTipoVivienda.Name = "cbxTipoVivienda";
-            cbxTipoVivienda.Size = new Size(121, 21);
-            cbxTipoVivienda.TabIndex = 33;
-            // 
-            // lblServiciosInclu
-            // 
-            lblServiciosInclu.AutoSize = true;
-            lblServiciosInclu.Location = new Point(147, 203);
-            lblServiciosInclu.Name = "lblServiciosInclu";
-            lblServiciosInclu.Size = new Size(109, 13);
-            lblServiciosInclu.TabIndex = 34;
-            lblServiciosInclu.Text = "*Servicios Inlcuidos:";
-            // 
-            // rbAgua
-            // 
-            rbAgua.AutoSize = true;
-            rbAgua.Location = new Point(315, 203);
-            rbAgua.Name = "rbAgua";
-            rbAgua.Size = new Size(52, 17);
-            rbAgua.TabIndex = 36;
-            rbAgua.TabStop = true;
-            rbAgua.Text = "Agua";
-            rbAgua.UseVisualStyleBackColor = true;
-            // 
-            // rbLuz
-            // 
-            rbLuz.AutoSize = true;
-            rbLuz.Location = new Point(421, 203);
-            rbLuz.Name = "rbLuz";
-            rbLuz.Size = new Size(42, 17);
-            rbLuz.TabIndex = 37;
-            rbLuz.TabStop = true;
-            rbLuz.Text = "Luz";
-            rbLuz.UseVisualStyleBackColor = true;
-            // 
-            // rbWifi
-            // 
-            rbWifi.AutoSize = true;
-            rbWifi.Location = new Point(499, 203);
-            rbWifi.Name = "rbWifi";
-            rbWifi.RightToLeft = RightToLeft.No;
-            rbWifi.Size = new Size(46, 17);
-            rbWifi.TabIndex = 38;
-            rbWifi.TabStop = true;
-            rbWifi.Text = "Wifi";
-            rbWifi.UseVisualStyleBackColor = true;
-            // 
-            // rbTv
-            // 
-            rbTv.AutoSize = true;
-            rbTv.Location = new Point(572, 203);
-            rbTv.Name = "rbTv";
-            rbTv.Size = new Size(35, 17);
-            rbTv.TabIndex = 39;
-            rbTv.TabStop = true;
-            rbTv.Text = "Tv";
-            rbTv.UseVisualStyleBackColor = true;
-            // 
-            // rbLavadora
-            // 
-            rbLavadora.AutoSize = true;
-            rbLavadora.Location = new Point(642, 201);
-            rbLavadora.Name = "rbLavadora";
-            rbLavadora.Size = new Size(71, 17);
-            rbLavadora.TabIndex = 40;
-            rbLavadora.TabStop = true;
-            rbLavadora.Text = "Lavadora";
-            rbLavadora.UseVisualStyleBackColor = true;
-            // 
-            // rbGas
-            // 
-            rbGas.AutoSize = true;
-            rbGas.Location = new Point(730, 203);
-            rbGas.Name = "rbGas";
-            rbGas.Size = new Size(44, 17);
-            rbGas.TabIndex = 41;
-            rbGas.TabStop = true;
-            rbGas.Text = "Gas";
-            rbGas.UseVisualStyleBackColor = true;
-            // 
-            // lbnAmoblado
-            // 
-            lbnAmoblado.AutoSize = true;
-            lbnAmoblado.Location = new Point(162, 240);
-            lbnAmoblado.Name = "lbnAmoblado";
-            lbnAmoblado.Size = new Size(94, 13);
-            lbnAmoblado.TabIndex = 42;
-            lbnAmoblado.Text = "* ¿ Es amoblado?";
-            // 
-            // cbxAmoblado
-            // 
-            cbxAmoblado.FormattingEnabled = true;
-            cbxAmoblado.Items.AddRange(new object[] { "Si", "No", "Parcialmente" });
-            cbxAmoblado.Location = new Point(276, 237);
-            cbxAmoblado.Name = "cbxAmoblado";
-            cbxAmoblado.Size = new Size(121, 21);
-            cbxAmoblado.TabIndex = 43;
-            // 
-            // lbnAnimales
-            // 
-            lbnAnimales.AutoSize = true;
-            lbnAnimales.Location = new Point(437, 241);
-            lbnAnimales.Name = "lbnAnimales";
-            lbnAnimales.Size = new Size(106, 13);
-            lbnAnimales.TabIndex = 44;
-            lbnAnimales.Text = "¿ Permite animales?";
-            // 
-            // cbxAnimales
-            // 
-            cbxAnimales.FormattingEnabled = true;
-            cbxAnimales.Items.AddRange(new object[] { "Si", "No", "Depende" });
-            cbxAnimales.Location = new Point(592, 241);
-            cbxAnimales.Name = "cbxAnimales";
-            cbxAnimales.Size = new Size(121, 21);
-            cbxAnimales.TabIndex = 45;
-            // 
-            // lbnParqueadero
-            // 
-            lbnParqueadero.AutoSize = true;
-            lbnParqueadero.Location = new Point(162, 283);
-            lbnParqueadero.Name = "lbnParqueadero";
-            lbnParqueadero.Size = new Size(129, 13);
-            lbnParqueadero.TabIndex = 46;
-            lbnParqueadero.Text = "* ¿ Tiene parqueadero ?";
-            // 
-            // cbxParqueadero
-            // 
-            cbxParqueadero.FormattingEnabled = true;
-            cbxParqueadero.Items.AddRange(new object[] { "Si", "No", "Solo motos" });
-            cbxParqueadero.Location = new Point(297, 280);
-            cbxParqueadero.Name = "cbxParqueadero";
-            cbxParqueadero.Size = new Size(121, 21);
-            cbxParqueadero.TabIndex = 47;
-            // 
-            // lbnTelefono
-            // 
-            lbnTelefono.AutoSize = true;
-            lbnTelefono.Location = new Point(167, 332);
-            lbnTelefono.Name = "lbnTelefono";
-            lbnTelefono.Size = new Size(124, 13);
-            lbnTelefono.TabIndex = 48;
-            lbnTelefono.Text = "* Telefono de contacto";
-            // 
-            // cbxTelefono
-            // 
-            cbxTelefono.Location = new Point(297, 329);
-            cbxTelefono.Name = "cbxTelefono";
-            cbxTelefono.Size = new Size(100, 22);
-            cbxTelefono.TabIndex = 49;
-            // 
-            // lbnPrecio
-            // 
-            lbnPrecio.AutoSize = true;
-            lbnPrecio.Location = new Point(178, 370);
-            lbnPrecio.Name = "lbnPrecio";
-            lbnPrecio.Size = new Size(67, 13);
-            lbnPrecio.TabIndex = 50;
-            lbnPrecio.Text = "* Precio     $";
-            // 
-            // cbxPrecio
-            // 
-            cbxPrecio.Location = new Point(267, 367);
-            cbxPrecio.Name = "cbxPrecio";
-            cbxPrecio.Size = new Size(100, 22);
-            cbxPrecio.TabIndex = 51;
-            // 
-            // bntRegistrarInmueble
-            // 
-            bntRegistrarInmueble.Location = new Point(557, 387);
-            bntRegistrarInmueble.Name = "bntRegistrarInmueble";
-            bntRegistrarInmueble.RightToLeft = RightToLeft.No;
-            bntRegistrarInmueble.Size = new Size(130, 23);
-            bntRegistrarInmueble.TabIndex = 52;
-            bntRegistrarInmueble.Text = "REGISTRAR INMUEBLE";
-            bntRegistrarInmueble.UseVisualStyleBackColor = true;
             // 
             // RegistroInmueble
             // 

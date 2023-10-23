@@ -203,6 +203,7 @@
             btn_RegistrarUsuario.TabIndex = 26;
             btn_RegistrarUsuario.Text = "REGISTRARSE";
             btn_RegistrarUsuario.UseVisualStyleBackColor = false;
+            btn_RegistrarUsuario.Click += btn_RegistrarUsuario_Click;
             // 
             // panel5
             // 

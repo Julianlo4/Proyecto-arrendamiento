@@ -26,7 +26,7 @@ namespace ArriendoPrototipo
 
         private void pbxLogo_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -49,7 +49,14 @@ namespace ArriendoPrototipo
             PaginaPrincipalTodos paginaPrincipalTodos = new PaginaPrincipalTodos();
             this.Close();
             paginaPrincipalTodos.Show();
-            
+
+        }
+
+        private void btn_RegistrarUsuario_Click(object sender, EventArgs e)
+        {
+            HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis();
+            this.Close();
+            homeUsuarioRegis.Show();
         }
     }
 }

@@ -16,5 +16,17 @@ namespace ArriendoPrototipo.Interfaces
         {
             InitializeComponent();
         }
+
+        private void btnAgregarPublicacion_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnAgregarArriendo_Click(object sender, EventArgs e)
+        {
+            RegistroInmueble registroInmueble = new RegistroInmueble();
+            this.Close();
+            registroInmueble.Show();
+        }
     }
 }

@@ -57,9 +57,10 @@ namespace ArriendoPrototipo
 
         private void btn_RegistrarUsuario_Click(object sender, EventArgs e)
         {
+            /*
             HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis();
             this.Close();
-            homeUsuarioRegis.Show();
+            homeUsuarioRegis.Show();*/
 
             string primerNombre, segundoNombre, primerApellido,
                segundoApellido, genero, telefono, correo,

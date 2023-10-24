@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroUsuario));
             pnlPrincipal = new Panel();
+            txtNombreUsuario = new Apariencia.CustomTextBox();
+            lblNombreUsuario = new Label();
             btn_volverMenuPrincipal = new Button();
             btn_RegistrarUsuario = new Button();
             panel5 = new Panel();
@@ -69,8 +71,6 @@
             lblQueSomos = new Label();
             lblPaginaPrincipal = new Label();
             panel1 = new Panel();
-            lblNombreUsuario = new Label();
-            txtNombreUsuario = new Apariencia.CustomTextBox();
             pnlPrincipal.SuspendLayout();
             pnlInicioSuperior.SuspendLayout();
             panel2.SuspendLayout();
@@ -118,6 +118,36 @@
             pnlPrincipal.Size = new Size(800, 600);
             pnlPrincipal.TabIndex = 0;
             pnlPrincipal.Paint += pnlPrincipal_Paint;
+            // 
+            // txtNombreUsuario
+            // 
+            txtNombreUsuario.BackColor = SystemColors.Window;
+            txtNombreUsuario.BorderColor = Color.Black;
+            txtNombreUsuario.BorderFocusColor = Color.HotPink;
+            txtNombreUsuario.BorderRadius = 0;
+            txtNombreUsuario.BorderSize = 2;
+            txtNombreUsuario.Cursor = Cursors.IBeam;
+            txtNombreUsuario.ForeColor = Color.DimGray;
+            txtNombreUsuario.Location = new Point(253, 483);
+            txtNombreUsuario.Multiline = false;
+            txtNombreUsuario.Name = "txtNombreUsuario";
+            txtNombreUsuario.Padding = new Padding(7);
+            txtNombreUsuario.PasswordChar = false;
+            txtNombreUsuario.PlaceholderColor = Color.DarkGray;
+            txtNombreUsuario.PlaceholderText = "";
+            txtNombreUsuario.Size = new Size(181, 29);
+            txtNombreUsuario.TabIndex = 29;
+            txtNombreUsuario.Texts = "";
+            txtNombreUsuario.UnderlinedStyle = false;
+            // 
+            // lblNombreUsuario
+            // 
+            lblNombreUsuario.AutoSize = true;
+            lblNombreUsuario.Location = new Point(141, 485);
+            lblNombreUsuario.Name = "lblNombreUsuario";
+            lblNombreUsuario.Size = new Size(106, 13);
+            lblNombreUsuario.TabIndex = 28;
+            lblNombreUsuario.Text = "Nombre de usuario";
             // 
             // btn_volverMenuPrincipal
             // 
@@ -182,6 +212,7 @@
             cbxGenero.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             cbxGenero.ForeColor = Color.DimGray;
             cbxGenero.IconColor = Color.MediumSlateBlue;
+            cbxGenero.Items.AddRange(new object[] { "Masculino", "Femenino", "Otro", "Desconocido" });
             cbxGenero.ListBackColor = Color.FromArgb(230, 228, 245);
             cbxGenero.ListTextColor = Color.DimGray;
             cbxGenero.Location = new Point(556, 330);
@@ -611,36 +642,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(676, 332);
             panel1.TabIndex = 0;
-            // 
-            // lblNombreUsuario
-            // 
-            lblNombreUsuario.AutoSize = true;
-            lblNombreUsuario.Location = new Point(141, 485);
-            lblNombreUsuario.Name = "lblNombreUsuario";
-            lblNombreUsuario.Size = new Size(106, 13);
-            lblNombreUsuario.TabIndex = 28;
-            lblNombreUsuario.Text = "Nombre de usuario";
-            // 
-            // txtNombreUsuario
-            // 
-            txtNombreUsuario.BackColor = SystemColors.Window;
-            txtNombreUsuario.BorderColor = Color.Black;
-            txtNombreUsuario.BorderFocusColor = Color.HotPink;
-            txtNombreUsuario.BorderRadius = 0;
-            txtNombreUsuario.BorderSize = 2;
-            txtNombreUsuario.Cursor = Cursors.IBeam;
-            txtNombreUsuario.ForeColor = Color.DimGray;
-            txtNombreUsuario.Location = new Point(253, 483);
-            txtNombreUsuario.Multiline = false;
-            txtNombreUsuario.Name = "txtNombreUsuario";
-            txtNombreUsuario.Padding = new Padding(7);
-            txtNombreUsuario.PasswordChar = false;
-            txtNombreUsuario.PlaceholderColor = Color.DarkGray;
-            txtNombreUsuario.PlaceholderText = "";
-            txtNombreUsuario.Size = new Size(181, 29);
-            txtNombreUsuario.TabIndex = 29;
-            txtNombreUsuario.Texts = "";
-            txtNombreUsuario.UnderlinedStyle = false;
             // 
             // RegistroUsuario
             // 

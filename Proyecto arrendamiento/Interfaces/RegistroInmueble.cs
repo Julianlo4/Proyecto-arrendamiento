@@ -24,9 +24,16 @@ namespace ArriendoPrototipo.Interfaces
 
         private void label3_Click(object sender, EventArgs e)
         {
-            HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis();
+            HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis("Usuario");
             this.Close();
             homeUsuarioRegis.Show();
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+            HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis(lblNombreUsuario.Text);
+            homeUsuarioRegis.Show();
+            this.Close();
         }
     }
 }

@@ -33,15 +33,7 @@ namespace ArriendoPrototipo
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroUsuario));
             this.pnlPrincipal = new System.Windows.Forms.Panel();
-            this.txtSegundoNombre = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
-            this.txtSegundoApell = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
-            this.txtSegundoApellido = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
-            this.txtTelefono = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
-            this.txtCorreo = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
-            this.txtIdentificacion = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
-            this.txtContraseña = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
-            this.txtNombreUsuario = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
-            this.txtPrimerNombre = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.cbxGenero = new System.Windows.Forms.ComboBox();
             this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.btn_volverMenuPrincipal = new System.Windows.Forms.Button();
             this.btn_RegistrarUsuario = new System.Windows.Forms.Button();
@@ -73,7 +65,15 @@ namespace ArriendoPrototipo
             this.lblQueSomos = new System.Windows.Forms.Label();
             this.lblPaginaPrincipal = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbxGenero = new System.Windows.Forms.ComboBox();
+            this.txtSegundoNombre = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.txtSegundoApell = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.txtSegundoApellido = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.txtTelefono = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.txtCorreo = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.txtIdentificacion = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.txtContraseña = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.txtNombreUsuario = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.txtPrimerNombre = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
             this.pnlPrincipal.SuspendLayout();
             this.pnlInicioSuperior.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -121,177 +121,19 @@ namespace ArriendoPrototipo
             this.pnlPrincipal.Size = new System.Drawing.Size(686, 529);
             this.pnlPrincipal.TabIndex = 0;
             // 
-            // txtSegundoNombre
+            // cbxGenero
             // 
-            this.txtSegundoNombre.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtSegundoNombre.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtSegundoNombre.BorderRadius = 0;
-            this.txtSegundoNombre.BorderSize = 2;
-            this.txtSegundoNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSegundoNombre.Location = new System.Drawing.Point(515, 201);
-            this.txtSegundoNombre.Multiline = false;
-            this.txtSegundoNombre.Name = "txtSegundoNombre";
-            this.txtSegundoNombre.Padding = new System.Windows.Forms.Padding(7);
-            this.txtSegundoNombre.PasswordChar = false;
-            this.txtSegundoNombre.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSegundoNombre.PlaceholderText = "";
-            this.txtSegundoNombre.Size = new System.Drawing.Size(151, 29);
-            this.txtSegundoNombre.TabIndex = 37;
-            this.txtSegundoNombre.Texts = "";
-            this.txtSegundoNombre.UnderlinedStyle = false;
-            // 
-            // txtSegundoApell
-            // 
-            this.txtSegundoApell.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtSegundoApell.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtSegundoApell.BorderRadius = 0;
-            this.txtSegundoApell.BorderSize = 2;
-            this.txtSegundoApell.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSegundoApell.Location = new System.Drawing.Point(515, 240);
-            this.txtSegundoApell.Multiline = false;
-            this.txtSegundoApell.Name = "txtSegundoApell";
-            this.txtSegundoApell.Padding = new System.Windows.Forms.Padding(7);
-            this.txtSegundoApell.PasswordChar = false;
-            this.txtSegundoApell.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSegundoApell.PlaceholderText = "";
-            this.txtSegundoApell.Size = new System.Drawing.Size(151, 29);
-            this.txtSegundoApell.TabIndex = 36;
-            this.txtSegundoApell.Texts = "";
-            this.txtSegundoApell.UnderlinedStyle = false;
-            // 
-            // txtSegundoApellido
-            // 
-            this.txtSegundoApellido.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtSegundoApellido.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtSegundoApellido.BorderRadius = 0;
-            this.txtSegundoApellido.BorderSize = 2;
-            this.txtSegundoApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSegundoApellido.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtSegundoApellido.Location = new System.Drawing.Point(217, 240);
-            this.txtSegundoApellido.Multiline = false;
-            this.txtSegundoApellido.Name = "txtSegundoApellido";
-            this.txtSegundoApellido.Padding = new System.Windows.Forms.Padding(7);
-            this.txtSegundoApellido.PasswordChar = false;
-            this.txtSegundoApellido.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSegundoApellido.PlaceholderText = "";
-            this.txtSegundoApellido.Size = new System.Drawing.Size(151, 29);
-            this.txtSegundoApellido.TabIndex = 35;
-            this.txtSegundoApellido.Texts = "";
-            this.txtSegundoApellido.UnderlinedStyle = false;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtTelefono.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtTelefono.BorderRadius = 0;
-            this.txtTelefono.BorderSize = 2;
-            this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTelefono.Location = new System.Drawing.Point(187, 330);
-            this.txtTelefono.Multiline = false;
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Padding = new System.Windows.Forms.Padding(7);
-            this.txtTelefono.PasswordChar = false;
-            this.txtTelefono.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTelefono.PlaceholderText = "";
-            this.txtTelefono.Size = new System.Drawing.Size(151, 29);
-            this.txtTelefono.TabIndex = 34;
-            this.txtTelefono.Texts = "";
-            this.txtTelefono.UnderlinedStyle = false;
-            // 
-            // txtCorreo
-            // 
-            this.txtCorreo.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtCorreo.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtCorreo.BorderRadius = 0;
-            this.txtCorreo.BorderSize = 2;
-            this.txtCorreo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCorreo.Location = new System.Drawing.Point(525, 330);
-            this.txtCorreo.Multiline = false;
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Padding = new System.Windows.Forms.Padding(7);
-            this.txtCorreo.PasswordChar = false;
-            this.txtCorreo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCorreo.PlaceholderText = "";
-            this.txtCorreo.Size = new System.Drawing.Size(151, 29);
-            this.txtCorreo.TabIndex = 33;
-            this.txtCorreo.Texts = "";
-            this.txtCorreo.UnderlinedStyle = false;
-            // 
-            // txtIdentificacion
-            // 
-            this.txtIdentificacion.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtIdentificacion.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtIdentificacion.BorderRadius = 0;
-            this.txtIdentificacion.BorderSize = 2;
-            this.txtIdentificacion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtIdentificacion.Location = new System.Drawing.Point(230, 378);
-            this.txtIdentificacion.Multiline = false;
-            this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Padding = new System.Windows.Forms.Padding(7);
-            this.txtIdentificacion.PasswordChar = false;
-            this.txtIdentificacion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtIdentificacion.PlaceholderText = "";
-            this.txtIdentificacion.Size = new System.Drawing.Size(151, 29);
-            this.txtIdentificacion.TabIndex = 32;
-            this.txtIdentificacion.Texts = "";
-            this.txtIdentificacion.UnderlinedStyle = false;
-            // 
-            // txtContraseña
-            // 
-            this.txtContraseña.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtContraseña.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtContraseña.BorderRadius = 0;
-            this.txtContraseña.BorderSize = 2;
-            this.txtContraseña.ForeColor = System.Drawing.Color.DimGray;
-            this.txtContraseña.Location = new System.Drawing.Point(495, 378);
-            this.txtContraseña.Multiline = false;
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Padding = new System.Windows.Forms.Padding(7);
-            this.txtContraseña.PasswordChar = false;
-            this.txtContraseña.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtContraseña.PlaceholderText = "";
-            this.txtContraseña.Size = new System.Drawing.Size(151, 29);
-            this.txtContraseña.TabIndex = 31;
-            this.txtContraseña.Texts = "";
-            this.txtContraseña.UnderlinedStyle = false;
-            // 
-            // txtNombreUsuario
-            // 
-            this.txtNombreUsuario.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtNombreUsuario.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtNombreUsuario.BorderRadius = 0;
-            this.txtNombreUsuario.BorderSize = 2;
-            this.txtNombreUsuario.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreUsuario.Location = new System.Drawing.Point(224, 420);
-            this.txtNombreUsuario.Multiline = false;
-            this.txtNombreUsuario.Name = "txtNombreUsuario";
-            this.txtNombreUsuario.Padding = new System.Windows.Forms.Padding(7);
-            this.txtNombreUsuario.PasswordChar = false;
-            this.txtNombreUsuario.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreUsuario.PlaceholderText = "";
-            this.txtNombreUsuario.Size = new System.Drawing.Size(151, 29);
-            this.txtNombreUsuario.TabIndex = 30;
-            this.txtNombreUsuario.Texts = "";
-            this.txtNombreUsuario.UnderlinedStyle = false;
-            // 
-            // txtPrimerNombre
-            // 
-            this.txtPrimerNombre.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtPrimerNombre.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtPrimerNombre.BorderRadius = 0;
-            this.txtPrimerNombre.BorderSize = 2;
-            this.txtPrimerNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPrimerNombre.Location = new System.Drawing.Point(217, 201);
-            this.txtPrimerNombre.Multiline = false;
-            this.txtPrimerNombre.Name = "txtPrimerNombre";
-            this.txtPrimerNombre.Padding = new System.Windows.Forms.Padding(7);
-            this.txtPrimerNombre.PasswordChar = false;
-            this.txtPrimerNombre.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtPrimerNombre.PlaceholderText = "";
-            this.txtPrimerNombre.Size = new System.Drawing.Size(151, 29);
-            this.txtPrimerNombre.TabIndex = 29;
-            this.txtPrimerNombre.Texts = "";
-            this.txtPrimerNombre.UnderlinedStyle = false;
+            this.cbxGenero.AutoCompleteCustomSource.AddRange(new string[] {
+            "Maculino",
+            "Femenino"});
+            this.cbxGenero.FormattingEnabled = true;
+            this.cbxGenero.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.cbxGenero.Location = new System.Drawing.Point(493, 286);
+            this.cbxGenero.Name = "cbxGenero";
+            this.cbxGenero.Size = new System.Drawing.Size(146, 21);
+            this.cbxGenero.TabIndex = 38;
             // 
             // lblNombreUsuario
             // 
@@ -305,6 +147,7 @@ namespace ArriendoPrototipo
             // btn_volverMenuPrincipal
             // 
             this.btn_volverMenuPrincipal.BackColor = System.Drawing.Color.Transparent;
+            this.btn_volverMenuPrincipal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_volverMenuPrincipal.BackgroundImage")));
             this.btn_volverMenuPrincipal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_volverMenuPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_volverMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -313,6 +156,7 @@ namespace ArriendoPrototipo
             this.btn_volverMenuPrincipal.Size = new System.Drawing.Size(41, 36);
             this.btn_volverMenuPrincipal.TabIndex = 27;
             this.btn_volverMenuPrincipal.UseVisualStyleBackColor = false;
+            this.btn_volverMenuPrincipal.Click += new System.EventHandler(this.btn_volverMenuPrincipal_Click_1);
             // 
             // btn_RegistrarUsuario
             // 
@@ -603,19 +447,177 @@ namespace ArriendoPrototipo
             this.panel1.Size = new System.Drawing.Size(579, 288);
             this.panel1.TabIndex = 0;
             // 
-            // cbxGenero
+            // txtSegundoNombre
             // 
-            this.cbxGenero.AutoCompleteCustomSource.AddRange(new string[] {
-            "Maculino",
-            "Femenino"});
-            this.cbxGenero.FormattingEnabled = true;
-            this.cbxGenero.Items.AddRange(new object[] {
-            "Masculino",
-            "Femenino"});
-            this.cbxGenero.Location = new System.Drawing.Point(493, 286);
-            this.cbxGenero.Name = "cbxGenero";
-            this.cbxGenero.Size = new System.Drawing.Size(146, 21);
-            this.cbxGenero.TabIndex = 38;
+            this.txtSegundoNombre.BorderColor = System.Drawing.Color.Transparent;
+            this.txtSegundoNombre.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtSegundoNombre.BorderRadius = 0;
+            this.txtSegundoNombre.BorderSize = 2;
+            this.txtSegundoNombre.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSegundoNombre.Location = new System.Drawing.Point(515, 201);
+            this.txtSegundoNombre.Multiline = false;
+            this.txtSegundoNombre.Name = "txtSegundoNombre";
+            this.txtSegundoNombre.Padding = new System.Windows.Forms.Padding(7);
+            this.txtSegundoNombre.PasswordChar = false;
+            this.txtSegundoNombre.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSegundoNombre.PlaceholderText = "";
+            this.txtSegundoNombre.Size = new System.Drawing.Size(151, 29);
+            this.txtSegundoNombre.TabIndex = 37;
+            this.txtSegundoNombre.Texts = "";
+            this.txtSegundoNombre.UnderlinedStyle = false;
+            // 
+            // txtSegundoApell
+            // 
+            this.txtSegundoApell.BorderColor = System.Drawing.Color.Transparent;
+            this.txtSegundoApell.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtSegundoApell.BorderRadius = 0;
+            this.txtSegundoApell.BorderSize = 2;
+            this.txtSegundoApell.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSegundoApell.Location = new System.Drawing.Point(515, 240);
+            this.txtSegundoApell.Multiline = false;
+            this.txtSegundoApell.Name = "txtSegundoApell";
+            this.txtSegundoApell.Padding = new System.Windows.Forms.Padding(7);
+            this.txtSegundoApell.PasswordChar = false;
+            this.txtSegundoApell.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSegundoApell.PlaceholderText = "";
+            this.txtSegundoApell.Size = new System.Drawing.Size(151, 29);
+            this.txtSegundoApell.TabIndex = 36;
+            this.txtSegundoApell.Texts = "";
+            this.txtSegundoApell.UnderlinedStyle = false;
+            // 
+            // txtSegundoApellido
+            // 
+            this.txtSegundoApellido.BorderColor = System.Drawing.Color.Transparent;
+            this.txtSegundoApellido.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtSegundoApellido.BorderRadius = 0;
+            this.txtSegundoApellido.BorderSize = 2;
+            this.txtSegundoApellido.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSegundoApellido.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtSegundoApellido.Location = new System.Drawing.Point(217, 240);
+            this.txtSegundoApellido.Multiline = false;
+            this.txtSegundoApellido.Name = "txtSegundoApellido";
+            this.txtSegundoApellido.Padding = new System.Windows.Forms.Padding(7);
+            this.txtSegundoApellido.PasswordChar = false;
+            this.txtSegundoApellido.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSegundoApellido.PlaceholderText = "";
+            this.txtSegundoApellido.Size = new System.Drawing.Size(151, 29);
+            this.txtSegundoApellido.TabIndex = 35;
+            this.txtSegundoApellido.Texts = "";
+            this.txtSegundoApellido.UnderlinedStyle = false;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.BorderColor = System.Drawing.Color.Transparent;
+            this.txtTelefono.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtTelefono.BorderRadius = 0;
+            this.txtTelefono.BorderSize = 2;
+            this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTelefono.Location = new System.Drawing.Point(187, 330);
+            this.txtTelefono.Multiline = false;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Padding = new System.Windows.Forms.Padding(7);
+            this.txtTelefono.PasswordChar = false;
+            this.txtTelefono.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTelefono.PlaceholderText = "";
+            this.txtTelefono.Size = new System.Drawing.Size(151, 29);
+            this.txtTelefono.TabIndex = 34;
+            this.txtTelefono.Texts = "";
+            this.txtTelefono.UnderlinedStyle = false;
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.BorderColor = System.Drawing.Color.Transparent;
+            this.txtCorreo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtCorreo.BorderRadius = 0;
+            this.txtCorreo.BorderSize = 2;
+            this.txtCorreo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCorreo.Location = new System.Drawing.Point(525, 330);
+            this.txtCorreo.Multiline = false;
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Padding = new System.Windows.Forms.Padding(7);
+            this.txtCorreo.PasswordChar = false;
+            this.txtCorreo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCorreo.PlaceholderText = "";
+            this.txtCorreo.Size = new System.Drawing.Size(151, 29);
+            this.txtCorreo.TabIndex = 33;
+            this.txtCorreo.Texts = "";
+            this.txtCorreo.UnderlinedStyle = false;
+            // 
+            // txtIdentificacion
+            // 
+            this.txtIdentificacion.BorderColor = System.Drawing.Color.Transparent;
+            this.txtIdentificacion.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtIdentificacion.BorderRadius = 0;
+            this.txtIdentificacion.BorderSize = 2;
+            this.txtIdentificacion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtIdentificacion.Location = new System.Drawing.Point(230, 378);
+            this.txtIdentificacion.Multiline = false;
+            this.txtIdentificacion.Name = "txtIdentificacion";
+            this.txtIdentificacion.Padding = new System.Windows.Forms.Padding(7);
+            this.txtIdentificacion.PasswordChar = false;
+            this.txtIdentificacion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIdentificacion.PlaceholderText = "";
+            this.txtIdentificacion.Size = new System.Drawing.Size(151, 29);
+            this.txtIdentificacion.TabIndex = 32;
+            this.txtIdentificacion.Texts = "";
+            this.txtIdentificacion.UnderlinedStyle = false;
+            // 
+            // txtContraseña
+            // 
+            this.txtContraseña.BorderColor = System.Drawing.Color.Transparent;
+            this.txtContraseña.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtContraseña.BorderRadius = 0;
+            this.txtContraseña.BorderSize = 2;
+            this.txtContraseña.ForeColor = System.Drawing.Color.DimGray;
+            this.txtContraseña.Location = new System.Drawing.Point(495, 378);
+            this.txtContraseña.Multiline = false;
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Padding = new System.Windows.Forms.Padding(7);
+            this.txtContraseña.PasswordChar = false;
+            this.txtContraseña.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtContraseña.PlaceholderText = "";
+            this.txtContraseña.Size = new System.Drawing.Size(151, 29);
+            this.txtContraseña.TabIndex = 31;
+            this.txtContraseña.Texts = "";
+            this.txtContraseña.UnderlinedStyle = false;
+            // 
+            // txtNombreUsuario
+            // 
+            this.txtNombreUsuario.BorderColor = System.Drawing.Color.Transparent;
+            this.txtNombreUsuario.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtNombreUsuario.BorderRadius = 0;
+            this.txtNombreUsuario.BorderSize = 2;
+            this.txtNombreUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreUsuario.Location = new System.Drawing.Point(224, 420);
+            this.txtNombreUsuario.Multiline = false;
+            this.txtNombreUsuario.Name = "txtNombreUsuario";
+            this.txtNombreUsuario.Padding = new System.Windows.Forms.Padding(7);
+            this.txtNombreUsuario.PasswordChar = false;
+            this.txtNombreUsuario.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreUsuario.PlaceholderText = "";
+            this.txtNombreUsuario.Size = new System.Drawing.Size(151, 29);
+            this.txtNombreUsuario.TabIndex = 30;
+            this.txtNombreUsuario.Texts = "";
+            this.txtNombreUsuario.UnderlinedStyle = false;
+            // 
+            // txtPrimerNombre
+            // 
+            this.txtPrimerNombre.BorderColor = System.Drawing.Color.Transparent;
+            this.txtPrimerNombre.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtPrimerNombre.BorderRadius = 0;
+            this.txtPrimerNombre.BorderSize = 2;
+            this.txtPrimerNombre.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPrimerNombre.Location = new System.Drawing.Point(217, 201);
+            this.txtPrimerNombre.Multiline = false;
+            this.txtPrimerNombre.Name = "txtPrimerNombre";
+            this.txtPrimerNombre.Padding = new System.Windows.Forms.Padding(7);
+            this.txtPrimerNombre.PasswordChar = false;
+            this.txtPrimerNombre.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPrimerNombre.PlaceholderText = "";
+            this.txtPrimerNombre.Size = new System.Drawing.Size(151, 29);
+            this.txtPrimerNombre.TabIndex = 29;
+            this.txtPrimerNombre.Texts = "";
+            this.txtPrimerNombre.UnderlinedStyle = false;
             // 
             // RegistroUsuario
             // 

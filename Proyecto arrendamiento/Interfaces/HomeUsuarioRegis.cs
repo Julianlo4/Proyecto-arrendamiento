@@ -12,9 +12,13 @@ namespace ArriendoPrototipo.Interfaces
 {
     public partial class HomeUsuarioRegis : Form
     {
-        public HomeUsuarioRegis()
+        private string nombreCliente;
+        public HomeUsuarioRegis(string nombreCliente)
         {
             InitializeComponent();
+            this.nombreCliente = nombreCliente;
+            lblNombreUsuario.Text = nombreCliente;
+
         }
 
         private void btnAgregarPublicacion_Click(object sender, EventArgs e)
@@ -27,6 +31,13 @@ namespace ArriendoPrototipo.Interfaces
             RegistroInmueble registroInmueble = new RegistroInmueble();
             this.Close();
             registroInmueble.Show();
+        }
+
+        private void btnAgregarArriendo_Click_1(object sender, EventArgs e)
+        {
+            RegistroInmueble registroInmueble = new RegistroInmueble();
+            registroInmueble.Show();
+            this.Close();
         }
     }
 }

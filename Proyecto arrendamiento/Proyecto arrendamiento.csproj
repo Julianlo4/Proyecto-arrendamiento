@@ -122,6 +122,7 @@
     <Compile Include="Interfaces\RegistroUsuario.Designer.cs">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logica\Exeptions.cs" />
     <Compile Include="Logica\RegistroUsuarioLog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

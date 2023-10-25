@@ -18,6 +18,10 @@ CREATE TABLE registro(
     constraint uq_RegCorreo unique (RegCorreo)
 );
 
+SELECT REGNOMBREU
+FROM REGISTRO
+WHERE REGNOMBREU = 'juan' AND RegContrasenia = 123;
+
 DROP TABLE inmueble;
 CREATE TABLE inmueble(    RegId number(10),
     InmId number(30),    InmTitulo varchar2(100) not null,

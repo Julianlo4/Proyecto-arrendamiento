@@ -32,206 +32,221 @@ namespace ArriendoPrototipo.Interfaces
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaginaPrincipalTodos));
-            label2 = new Label();
-            pbxLogo = new PictureBox();
-            label1 = new Label();
-            MenuRegistroUsuario = new Label();
-            lblAyuda = new Label();
-            pictureBox1 = new PictureBox();
-            lblQueSomos = new Label();
-            pnlInicioSuperior = new Panel();
-            panel2 = new Panel();
-            panel1 = new Panel();
-            btn_RegistrarUsuarioMenu = new Button();
-            lblIniciarSesion = new Label();
-            pnlPrincipal = new Panel();
-            panel3 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pbxLogo).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            pnlInicioSuperior.SuspendLayout();
-            panel2.SuspendLayout();
-            panel1.SuspendLayout();
-            pnlPrincipal.SuspendLayout();
-            panel3.SuspendLayout();
-            SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.MenuRegistroUsuario = new System.Windows.Forms.Label();
+            this.lblAyuda = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblQueSomos = new System.Windows.Forms.Label();
+            this.pnlInicioSuperior = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_RegistrarUsuarioMenu = new System.Windows.Forms.Button();
+            this.lblIniciarSesion = new System.Windows.Forms.Label();
+            this.pnlPrincipal = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlInicioSuperior.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.pnlPrincipal.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.SuspendLayout();
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Bookman Old Style", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(254, 73);
-            label2.Name = "label2";
-            label2.Size = new Size(314, 35);
-            label2.TabIndex = 3;
-            label2.Text = "Alojamientos Pacho";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(291, 78);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(314, 35);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Alojamientos Pacho";
             // 
             // pbxLogo
             // 
-            pbxLogo.BackColor = Color.FromArgb(255, 192, 192);
-            pbxLogo.BackgroundImageLayout = ImageLayout.None;
-            pbxLogo.Image = (Image)resources.GetObject("pbxLogo.Image");
-            pbxLogo.Location = new Point(40, -8);
-            pbxLogo.Name = "pbxLogo";
-            pbxLogo.Size = new Size(67, 62);
-            pbxLogo.SizeMode = PictureBoxSizeMode.Zoom;
-            pbxLogo.TabIndex = 1;
-            pbxLogo.TabStop = false;
+            this.pbxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
+            this.pbxLogo.Location = new System.Drawing.Point(45, -9);
+            this.pbxLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pbxLogo.Name = "pbxLogo";
+            this.pbxLogo.Size = new System.Drawing.Size(76, 66);
+            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLogo.TabIndex = 1;
+            this.pbxLogo.TabStop = false;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(124, 11);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 15);
-            label1.TabIndex = 23;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9F);
+            this.label1.Location = new System.Drawing.Point(141, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.TabIndex = 23;
             // 
             // MenuRegistroUsuario
             // 
-            MenuRegistroUsuario.AutoSize = true;
-            MenuRegistroUsuario.Font = new Font("Franklin Gothic Demi Cond", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            MenuRegistroUsuario.ForeColor = Color.LightCoral;
-            MenuRegistroUsuario.Location = new Point(12, 131);
-            MenuRegistroUsuario.Name = "MenuRegistroUsuario";
-            MenuRegistroUsuario.Size = new Size(79, 34);
-            MenuRegistroUsuario.TabIndex = 4;
-            MenuRegistroUsuario.Text = "MENÚ";
+            this.MenuRegistroUsuario.AutoSize = true;
+            this.MenuRegistroUsuario.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 20.25F);
+            this.MenuRegistroUsuario.ForeColor = System.Drawing.Color.LightCoral;
+            this.MenuRegistroUsuario.Location = new System.Drawing.Point(13, 140);
+            this.MenuRegistroUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MenuRegistroUsuario.Name = "MenuRegistroUsuario";
+            this.MenuRegistroUsuario.Size = new System.Drawing.Size(79, 34);
+            this.MenuRegistroUsuario.TabIndex = 4;
+            this.MenuRegistroUsuario.Text = "MENÚ";
             // 
             // lblAyuda
             // 
-            lblAyuda.AutoSize = true;
-            lblAyuda.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblAyuda.ForeColor = Color.FromArgb(254, 145, 147);
-            lblAyuda.Location = new Point(268, 131);
-            lblAyuda.Name = "lblAyuda";
-            lblAyuda.Size = new Size(54, 20);
-            lblAyuda.TabIndex = 3;
-            lblAyuda.Text = "Ayuda";
+            this.lblAyuda.AutoSize = true;
+            this.lblAyuda.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.lblAyuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
+            this.lblAyuda.Location = new System.Drawing.Point(307, 140);
+            this.lblAyuda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAyuda.Name = "lblAyuda";
+            this.lblAyuda.Size = new System.Drawing.Size(54, 20);
+            this.lblAyuda.TabIndex = 3;
+            this.lblAyuda.Text = "Ayuda";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(360, 0);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(116, 87);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(412, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // lblQueSomos
             // 
-            lblQueSomos.AutoSize = true;
-            lblQueSomos.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblQueSomos.ForeColor = Color.FromArgb(254, 145, 147);
-            lblQueSomos.Location = new Point(128, 131);
-            lblQueSomos.Name = "lblQueSomos";
-            lblQueSomos.Size = new Size(101, 20);
-            lblQueSomos.TabIndex = 2;
-            lblQueSomos.Text = "¿Qué somos?";
+            this.lblQueSomos.AutoSize = true;
+            this.lblQueSomos.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.lblQueSomos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
+            this.lblQueSomos.Location = new System.Drawing.Point(147, 140);
+            this.lblQueSomos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblQueSomos.Name = "lblQueSomos";
+            this.lblQueSomos.Size = new System.Drawing.Size(101, 20);
+            this.lblQueSomos.TabIndex = 2;
+            this.lblQueSomos.Text = "¿Qué somos?";
             // 
             // pnlInicioSuperior
             // 
-            pnlInicioSuperior.BackColor = Color.FromArgb(249, 243, 204);
-            pnlInicioSuperior.Controls.Add(panel2);
-            pnlInicioSuperior.Controls.Add(lblAyuda);
-            pnlInicioSuperior.Controls.Add(MenuRegistroUsuario);
-            pnlInicioSuperior.Controls.Add(lblQueSomos);
-            pnlInicioSuperior.Controls.Add(lblIniciarSesion);
-            pnlInicioSuperior.Location = new Point(0, 0);
-            pnlInicioSuperior.Name = "pnlInicioSuperior";
-            pnlInicioSuperior.Size = new Size(858, 176);
-            pnlInicioSuperior.TabIndex = 1;
+            this.pnlInicioSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(243)))), ((int)(((byte)(204)))));
+            this.pnlInicioSuperior.Controls.Add(this.panel2);
+            this.pnlInicioSuperior.Controls.Add(this.lblAyuda);
+            this.pnlInicioSuperior.Controls.Add(this.MenuRegistroUsuario);
+            this.pnlInicioSuperior.Controls.Add(this.lblQueSomos);
+            this.pnlInicioSuperior.Controls.Add(this.lblIniciarSesion);
+            this.pnlInicioSuperior.Location = new System.Drawing.Point(0, 0);
+            this.pnlInicioSuperior.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlInicioSuperior.Name = "pnlInicioSuperior";
+            this.pnlInicioSuperior.Size = new System.Drawing.Size(980, 188);
+            this.pnlInicioSuperior.TabIndex = 1;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(45, 214, 215);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(panel1);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(858, 115);
-            panel2.TabIndex = 2;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(214)))), ((int)(((byte)(215)))));
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(980, 123);
+            this.panel2.TabIndex = 2;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(255, 192, 192);
-            panel1.Controls.Add(btn_RegistrarUsuarioMenu);
-            panel1.Controls.Add(pbxLogo);
-            panel1.Location = new Point(726, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(133, 116);
-            panel1.TabIndex = 5;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.btn_RegistrarUsuarioMenu);
+            this.panel1.Controls.Add(this.pbxLogo);
+            this.panel1.Location = new System.Drawing.Point(829, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(152, 124);
+            this.panel1.TabIndex = 5;
             // 
             // btn_RegistrarUsuarioMenu
             // 
-            btn_RegistrarUsuarioMenu.BackColor = Color.FromArgb(255, 128, 128);
-            btn_RegistrarUsuarioMenu.Cursor = Cursors.Hand;
-            btn_RegistrarUsuarioMenu.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_RegistrarUsuarioMenu.ForeColor = Color.White;
-            btn_RegistrarUsuarioMenu.Location = new Point(7, 47);
-            btn_RegistrarUsuarioMenu.Name = "btn_RegistrarUsuarioMenu";
-            btn_RegistrarUsuarioMenu.Size = new Size(126, 68);
-            btn_RegistrarUsuarioMenu.TabIndex = 2;
-            btn_RegistrarUsuarioMenu.Text = "¿ Con animo de \r\ntomar o arrendar\r\nuna casa?\r\n¡REGISTRATE!";
-            btn_RegistrarUsuarioMenu.UseVisualStyleBackColor = false;
-            btn_RegistrarUsuarioMenu.Click += btn_RegistrarUsuarioMenu_Click;
+            this.btn_RegistrarUsuarioMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_RegistrarUsuarioMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_RegistrarUsuarioMenu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_RegistrarUsuarioMenu.ForeColor = System.Drawing.Color.White;
+            this.btn_RegistrarUsuarioMenu.Location = new System.Drawing.Point(8, 50);
+            this.btn_RegistrarUsuarioMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_RegistrarUsuarioMenu.Name = "btn_RegistrarUsuarioMenu";
+            this.btn_RegistrarUsuarioMenu.Size = new System.Drawing.Size(144, 73);
+            this.btn_RegistrarUsuarioMenu.TabIndex = 2;
+            this.btn_RegistrarUsuarioMenu.Text = "¿ Con animo de \r\ntomar o arrendar\r\nuna casa?\r\n¡REGISTRATE!";
+            this.btn_RegistrarUsuarioMenu.UseVisualStyleBackColor = false;
+            this.btn_RegistrarUsuarioMenu.Click += new System.EventHandler(this.btn_RegistrarUsuarioMenu_Click_1);
             // 
             // lblIniciarSesion
             // 
-            lblIniciarSesion.AutoSize = true;
-            lblIniciarSesion.Cursor = Cursors.Hand;
-            lblIniciarSesion.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblIniciarSesion.ForeColor = Color.FromArgb(254, 145, 147);
-            lblIniciarSesion.Location = new Point(706, 125);
-            lblIniciarSesion.Name = "lblIniciarSesion";
-            lblIniciarSesion.Size = new Size(140, 40);
-            lblIniciarSesion.TabIndex = 1;
-            lblIniciarSesion.Text = "¿ Ya tienes cuenta?\r\nIniciar Sesión";
-            lblIniciarSesion.TextAlign = ContentAlignment.MiddleCenter;
-            lblIniciarSesion.Click += lblIniciarSesion_Click;
+            this.lblIniciarSesion.AutoSize = true;
+            this.lblIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblIniciarSesion.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.lblIniciarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
+            this.lblIniciarSesion.Location = new System.Drawing.Point(807, 133);
+            this.lblIniciarSesion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIniciarSesion.Name = "lblIniciarSesion";
+            this.lblIniciarSesion.Size = new System.Drawing.Size(140, 40);
+            this.lblIniciarSesion.TabIndex = 1;
+            this.lblIniciarSesion.Text = "¿ Ya tienes cuenta?\r\nIniciar Sesión";
+            this.lblIniciarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblIniciarSesion.Click += new System.EventHandler(this.lblIniciarSesion_Click_1);
             // 
             // pnlPrincipal
             // 
-            pnlPrincipal.Controls.Add(panel3);
-            pnlPrincipal.Controls.Add(pnlInicioSuperior);
-            pnlPrincipal.Dock = DockStyle.Fill;
-            pnlPrincipal.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            pnlPrincipal.Location = new Point(0, 0);
-            pnlPrincipal.Name = "pnlPrincipal";
-            pnlPrincipal.Size = new Size(858, 549);
-            pnlPrincipal.TabIndex = 1;
+            this.pnlPrincipal.Controls.Add(this.panel3);
+            this.pnlPrincipal.Controls.Add(this.pnlInicioSuperior);
+            this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPrincipal.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.pnlPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.pnlPrincipal.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlPrincipal.Name = "pnlPrincipal";
+            this.pnlPrincipal.Size = new System.Drawing.Size(980, 586);
+            this.pnlPrincipal.TabIndex = 1;
             // 
             // panel3
             // 
-            panel3.Controls.Add(label1);
-            panel3.Location = new Point(7, 183);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(842, 359);
-            panel3.TabIndex = 24;
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(8, 196);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(963, 383);
+            this.panel3.TabIndex = 24;
             // 
             // PaginaPrincipalTodos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(858, 549);
-            Controls.Add(pnlPrincipal);
-            Name = "PaginaPrincipalTodos";
-            Text = "PaginaPrincipalTodos";
-            ((System.ComponentModel.ISupportInitialize)pbxLogo).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            pnlInicioSuperior.ResumeLayout(false);
-            pnlInicioSuperior.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel1.ResumeLayout(false);
-            pnlPrincipal.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(980, 586);
+            this.Controls.Add(this.pnlPrincipal);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "PaginaPrincipalTodos";
+            this.Text = "PaginaPrincipalTodos";
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlInicioSuperior.ResumeLayout(false);
+            this.pnlInicioSuperior.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.pnlPrincipal.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

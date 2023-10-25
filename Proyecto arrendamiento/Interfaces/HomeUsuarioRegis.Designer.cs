@@ -32,278 +32,279 @@ namespace ArriendoPrototipo.Interfaces
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeUsuarioRegis));
-            panel1 = new Panel();
-            lblNombreUsuario = new Label();
-            lblBienvenido = new Label();
-            pbxLogo = new PictureBox();
-            pnlPrincipal = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
-            label3 = new Label();
-            lblQueSomos = new Label();
-            lblIniciarSesion = new Label();
-            lblAyuda = new Label();
-            MenuRegistroUsuario = new Label();
-            panel5 = new Panel();
-            label1 = new Label();
-            pnlInicioSuperior = new Panel();
-            panel2 = new Panel();
-            label2 = new Label();
-            pictureBox1 = new PictureBox();
-            btnAgregarArriendo = new Button();
-            lbnPreguntarArrendar = new Label();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbxLogo).BeginInit();
-            pnlPrincipal.SuspendLayout();
-            panel3.SuspendLayout();
-            panel4.SuspendLayout();
-            pnlInicioSuperior.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblNombreUsuario = new System.Windows.Forms.Label();
+            this.lblBienvenido = new System.Windows.Forms.Label();
+            this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.pnlPrincipal = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lbnPreguntarArrendar = new System.Windows.Forms.Label();
+            this.btnAgregarArriendo = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlInicioSuperior = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblIniciarSesion = new System.Windows.Forms.Label();
+            this.lblQueSomos = new System.Windows.Forms.Label();
+            this.lblAyuda = new System.Windows.Forms.Label();
+            this.MenuRegistroUsuario = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
+            this.pnlPrincipal.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.pnlInicioSuperior.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(192, 255, 192);
-            panel1.Controls.Add(lblNombreUsuario);
-            panel1.Controls.Add(lblBienvenido);
-            panel1.Controls.Add(pbxLogo);
-            panel1.Location = new Point(726, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(133, 116);
-            panel1.TabIndex = 5;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.lblNombreUsuario);
+            this.panel1.Controls.Add(this.lblBienvenido);
+            this.panel1.Controls.Add(this.pbxLogo);
+            this.panel1.Location = new System.Drawing.Point(622, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(124, 101);
+            this.panel1.TabIndex = 5;
             // 
             // lblNombreUsuario
             // 
-            lblNombreUsuario.AutoSize = true;
-            lblNombreUsuario.Font = new Font("Franklin Gothic Book", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNombreUsuario.ForeColor = Color.White;
-            lblNombreUsuario.Location = new Point(21, 83);
-            lblNombreUsuario.Name = "lblNombreUsuario";
-            lblNombreUsuario.Size = new Size(99, 26);
-            lblNombreUsuario.TabIndex = 3;
-            lblNombreUsuario.Text = "USUARIO";
+            this.lblNombreUsuario.AutoSize = true;
+            this.lblNombreUsuario.Font = new System.Drawing.Font("Franklin Gothic Book", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblNombreUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblNombreUsuario.Location = new System.Drawing.Point(18, 72);
+            this.lblNombreUsuario.Name = "lblNombreUsuario";
+            this.lblNombreUsuario.Size = new System.Drawing.Size(99, 26);
+            this.lblNombreUsuario.TabIndex = 3;
+            this.lblNombreUsuario.Text = "USUARIO";
             // 
             // lblBienvenido
             // 
-            lblBienvenido.AutoSize = true;
-            lblBienvenido.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblBienvenido.ForeColor = Color.White;
-            lblBienvenido.Location = new Point(4, 57);
-            lblBienvenido.Name = "lblBienvenido";
-            lblBienvenido.Size = new Size(125, 26);
-            lblBienvenido.TabIndex = 2;
-            lblBienvenido.Text = "Bienvenid@";
-            lblBienvenido.TextAlign = ContentAlignment.MiddleCenter;
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15.75F);
+            this.lblBienvenido.ForeColor = System.Drawing.Color.White;
+            this.lblBienvenido.Location = new System.Drawing.Point(3, 49);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(125, 26);
+            this.lblBienvenido.TabIndex = 2;
+            this.lblBienvenido.Text = "Bienvenid@";
+            this.lblBienvenido.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbxLogo
             // 
-            pbxLogo.BackColor = Color.FromArgb(192, 255, 192);
-            pbxLogo.BackgroundImageLayout = ImageLayout.None;
-            pbxLogo.Image = (Image)resources.GetObject("pbxLogo.Image");
-            pbxLogo.Location = new Point(40, -8);
-            pbxLogo.Name = "pbxLogo";
-            pbxLogo.Size = new Size(67, 62);
-            pbxLogo.SizeMode = PictureBoxSizeMode.Zoom;
-            pbxLogo.TabIndex = 1;
-            pbxLogo.TabStop = false;
+            this.pbxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
+            this.pbxLogo.Location = new System.Drawing.Point(34, -7);
+            this.pbxLogo.Name = "pbxLogo";
+            this.pbxLogo.Size = new System.Drawing.Size(57, 54);
+            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLogo.TabIndex = 1;
+            this.pbxLogo.TabStop = false;
             // 
             // pnlPrincipal
             // 
-            pnlPrincipal.Controls.Add(panel3);
-            pnlPrincipal.Controls.Add(pnlInicioSuperior);
-            pnlPrincipal.Dock = DockStyle.Fill;
-            pnlPrincipal.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            pnlPrincipal.Location = new Point(0, 0);
-            pnlPrincipal.Name = "pnlPrincipal";
-            pnlPrincipal.Size = new Size(854, 619);
-            pnlPrincipal.TabIndex = 4;
+            this.pnlPrincipal.Controls.Add(this.panel3);
+            this.pnlPrincipal.Controls.Add(this.pnlInicioSuperior);
+            this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPrincipal.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.pnlPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.pnlPrincipal.Name = "pnlPrincipal";
+            this.pnlPrincipal.Size = new System.Drawing.Size(746, 536);
+            this.pnlPrincipal.TabIndex = 4;
             // 
             // panel3
             // 
-            panel3.Controls.Add(panel4);
-            panel3.Controls.Add(label1);
-            panel3.Location = new Point(0, 168);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(858, 429);
-            panel3.TabIndex = 24;
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(0, 146);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(746, 387);
+            this.panel3.TabIndex = 24;
             // 
             // panel4
             // 
-            panel4.BackColor = Color.FromArgb(249, 243, 204);
-            panel4.Controls.Add(lbnPreguntarArrendar);
-            panel4.Controls.Add(btnAgregarArriendo);
-            panel4.Controls.Add(label3);
-            panel4.Controls.Add(panel5);
-            panel4.Location = new Point(0, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(124, 426);
-            panel4.TabIndex = 24;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Franklin Gothic Medium Cond", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(14, 11);
-            label3.Name = "label3";
-            label3.Size = new Size(99, 72);
-            label3.TabIndex = 5;
-            label3.Text = "FUNCIONES \r\nUNICAS \r\nPARA TI";
-            // 
-            // lblQueSomos
-            // 
-            lblQueSomos.AutoSize = true;
-            lblQueSomos.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblQueSomos.ForeColor = Color.FromArgb(254, 145, 147);
-            lblQueSomos.Location = new Point(159, 132);
-            lblQueSomos.Name = "lblQueSomos";
-            lblQueSomos.Size = new Size(101, 20);
-            lblQueSomos.TabIndex = 2;
-            lblQueSomos.Text = "¿Qué somos?";
-            // 
-            // lblIniciarSesion
-            // 
-            lblIniciarSesion.AutoSize = true;
-            lblIniciarSesion.Cursor = Cursors.Hand;
-            lblIniciarSesion.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblIniciarSesion.ForeColor = Color.FromArgb(254, 145, 147);
-            lblIniciarSesion.Location = new Point(386, 132);
-            lblIniciarSesion.Name = "lblIniciarSesion";
-            lblIniciarSesion.Size = new Size(107, 20);
-            lblIniciarSesion.TabIndex = 1;
-            lblIniciarSesion.Text = "Configuracion";
-            lblIniciarSesion.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblAyuda
-            // 
-            lblAyuda.AutoSize = true;
-            lblAyuda.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblAyuda.ForeColor = Color.FromArgb(254, 145, 147);
-            lblAyuda.Location = new Point(306, 128);
-            lblAyuda.Name = "lblAyuda";
-            lblAyuda.Size = new Size(54, 20);
-            lblAyuda.TabIndex = 3;
-            lblAyuda.Text = "Ayuda";
-            // 
-            // MenuRegistroUsuario
-            // 
-            MenuRegistroUsuario.AutoSize = true;
-            MenuRegistroUsuario.Font = new Font("Franklin Gothic Demi Cond", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            MenuRegistroUsuario.ForeColor = Color.FromArgb(254, 145, 147);
-            MenuRegistroUsuario.Location = new Point(15, 118);
-            MenuRegistroUsuario.Name = "MenuRegistroUsuario";
-            MenuRegistroUsuario.Size = new Size(79, 34);
-            MenuRegistroUsuario.TabIndex = 4;
-            MenuRegistroUsuario.Text = "MENÚ";
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.White;
-            panel5.ForeColor = Color.White;
-            panel5.Location = new Point(3, 86);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(124, 10);
-            panel5.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Nirmala UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(124, 11);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 15);
-            label1.TabIndex = 23;
-            // 
-            // pnlInicioSuperior
-            // 
-            pnlInicioSuperior.BackColor = Color.FromArgb(249, 243, 204);
-            pnlInicioSuperior.Controls.Add(panel2);
-            pnlInicioSuperior.Controls.Add(lblIniciarSesion);
-            pnlInicioSuperior.Controls.Add(lblQueSomos);
-            pnlInicioSuperior.Controls.Add(lblAyuda);
-            pnlInicioSuperior.Controls.Add(MenuRegistroUsuario);
-            pnlInicioSuperior.Location = new Point(0, 0);
-            pnlInicioSuperior.Name = "pnlInicioSuperior";
-            pnlInicioSuperior.Size = new Size(858, 176);
-            pnlInicioSuperior.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(45, 214, 215);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(panel1);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(858, 115);
-            panel2.TabIndex = 2;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Bookman Old Style", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(254, 73);
-            label2.Name = "label2";
-            label2.Size = new Size(314, 35);
-            label2.TabIndex = 3;
-            label2.Text = "Alojamientos Pacho";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(360, 0);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(116, 87);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
-            // 
-            // btnAgregarArriendo
-            // 
-            btnAgregarArriendo.BackgroundImage = (Image)resources.GetObject("btnAgregarArriendo.BackgroundImage");
-            btnAgregarArriendo.BackgroundImageLayout = ImageLayout.Zoom;
-            btnAgregarArriendo.Location = new Point(19, 126);
-            btnAgregarArriendo.Name = "btnAgregarArriendo";
-            btnAgregarArriendo.Size = new Size(94, 73);
-            btnAgregarArriendo.TabIndex = 6;
-            btnAgregarArriendo.UseVisualStyleBackColor = true;
-            btnAgregarArriendo.Click += btnAgregarArriendo_Click;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(243)))), ((int)(((byte)(204)))));
+            this.panel4.Controls.Add(this.lbnPreguntarArrendar);
+            this.panel4.Controls.Add(this.btnAgregarArriendo);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(106, 369);
+            this.panel4.TabIndex = 24;
             // 
             // lbnPreguntarArrendar
             // 
-            lbnPreguntarArrendar.AutoSize = true;
-            lbnPreguntarArrendar.Font = new Font("Franklin Gothic Medium Cond", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lbnPreguntarArrendar.Location = new Point(12, 222);
-            lbnPreguntarArrendar.Name = "lbnPreguntarArrendar";
-            lbnPreguntarArrendar.Size = new Size(108, 156);
-            lbnPreguntarArrendar.TabIndex = 7;
-            lbnPreguntarArrendar.Text = "¿ Tienes un \r\ninmueble \r\npara \r\narrendar?\r\n¡ Registrarlo\r\naqui!";
+            this.lbnPreguntarArrendar.AutoSize = true;
+            this.lbnPreguntarArrendar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
+            this.lbnPreguntarArrendar.Location = new System.Drawing.Point(10, 192);
+            this.lbnPreguntarArrendar.Name = "lbnPreguntarArrendar";
+            this.lbnPreguntarArrendar.Size = new System.Drawing.Size(108, 156);
+            this.lbnPreguntarArrendar.TabIndex = 7;
+            this.lbnPreguntarArrendar.Text = "¿ Tienes un \r\ninmueble \r\npara \r\narrendar?\r\n¡ Registrarlo\r\naqui!";
+            // 
+            // btnAgregarArriendo
+            // 
+            this.btnAgregarArriendo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarArriendo.BackgroundImage")));
+            this.btnAgregarArriendo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregarArriendo.Location = new System.Drawing.Point(16, 109);
+            this.btnAgregarArriendo.Name = "btnAgregarArriendo";
+            this.btnAgregarArriendo.Size = new System.Drawing.Size(81, 63);
+            this.btnAgregarArriendo.TabIndex = 6;
+            this.btnAgregarArriendo.UseVisualStyleBackColor = true;
+            this.btnAgregarArriendo.Click += new System.EventHandler(this.btnAgregarArriendo_Click_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 14.25F);
+            this.label3.Location = new System.Drawing.Point(12, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 72);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "FUNCIONES \r\nUNICAS \r\nPARA TI";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.ForeColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(3, 75);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(106, 9);
+            this.panel5.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9F);
+            this.label1.Location = new System.Drawing.Point(106, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.TabIndex = 23;
+            // 
+            // pnlInicioSuperior
+            // 
+            this.pnlInicioSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(243)))), ((int)(((byte)(204)))));
+            this.pnlInicioSuperior.Controls.Add(this.panel2);
+            this.pnlInicioSuperior.Controls.Add(this.lblIniciarSesion);
+            this.pnlInicioSuperior.Controls.Add(this.lblQueSomos);
+            this.pnlInicioSuperior.Controls.Add(this.lblAyuda);
+            this.pnlInicioSuperior.Controls.Add(this.MenuRegistroUsuario);
+            this.pnlInicioSuperior.Location = new System.Drawing.Point(0, 0);
+            this.pnlInicioSuperior.Name = "pnlInicioSuperior";
+            this.pnlInicioSuperior.Size = new System.Drawing.Size(746, 153);
+            this.pnlInicioSuperior.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(214)))), ((int)(((byte)(215)))));
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(746, 100);
+            this.panel2.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(218, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(314, 35);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Alojamientos Pacho";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(309, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 75);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblIniciarSesion
+            // 
+            this.lblIniciarSesion.AutoSize = true;
+            this.lblIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblIniciarSesion.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.lblIniciarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
+            this.lblIniciarSesion.Location = new System.Drawing.Point(331, 114);
+            this.lblIniciarSesion.Name = "lblIniciarSesion";
+            this.lblIniciarSesion.Size = new System.Drawing.Size(107, 20);
+            this.lblIniciarSesion.TabIndex = 1;
+            this.lblIniciarSesion.Text = "Configuracion";
+            this.lblIniciarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblQueSomos
+            // 
+            this.lblQueSomos.AutoSize = true;
+            this.lblQueSomos.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.lblQueSomos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
+            this.lblQueSomos.Location = new System.Drawing.Point(136, 114);
+            this.lblQueSomos.Name = "lblQueSomos";
+            this.lblQueSomos.Size = new System.Drawing.Size(101, 20);
+            this.lblQueSomos.TabIndex = 2;
+            this.lblQueSomos.Text = "¿Qué somos?";
+            // 
+            // lblAyuda
+            // 
+            this.lblAyuda.AutoSize = true;
+            this.lblAyuda.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.lblAyuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
+            this.lblAyuda.Location = new System.Drawing.Point(262, 111);
+            this.lblAyuda.Name = "lblAyuda";
+            this.lblAyuda.Size = new System.Drawing.Size(54, 20);
+            this.lblAyuda.TabIndex = 3;
+            this.lblAyuda.Text = "Ayuda";
+            // 
+            // MenuRegistroUsuario
+            // 
+            this.MenuRegistroUsuario.AutoSize = true;
+            this.MenuRegistroUsuario.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 20.25F);
+            this.MenuRegistroUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
+            this.MenuRegistroUsuario.Location = new System.Drawing.Point(13, 102);
+            this.MenuRegistroUsuario.Name = "MenuRegistroUsuario";
+            this.MenuRegistroUsuario.Size = new System.Drawing.Size(79, 34);
+            this.MenuRegistroUsuario.TabIndex = 4;
+            this.MenuRegistroUsuario.Text = "MENÚ";
             // 
             // HomeUsuarioRegis
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(854, 619);
-            Controls.Add(pnlPrincipal);
-            Name = "HomeUsuarioRegis";
-            Text = "HomeUsuarioRegis";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pbxLogo).EndInit();
-            pnlPrincipal.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            pnlInicioSuperior.ResumeLayout(false);
-            pnlInicioSuperior.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(746, 536);
+            this.Controls.Add(this.pnlPrincipal);
+            this.Name = "HomeUsuarioRegis";
+            this.Text = "HomeUsuarioRegis";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
+            this.pnlPrincipal.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.pnlInicioSuperior.ResumeLayout(false);
+            this.pnlInicioSuperior.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

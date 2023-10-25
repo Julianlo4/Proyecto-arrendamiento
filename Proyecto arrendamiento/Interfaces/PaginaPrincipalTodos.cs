@@ -37,5 +37,20 @@ namespace ArriendoPrototipo.Interfaces
             iniciarSesion.Show();
             this.Hide();
         }
+
+        private void lblIniciarSesion_Click_1(object sender, EventArgs e)
+        {
+            IniciarSesion iniciarSesion = new IniciarSesion();
+            iniciarSesion.Show();
+            this.Hide();
+        }
+
+        private void btn_RegistrarUsuarioMenu_Click_1(object sender, EventArgs e)
+        {
+            RegistroUsuario registro = new RegistroUsuario();
+            registro.Show();
+
+            this.Hide();
+        }
     }
 }

@@ -74,3 +74,42 @@ C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\Proyecto arrendam
 C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.CopyComplete
 C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.exe
 C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.pdb
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Proyecto arrendamiento.exe.config
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Proyecto arrendamiento.exe
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Proyecto arrendamiento.pdb
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Buffers.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Memory.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Text.Json.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.ValueTuple.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Buffers.xml
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Memory.xml
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Text.Json.xml
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.ValueTuple.xml
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.AssemblyReference.cache
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.SuggestedBindingRedirects.cache
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.exe.config
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Apariencia.CustomComboBox.resources
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Apariencia.CustomTextBox.resources
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Interfaces.HomeUsuarioRegis.resources
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Interfaces.IniciarSesion.resources
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Interfaces.PaginaPrincipalTodos.resources
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Interfaces.RegistroInmueble.resources
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.RegistroUsuario.resources
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Properties.Resources.resources
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.GenerateResource.cache
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.CoreCompileInputs.cache
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.CopyComplete
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.exe
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.pdb
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Interfaces.FormularioPrincipal.resources

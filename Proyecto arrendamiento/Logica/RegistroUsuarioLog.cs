@@ -31,6 +31,7 @@ namespace ArriendoPrototipo.Logica
 
             OracleParameter[] parametros = new OracleParameter[]
             {
+
         new OracleParameter("RegId", OracleDbType.Int32, identificacion, System.Data.ParameterDirection.Input),
         new OracleParameter("RegPrimerNom", OracleDbType.Varchar2, primerNombre, System.Data.ParameterDirection.Input),
         new OracleParameter("RegSegundoNom", OracleDbType.Varchar2, segundoNombre, System.Data.ParameterDirection.Input),

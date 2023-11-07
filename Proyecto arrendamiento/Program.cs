@@ -1,4 +1,6 @@
-﻿using ArriendoPrototipo.Interfaces;
+﻿using ArriendoPrototipo;
+using ArriendoPrototipo.Interfaces;
+using Proyecto_arrendamiento.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

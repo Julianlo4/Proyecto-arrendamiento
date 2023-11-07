@@ -28,14 +28,14 @@ namespace ArriendoPrototipo.Interfaces
 
         private void btnAgregarArriendo_Click(object sender, EventArgs e)
         {
-            RegistroInmueble registroInmueble = new RegistroInmueble();
+            RegistroInmueble registroInmueble = new RegistroInmueble(nombreCliente);
             this.Close();
             registroInmueble.Show();
         }
 
         private void btnAgregarArriendo_Click_1(object sender, EventArgs e)
         {
-            RegistroInmueble registroInmueble = new RegistroInmueble();
+            RegistroInmueble registroInmueble = new RegistroInmueble(nombreCliente);
             registroInmueble.Show();
             this.Close();
         }

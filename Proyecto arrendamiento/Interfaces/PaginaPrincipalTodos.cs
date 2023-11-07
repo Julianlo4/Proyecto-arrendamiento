@@ -1,4 +1,5 @@
 ﻿
+using Proyecto_arrendamiento.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,9 +48,8 @@ namespace ArriendoPrototipo.Interfaces
 
         private void btn_RegistrarUsuarioMenu_Click_1(object sender, EventArgs e)
         {
-            RegistroUsuario registro = new RegistroUsuario();
-            registro.Show();
-
+            RegistroUsuario us = new RegistroUsuario();
+            us.Show();
             this.Hide();
         }
     }

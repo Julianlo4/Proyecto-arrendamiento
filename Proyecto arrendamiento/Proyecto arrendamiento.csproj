@@ -92,6 +92,12 @@
       <DependentUpon>CustomTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Datos\Datos.cs" />
+    <Compile Include="Interfaces\Formulario principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Formulario principal.Designer.cs">
+      <DependentUpon>Formulario principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\HomeUsuarioRegis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,7 @@
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Logica\Exeptions.cs" />
+    <Compile Include="Logica\RegistrarInmueble.cs" />
     <Compile Include="Logica\RegistroUsuarioLog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -131,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apariencia\CustomTextBox.resx">
       <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Formulario principal.resx">
+      <DependentUpon>Formulario principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\HomeUsuarioRegis.resx">
       <DependentUpon>HomeUsuarioRegis.cs</DependentUpon>

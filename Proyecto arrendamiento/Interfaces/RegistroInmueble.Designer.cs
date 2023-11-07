@@ -43,30 +43,23 @@ namespace ArriendoPrototipo.Interfaces
             this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bntRegistrarInmueble = new System.Windows.Forms.Button();
-            this.cbxPrecio = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.lbnPrecio = new System.Windows.Forms.Label();
-            this.cbxTelefono = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lbnTelefono = new System.Windows.Forms.Label();
             this.cbxParqueadero = new System.Windows.Forms.ComboBox();
             this.lbnParqueadero = new System.Windows.Forms.Label();
             this.cbxAnimales = new System.Windows.Forms.ComboBox();
             this.cbxAmoblado = new System.Windows.Forms.ComboBox();
             this.lbnAmoblado = new System.Windows.Forms.Label();
-            this.rbGas = new System.Windows.Forms.RadioButton();
-            this.rbLavadora = new System.Windows.Forms.RadioButton();
-            this.rbTv = new System.Windows.Forms.RadioButton();
-            this.rbWifi = new System.Windows.Forms.RadioButton();
-            this.rbLuz = new System.Windows.Forms.RadioButton();
-            this.rbAgua = new System.Windows.Forms.RadioButton();
             this.lblServiciosInclu = new System.Windows.Forms.Label();
             this.cbxTipoVivienda = new System.Windows.Forms.ComboBox();
             this.lblTipoVivienda = new System.Windows.Forms.Label();
             this.cbxUbicacion = new System.Windows.Forms.ComboBox();
             this.lblUbicacionInmue = new System.Windows.Forms.Label();
-            this.cbxDescripcionInmueble = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lbnDescripcionPublicacion = new System.Windows.Forms.Label();
-            this.cbxNombrePublicacion = new System.Windows.Forms.TextBox();
+            this.txtNombrePublicacion = new System.Windows.Forms.TextBox();
             this.lbnTituloPublicacion = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -78,6 +71,15 @@ namespace ArriendoPrototipo.Interfaces
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.rbAgua = new System.Windows.Forms.CheckBox();
+            this.rbLuz = new System.Windows.Forms.CheckBox();
+            this.rbWifi = new System.Windows.Forms.CheckBox();
+            this.rbTv = new System.Windows.Forms.CheckBox();
+            this.rbLavadora = new System.Windows.Forms.CheckBox();
+            this.rbGas = new System.Windows.Forms.CheckBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.btnGuardarInmueble = new ArriendoPrototipo.Apariencia.CustomButton();
             lbnAnimales = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -202,10 +204,18 @@ namespace ArriendoPrototipo.Interfaces
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.bntRegistrarInmueble);
-            this.panel3.Controls.Add(this.cbxPrecio);
+            this.panel3.Controls.Add(this.lblDireccion);
+            this.panel3.Controls.Add(this.txtDireccion);
+            this.panel3.Controls.Add(this.rbGas);
+            this.panel3.Controls.Add(this.rbLavadora);
+            this.panel3.Controls.Add(this.rbTv);
+            this.panel3.Controls.Add(this.rbWifi);
+            this.panel3.Controls.Add(this.rbLuz);
+            this.panel3.Controls.Add(this.rbAgua);
+            this.panel3.Controls.Add(this.btnGuardarInmueble);
+            this.panel3.Controls.Add(this.txtPrecio);
             this.panel3.Controls.Add(this.lbnPrecio);
-            this.panel3.Controls.Add(this.cbxTelefono);
+            this.panel3.Controls.Add(this.txtTelefono);
             this.panel3.Controls.Add(this.lbnTelefono);
             this.panel3.Controls.Add(this.cbxParqueadero);
             this.panel3.Controls.Add(this.lbnParqueadero);
@@ -213,20 +223,14 @@ namespace ArriendoPrototipo.Interfaces
             this.panel3.Controls.Add(lbnAnimales);
             this.panel3.Controls.Add(this.cbxAmoblado);
             this.panel3.Controls.Add(this.lbnAmoblado);
-            this.panel3.Controls.Add(this.rbGas);
-            this.panel3.Controls.Add(this.rbLavadora);
-            this.panel3.Controls.Add(this.rbTv);
-            this.panel3.Controls.Add(this.rbWifi);
-            this.panel3.Controls.Add(this.rbLuz);
-            this.panel3.Controls.Add(this.rbAgua);
             this.panel3.Controls.Add(this.lblServiciosInclu);
             this.panel3.Controls.Add(this.cbxTipoVivienda);
             this.panel3.Controls.Add(this.lblTipoVivienda);
             this.panel3.Controls.Add(this.cbxUbicacion);
             this.panel3.Controls.Add(this.lblUbicacionInmue);
-            this.panel3.Controls.Add(this.cbxDescripcionInmueble);
+            this.panel3.Controls.Add(this.txtDescripcion);
             this.panel3.Controls.Add(this.lbnDescripcionPublicacion);
-            this.panel3.Controls.Add(this.cbxNombrePublicacion);
+            this.panel3.Controls.Add(this.txtNombrePublicacion);
             this.panel3.Controls.Add(this.lbnTituloPublicacion);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.label4);
@@ -237,22 +241,12 @@ namespace ArriendoPrototipo.Interfaces
             this.panel3.Size = new System.Drawing.Size(735, 372);
             this.panel3.TabIndex = 24;
             // 
-            // bntRegistrarInmueble
+            // txtPrecio
             // 
-            this.bntRegistrarInmueble.Location = new System.Drawing.Point(477, 335);
-            this.bntRegistrarInmueble.Name = "bntRegistrarInmueble";
-            this.bntRegistrarInmueble.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bntRegistrarInmueble.Size = new System.Drawing.Size(111, 20);
-            this.bntRegistrarInmueble.TabIndex = 52;
-            this.bntRegistrarInmueble.Text = "REGISTRAR INMUEBLE";
-            this.bntRegistrarInmueble.UseVisualStyleBackColor = true;
-            // 
-            // cbxPrecio
-            // 
-            this.cbxPrecio.Location = new System.Drawing.Point(229, 318);
-            this.cbxPrecio.Name = "cbxPrecio";
-            this.cbxPrecio.Size = new System.Drawing.Size(86, 22);
-            this.cbxPrecio.TabIndex = 51;
+            this.txtPrecio.Location = new System.Drawing.Point(229, 318);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(86, 22);
+            this.txtPrecio.TabIndex = 51;
             // 
             // lbnPrecio
             // 
@@ -263,12 +257,12 @@ namespace ArriendoPrototipo.Interfaces
             this.lbnPrecio.TabIndex = 50;
             this.lbnPrecio.Text = "* Precio     $";
             // 
-            // cbxTelefono
+            // txtTelefono
             // 
-            this.cbxTelefono.Location = new System.Drawing.Point(255, 285);
-            this.cbxTelefono.Name = "cbxTelefono";
-            this.cbxTelefono.Size = new System.Drawing.Size(86, 22);
-            this.cbxTelefono.TabIndex = 49;
+            this.txtTelefono.Location = new System.Drawing.Point(255, 285);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(86, 22);
+            this.txtTelefono.TabIndex = 49;
             // 
             // lbnTelefono
             // 
@@ -283,9 +277,10 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.cbxParqueadero.FormattingEnabled = true;
             this.cbxParqueadero.Items.AddRange(new object[] {
-            "Si",
-            "No",
-            "Solo motos"});
+            "Parqueadero para carro",
+            "Paqueadero para moto",
+            "Parqueadero para carro y moto",
+            "No tengo parqueadero"});
             this.cbxParqueadero.Location = new System.Drawing.Point(255, 243);
             this.cbxParqueadero.Name = "cbxParqueadero";
             this.cbxParqueadero.Size = new System.Drawing.Size(104, 21);
@@ -304,9 +299,8 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.cbxAnimales.FormattingEnabled = true;
             this.cbxAnimales.Items.AddRange(new object[] {
-            "Si",
             "No",
-            "Depende"});
+            "Si"});
             this.cbxAnimales.Location = new System.Drawing.Point(507, 209);
             this.cbxAnimales.Name = "cbxAnimales";
             this.cbxAnimales.Size = new System.Drawing.Size(104, 21);
@@ -316,9 +310,8 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.cbxAmoblado.FormattingEnabled = true;
             this.cbxAmoblado.Items.AddRange(new object[] {
-            "Si",
             "No",
-            "Parcialmente"});
+            "Si"});
             this.cbxAmoblado.Location = new System.Drawing.Point(237, 205);
             this.cbxAmoblado.Name = "cbxAmoblado";
             this.cbxAmoblado.Size = new System.Drawing.Size(104, 21);
@@ -333,73 +326,6 @@ namespace ArriendoPrototipo.Interfaces
             this.lbnAmoblado.TabIndex = 42;
             this.lbnAmoblado.Text = "* ¿ Es amoblado?";
             // 
-            // rbGas
-            // 
-            this.rbGas.AutoSize = true;
-            this.rbGas.Location = new System.Drawing.Point(626, 176);
-            this.rbGas.Name = "rbGas";
-            this.rbGas.Size = new System.Drawing.Size(44, 17);
-            this.rbGas.TabIndex = 41;
-            this.rbGas.TabStop = true;
-            this.rbGas.Text = "Gas";
-            this.rbGas.UseVisualStyleBackColor = true;
-            // 
-            // rbLavadora
-            // 
-            this.rbLavadora.AutoSize = true;
-            this.rbLavadora.Location = new System.Drawing.Point(550, 174);
-            this.rbLavadora.Name = "rbLavadora";
-            this.rbLavadora.Size = new System.Drawing.Size(71, 17);
-            this.rbLavadora.TabIndex = 40;
-            this.rbLavadora.TabStop = true;
-            this.rbLavadora.Text = "Lavadora";
-            this.rbLavadora.UseVisualStyleBackColor = true;
-            // 
-            // rbTv
-            // 
-            this.rbTv.AutoSize = true;
-            this.rbTv.Location = new System.Drawing.Point(490, 176);
-            this.rbTv.Name = "rbTv";
-            this.rbTv.Size = new System.Drawing.Size(35, 17);
-            this.rbTv.TabIndex = 39;
-            this.rbTv.TabStop = true;
-            this.rbTv.Text = "Tv";
-            this.rbTv.UseVisualStyleBackColor = true;
-            // 
-            // rbWifi
-            // 
-            this.rbWifi.AutoSize = true;
-            this.rbWifi.Location = new System.Drawing.Point(428, 176);
-            this.rbWifi.Name = "rbWifi";
-            this.rbWifi.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.rbWifi.Size = new System.Drawing.Size(46, 17);
-            this.rbWifi.TabIndex = 38;
-            this.rbWifi.TabStop = true;
-            this.rbWifi.Text = "Wifi";
-            this.rbWifi.UseVisualStyleBackColor = true;
-            // 
-            // rbLuz
-            // 
-            this.rbLuz.AutoSize = true;
-            this.rbLuz.Location = new System.Drawing.Point(361, 176);
-            this.rbLuz.Name = "rbLuz";
-            this.rbLuz.Size = new System.Drawing.Size(42, 17);
-            this.rbLuz.TabIndex = 37;
-            this.rbLuz.TabStop = true;
-            this.rbLuz.Text = "Luz";
-            this.rbLuz.UseVisualStyleBackColor = true;
-            // 
-            // rbAgua
-            // 
-            this.rbAgua.AutoSize = true;
-            this.rbAgua.Location = new System.Drawing.Point(270, 176);
-            this.rbAgua.Name = "rbAgua";
-            this.rbAgua.Size = new System.Drawing.Size(52, 17);
-            this.rbAgua.TabIndex = 36;
-            this.rbAgua.TabStop = true;
-            this.rbAgua.Text = "Agua";
-            this.rbAgua.UseVisualStyleBackColor = true;
-            // 
             // lblServiciosInclu
             // 
             this.lblServiciosInclu.AutoSize = true;
@@ -413,9 +339,11 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.cbxTipoVivienda.FormattingEnabled = true;
             this.cbxTipoVivienda.Items.AddRange(new object[] {
+            "Habitacion",
             "Apartamento",
-            "ApartaEstudio",
-            "Casa de estudiantes"});
+            "Casa",
+            "Apartaestudio",
+            "Otro"});
             this.cbxTipoVivienda.Location = new System.Drawing.Point(585, 134);
             this.cbxTipoVivienda.Name = "cbxTipoVivienda";
             this.cbxTipoVivienda.Size = new System.Drawing.Size(104, 21);
@@ -452,13 +380,13 @@ namespace ArriendoPrototipo.Interfaces
             this.lblUbicacionInmue.TabIndex = 30;
             this.lblUbicacionInmue.Text = "* Ubicación:";
             // 
-            // cbxDescripcionInmueble
+            // txtDescripcion
             // 
-            this.cbxDescripcionInmueble.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cbxDescripcionInmueble.Location = new System.Drawing.Point(213, 94);
-            this.cbxDescripcionInmueble.Name = "cbxDescripcionInmueble";
-            this.cbxDescripcionInmueble.Size = new System.Drawing.Size(501, 22);
-            this.cbxDescripcionInmueble.TabIndex = 29;
+            this.txtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescripcion.Location = new System.Drawing.Point(213, 94);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(501, 22);
+            this.txtDescripcion.TabIndex = 29;
             // 
             // lbnDescripcionPublicacion
             // 
@@ -469,13 +397,13 @@ namespace ArriendoPrototipo.Interfaces
             this.lbnDescripcionPublicacion.TabIndex = 28;
             this.lbnDescripcionPublicacion.Text = "Descripción";
             // 
-            // cbxNombrePublicacion
+            // txtNombrePublicacion
             // 
-            this.cbxNombrePublicacion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cbxNombrePublicacion.Location = new System.Drawing.Point(211, 55);
-            this.cbxNombrePublicacion.Name = "cbxNombrePublicacion";
-            this.cbxNombrePublicacion.Size = new System.Drawing.Size(504, 22);
-            this.cbxNombrePublicacion.TabIndex = 27;
+            this.txtNombrePublicacion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombrePublicacion.Location = new System.Drawing.Point(211, 55);
+            this.txtNombrePublicacion.Name = "txtNombrePublicacion";
+            this.txtNombrePublicacion.Size = new System.Drawing.Size(504, 22);
+            this.txtNombrePublicacion.TabIndex = 27;
             // 
             // lbnTituloPublicacion
             // 
@@ -590,6 +518,101 @@ namespace ArriendoPrototipo.Interfaces
             this.pbxLogo.TabIndex = 1;
             this.pbxLogo.TabStop = false;
             // 
+            // rbAgua
+            // 
+            this.rbAgua.AutoSize = true;
+            this.rbAgua.Location = new System.Drawing.Point(288, 172);
+            this.rbAgua.Name = "rbAgua";
+            this.rbAgua.Size = new System.Drawing.Size(53, 17);
+            this.rbAgua.TabIndex = 53;
+            this.rbAgua.Text = "Agua";
+            this.rbAgua.UseVisualStyleBackColor = true;
+            // 
+            // rbLuz
+            // 
+            this.rbLuz.AutoSize = true;
+            this.rbLuz.Location = new System.Drawing.Point(347, 172);
+            this.rbLuz.Name = "rbLuz";
+            this.rbLuz.Size = new System.Drawing.Size(43, 17);
+            this.rbLuz.TabIndex = 54;
+            this.rbLuz.Text = "Luz";
+            this.rbLuz.UseVisualStyleBackColor = true;
+            // 
+            // rbWifi
+            // 
+            this.rbWifi.AutoSize = true;
+            this.rbWifi.Location = new System.Drawing.Point(396, 172);
+            this.rbWifi.Name = "rbWifi";
+            this.rbWifi.Size = new System.Drawing.Size(47, 17);
+            this.rbWifi.TabIndex = 55;
+            this.rbWifi.Text = "Wifi";
+            this.rbWifi.UseVisualStyleBackColor = true;
+            // 
+            // rbTv
+            // 
+            this.rbTv.AutoSize = true;
+            this.rbTv.Location = new System.Drawing.Point(449, 172);
+            this.rbTv.Name = "rbTv";
+            this.rbTv.Size = new System.Drawing.Size(36, 17);
+            this.rbTv.TabIndex = 56;
+            this.rbTv.Text = "Tv";
+            this.rbTv.UseVisualStyleBackColor = true;
+            // 
+            // rbLavadora
+            // 
+            this.rbLavadora.AutoSize = true;
+            this.rbLavadora.Location = new System.Drawing.Point(491, 172);
+            this.rbLavadora.Name = "rbLavadora";
+            this.rbLavadora.Size = new System.Drawing.Size(72, 17);
+            this.rbLavadora.TabIndex = 57;
+            this.rbLavadora.Text = "Lavadora";
+            this.rbLavadora.UseVisualStyleBackColor = true;
+            // 
+            // rbGas
+            // 
+            this.rbGas.AutoSize = true;
+            this.rbGas.Location = new System.Drawing.Point(569, 172);
+            this.rbGas.Name = "rbGas";
+            this.rbGas.Size = new System.Drawing.Size(45, 17);
+            this.rbGas.TabIndex = 58;
+            this.rbGas.Text = "Gas";
+            this.rbGas.UseVisualStyleBackColor = true;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(472, 251);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(139, 22);
+            this.txtDireccion.TabIndex = 59;
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Location = new System.Drawing.Point(393, 254);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(63, 13);
+            this.lblDireccion.TabIndex = 60;
+            this.lblDireccion.Text = "* Dirección";
+            // 
+            // btnGuardarInmueble
+            // 
+            this.btnGuardarInmueble.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnGuardarInmueble.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnGuardarInmueble.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnGuardarInmueble.BorderRadius = 0;
+            this.btnGuardarInmueble.BorderSize = 0;
+            this.btnGuardarInmueble.FlatAppearance.BorderSize = 0;
+            this.btnGuardarInmueble.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarInmueble.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarInmueble.Location = new System.Drawing.Point(539, 318);
+            this.btnGuardarInmueble.Name = "btnGuardarInmueble";
+            this.btnGuardarInmueble.Size = new System.Drawing.Size(150, 40);
+            this.btnGuardarInmueble.TabIndex = 52;
+            this.btnGuardarInmueble.Text = "Publicar inmueble";
+            this.btnGuardarInmueble.TextColor = System.Drawing.Color.White;
+            this.btnGuardarInmueble.UseVisualStyleBackColor = false;
+            this.btnGuardarInmueble.Click += new System.EventHandler(this.btnGuardarInmueble_Click);
+            // 
             // RegistroInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -635,9 +658,9 @@ namespace ArriendoPrototipo.Interfaces
         private PictureBox pictureBox1;
         private Panel panel1;
         private PictureBox pbxLogo;
-        private TextBox cbxDescripcionInmueble;
+        private TextBox txtDescripcion;
         private Label lbnDescripcionPublicacion;
-        private TextBox cbxNombrePublicacion;
+        private TextBox txtNombrePublicacion;
         private Label lbnTituloPublicacion;
         private Panel panel6;
         private Label lblServiciosInclu;
@@ -646,20 +669,22 @@ namespace ArriendoPrototipo.Interfaces
         private ComboBox cbxUbicacion;
         private Label lblUbicacionInmue;
         private Label lbnAmoblado;
-        private RadioButton rbGas;
-        private RadioButton rbLavadora;
-        private RadioButton rbTv;
-        private RadioButton rbWifi;
-        private RadioButton rbLuz;
-        private RadioButton rbAgua;
-        private TextBox cbxTelefono;
+        private TextBox txtTelefono;
         private Label lbnTelefono;
         private ComboBox cbxParqueadero;
         private Label lbnParqueadero;
         private ComboBox cbxAnimales;
         private ComboBox cbxAmoblado;
-        private Button bntRegistrarInmueble;
-        private TextBox cbxPrecio;
+        private TextBox txtPrecio;
         private Label lbnPrecio;
+        private Apariencia.CustomButton btnGuardarInmueble;
+        private CheckBox rbGas;
+        private CheckBox rbLavadora;
+        private CheckBox rbTv;
+        private CheckBox rbWifi;
+        private CheckBox rbLuz;
+        private CheckBox rbAgua;
+        private Label lblDireccion;
+        private TextBox txtDireccion;
     }
 }

@@ -69,10 +69,9 @@ namespace ArriendoPrototipo.Interfaces
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(0, 50);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(0, 41);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(163, 14);
+            this.panel3.Size = new System.Drawing.Size(122, 11);
             this.panel3.TabIndex = 5;
             // 
             // MenuRegistroUsuario
@@ -80,8 +79,7 @@ namespace ArriendoPrototipo.Interfaces
             this.MenuRegistroUsuario.AutoSize = true;
             this.MenuRegistroUsuario.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 20.25F);
             this.MenuRegistroUsuario.ForeColor = System.Drawing.Color.LightCoral;
-            this.MenuRegistroUsuario.Location = new System.Drawing.Point(11, 11);
-            this.MenuRegistroUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MenuRegistroUsuario.Location = new System.Drawing.Point(8, 9);
             this.MenuRegistroUsuario.Name = "MenuRegistroUsuario";
             this.MenuRegistroUsuario.Size = new System.Drawing.Size(79, 34);
             this.MenuRegistroUsuario.TabIndex = 4;
@@ -92,8 +90,7 @@ namespace ArriendoPrototipo.Interfaces
             this.lblAyuda.AutoSize = true;
             this.lblAyuda.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.lblAyuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
-            this.lblAyuda.Location = new System.Drawing.Point(32, 148);
-            this.lblAyuda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAyuda.Location = new System.Drawing.Point(24, 120);
             this.lblAyuda.Name = "lblAyuda";
             this.lblAyuda.Size = new System.Drawing.Size(54, 20);
             this.lblAyuda.TabIndex = 3;
@@ -104,8 +101,7 @@ namespace ArriendoPrototipo.Interfaces
             this.lblQueSomos.AutoSize = true;
             this.lblQueSomos.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.lblQueSomos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
-            this.lblQueSomos.Location = new System.Drawing.Point(13, 108);
-            this.lblQueSomos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblQueSomos.Location = new System.Drawing.Point(10, 88);
             this.lblQueSomos.Name = "lblQueSomos";
             this.lblQueSomos.Size = new System.Drawing.Size(101, 20);
             this.lblQueSomos.TabIndex = 2;
@@ -113,10 +109,9 @@ namespace ArriendoPrototipo.Interfaces
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(171, 33);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(128, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(741, 402);
+            this.panel1.Size = new System.Drawing.Size(556, 327);
             this.panel1.TabIndex = 0;
             // 
             // pbxLogo
@@ -124,10 +119,9 @@ namespace ArriendoPrototipo.Interfaces
             this.pbxLogo.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
-            this.pbxLogo.Location = new System.Drawing.Point(633, 118);
-            this.pbxLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pbxLogo.Location = new System.Drawing.Point(475, 96);
             this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(76, 66);
+            this.pbxLogo.Size = new System.Drawing.Size(57, 54);
             this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLogo.TabIndex = 1;
             this.pbxLogo.TabStop = false;
@@ -137,8 +131,7 @@ namespace ArriendoPrototipo.Interfaces
             this.lblTextoSupIniciar.AutoSize = true;
             this.lblTextoSupIniciar.Font = new System.Drawing.Font("Bookman Old Style", 21.75F, System.Drawing.FontStyle.Bold);
             this.lblTextoSupIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
-            this.lblTextoSupIniciar.Location = new System.Drawing.Point(285, 138);
-            this.lblTextoSupIniciar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTextoSupIniciar.Location = new System.Drawing.Point(214, 112);
             this.lblTextoSupIniciar.Name = "lblTextoSupIniciar";
             this.lblTextoSupIniciar.Size = new System.Drawing.Size(262, 35);
             this.lblTextoSupIniciar.TabIndex = 0;
@@ -149,8 +142,7 @@ namespace ArriendoPrototipo.Interfaces
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 21.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(291, 78);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(218, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(314, 35);
             this.label2.TabIndex = 3;
@@ -159,10 +151,10 @@ namespace ArriendoPrototipo.Interfaces
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(412, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(309, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(99, 75);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -174,9 +166,8 @@ namespace ArriendoPrototipo.Interfaces
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(923, 123);
+            this.panel2.Size = new System.Drawing.Size(692, 100);
             this.panel2.TabIndex = 2;
             // 
             // lblPaginaPrincipal
@@ -184,8 +175,7 @@ namespace ArriendoPrototipo.Interfaces
             this.lblPaginaPrincipal.AutoSize = true;
             this.lblPaginaPrincipal.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.lblPaginaPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(145)))), ((int)(((byte)(147)))));
-            this.lblPaginaPrincipal.Location = new System.Drawing.Point(3, 68);
-            this.lblPaginaPrincipal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPaginaPrincipal.Location = new System.Drawing.Point(2, 55);
             this.lblPaginaPrincipal.Name = "lblPaginaPrincipal";
             this.lblPaginaPrincipal.Size = new System.Drawing.Size(120, 20);
             this.lblPaginaPrincipal.TabIndex = 1;
@@ -198,10 +188,9 @@ namespace ArriendoPrototipo.Interfaces
             this.btn_volverMenuPrincipal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_volverMenuPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_volverMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_volverMenuPrincipal.Location = new System.Drawing.Point(171, 489);
-            this.btn_volverMenuPrincipal.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_volverMenuPrincipal.Location = new System.Drawing.Point(128, 397);
             this.btn_volverMenuPrincipal.Name = "btn_volverMenuPrincipal";
-            this.btn_volverMenuPrincipal.Size = new System.Drawing.Size(55, 44);
+            this.btn_volverMenuPrincipal.Size = new System.Drawing.Size(41, 36);
             this.btn_volverMenuPrincipal.TabIndex = 27;
             this.btn_volverMenuPrincipal.UseVisualStyleBackColor = false;
             this.btn_volverMenuPrincipal.Click += new System.EventHandler(this.btn_volverMenuPrincipal_Click_1);
@@ -212,10 +201,9 @@ namespace ArriendoPrototipo.Interfaces
             this.btn_RegistrarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_RegistrarUsuario.Font = new System.Drawing.Font("Franklin Gothic Demi", 12F, System.Drawing.FontStyle.Italic);
             this.btn_RegistrarUsuario.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_RegistrarUsuario.Location = new System.Drawing.Point(429, 492);
-            this.btn_RegistrarUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_RegistrarUsuario.Location = new System.Drawing.Point(322, 400);
             this.btn_RegistrarUsuario.Name = "btn_RegistrarUsuario";
-            this.btn_RegistrarUsuario.Size = new System.Drawing.Size(217, 42);
+            this.btn_RegistrarUsuario.Size = new System.Drawing.Size(163, 34);
             this.btn_RegistrarUsuario.TabIndex = 26;
             this.btn_RegistrarUsuario.Text = "REGISTRARSE";
             this.btn_RegistrarUsuario.UseVisualStyleBackColor = false;
@@ -224,19 +212,17 @@ namespace ArriendoPrototipo.Interfaces
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Cyan;
-            this.panel5.Location = new System.Drawing.Point(161, 460);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Location = new System.Drawing.Point(121, 374);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(756, 12);
+            this.panel5.Size = new System.Drawing.Size(567, 10);
             this.panel5.TabIndex = 25;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Cyan;
-            this.panel4.Location = new System.Drawing.Point(160, 196);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(120, 159);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(751, 12);
+            this.panel4.Size = new System.Drawing.Size(563, 10);
             this.panel4.TabIndex = 24;
             // 
             // pnlPrincipal
@@ -256,34 +242,30 @@ namespace ArriendoPrototipo.Interfaces
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrincipal.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.pnlPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.pnlPrincipal.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(923, 594);
+            this.pnlPrincipal.Size = new System.Drawing.Size(692, 483);
             this.pnlPrincipal.TabIndex = 1;
             // 
             // txbClaveUsuario
             // 
-            this.txbClaveUsuario.Location = new System.Drawing.Point(480, 396);
-            this.txbClaveUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txbClaveUsuario.Location = new System.Drawing.Point(360, 322);
             this.txbClaveUsuario.Name = "txbClaveUsuario";
-            this.txbClaveUsuario.Size = new System.Drawing.Size(229, 33);
+            this.txbClaveUsuario.Size = new System.Drawing.Size(173, 33);
             this.txbClaveUsuario.TabIndex = 30;
             // 
             // txbNombreUsuario
             // 
-            this.txbNombreUsuario.Location = new System.Drawing.Point(480, 339);
-            this.txbNombreUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txbNombreUsuario.Location = new System.Drawing.Point(360, 275);
             this.txbNombreUsuario.Name = "txbNombreUsuario";
-            this.txbNombreUsuario.Size = new System.Drawing.Size(229, 33);
+            this.txbNombreUsuario.Size = new System.Drawing.Size(173, 33);
             this.txbNombreUsuario.TabIndex = 29;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(429, 213);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(322, 173);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(209, 107);
+            this.pictureBox2.Size = new System.Drawing.Size(157, 87);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
@@ -292,8 +274,7 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.lblContrasenia.AutoSize = true;
             this.lblContrasenia.Font = new System.Drawing.Font("Segoe UI", 15.25F);
-            this.lblContrasenia.Location = new System.Drawing.Point(316, 396);
-            this.lblContrasenia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblContrasenia.Location = new System.Drawing.Point(237, 322);
             this.lblContrasenia.Name = "lblContrasenia";
             this.lblContrasenia.Size = new System.Drawing.Size(123, 30);
             this.lblContrasenia.TabIndex = 5;
@@ -303,8 +284,7 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.lblNombreUsuario.AutoSize = true;
             this.lblNombreUsuario.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.lblNombreUsuario.Location = new System.Drawing.Point(217, 342);
-            this.lblNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombreUsuario.Location = new System.Drawing.Point(163, 278);
             this.lblNombreUsuario.Name = "lblNombreUsuario";
             this.lblNombreUsuario.Size = new System.Drawing.Size(197, 30);
             this.lblNombreUsuario.TabIndex = 3;
@@ -314,8 +294,7 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.lblSugerenciaRegistro.AutoSize = true;
             this.lblSugerenciaRegistro.Font = new System.Drawing.Font("Nirmala UI", 9F);
-            this.lblSugerenciaRegistro.Location = new System.Drawing.Point(147, 191);
-            this.lblSugerenciaRegistro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSugerenciaRegistro.Location = new System.Drawing.Point(110, 155);
             this.lblSugerenciaRegistro.Name = "lblSugerenciaRegistro";
             this.lblSugerenciaRegistro.Size = new System.Drawing.Size(0, 15);
             this.lblSugerenciaRegistro.TabIndex = 2;
@@ -328,9 +307,8 @@ namespace ArriendoPrototipo.Interfaces
             this.pnlInicioSuperior.Controls.Add(this.lblTextoSupIniciar);
             this.pnlInicioSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlInicioSuperior.Location = new System.Drawing.Point(0, 0);
-            this.pnlInicioSuperior.Margin = new System.Windows.Forms.Padding(4);
             this.pnlInicioSuperior.Name = "pnlInicioSuperior";
-            this.pnlInicioSuperior.Size = new System.Drawing.Size(923, 188);
+            this.pnlInicioSuperior.Size = new System.Drawing.Size(692, 153);
             this.pnlInicioSuperior.TabIndex = 1;
             // 
             // pnlnicioDerecha
@@ -342,19 +320,17 @@ namespace ArriendoPrototipo.Interfaces
             this.pnlnicioDerecha.Controls.Add(this.lblQueSomos);
             this.pnlnicioDerecha.Controls.Add(this.lblPaginaPrincipal);
             this.pnlnicioDerecha.Controls.Add(this.panel1);
-            this.pnlnicioDerecha.Location = new System.Drawing.Point(0, 180);
-            this.pnlnicioDerecha.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlnicioDerecha.Location = new System.Drawing.Point(0, 146);
             this.pnlnicioDerecha.Name = "pnlnicioDerecha";
-            this.pnlnicioDerecha.Size = new System.Drawing.Size(153, 380);
+            this.pnlnicioDerecha.Size = new System.Drawing.Size(115, 309);
             this.pnlnicioDerecha.TabIndex = 0;
             // 
             // IniciarSesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(923, 594);
+            this.ClientSize = new System.Drawing.Size(692, 483);
             this.Controls.Add(this.pnlPrincipal);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "IniciarSesion";
             this.Text = "IniciarSesion";
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();

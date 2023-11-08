@@ -113,3 +113,4 @@ C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamien
 C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.exe
 C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.pdb
 C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Interfaces.FormularioPrincipal.resources
+C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Interfaces.FormularioPrincipal.resources

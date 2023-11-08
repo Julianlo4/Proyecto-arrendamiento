@@ -19,8 +19,48 @@ namespace ArriendoPrototipo.Interfaces
         {
             InitializeComponent();
             this.NombreUsuario = nombreU;
+            lblNombreUsuario.Text = nombreU;
+            this.WindowState = FormWindowState.Maximized;
+            this.SizeChanged += new EventHandler (RegistroInmueble_SizeChanged);
+            this.FormClosing += MiFormularioPrincipal_FormClosing;
         }
 
+        private void RegistroInmueble_SizeChanged(object sender, EventArgs e)
+        {
+            // Obtén el tamaño del formulario
+            int formularioAncho = panel2.Width - panel1.Width;
+            int formularioAlto = panel2.ClientSize.Height;
+
+            // Calcula las coordenadas X e Y para centrar el Label
+            int labelX = (formularioAncho - label2.Width) / 2;
+            int labelY = (formularioAlto - label2.Height) / 2;
+            // Calcula las coordenadas X e Y para centrar el logo
+
+            // Establece la posición del Label
+            label2.Location = new Point(labelX, labelY + 30);
+
+            tableLayoutPanel1.Location = new Point((label4.Width/3)-40, 250);
+            btnGuardarInmueble.Location = new Point(formularioAncho/2, 600);
+        }
+        private void MiFormularioPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                // Pregunta al usuario si realmente desea cerrar la aplicación
+                DialogResult resultado = MessageBox.Show("¿Estás seguro de que deseas cerrar la aplicación?", "Cerrar la aplicación", MessageBoxButtons.YesNo);
+
+                if (resultado == DialogResult.No)
+                {
+                    // Cancela el cierre de la aplicación si el usuario elige "No"
+                    e.Cancel = true;
+                }
+                else
+                {
+                    // Cierra la aplicación si el usuario elige "Sí"
+                    Application.Exit();
+                }
+            }
+        }
         private void cbxDescripcionInmueble_TextChanged(object sender, EventArgs e)
         {
 
@@ -37,7 +77,7 @@ namespace ArriendoPrototipo.Interfaces
         {
             HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis(lblNombreUsuario.Text);
             homeUsuarioRegis.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnGuardarInmueble_Click(object sender, EventArgs e)
@@ -77,6 +117,22 @@ namespace ArriendoPrototipo.Interfaces
             else { MessageBox.Show("La insercion ha sido fallida", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_volverMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis(lblNombreUsuario.Text);
+            homeUsuarioRegis.Show();
+            this.Hide();
+        }
     }
     
 }

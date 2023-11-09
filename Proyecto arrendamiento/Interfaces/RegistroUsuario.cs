@@ -72,28 +72,42 @@ namespace ArriendoPrototipo
         {
 
             string primerNombre, segundoNombre, primerApellido,
-             segundoApellido, genero, telefono, correo,
-              contraseña, fechaNacimiento, nombreUsuario;
+                   segundoApellido, genero, telefono, correo,
+                   contraseña, fechaNacimiento, nombreUsuario;
             int result;
             int identiificacion;
+            if (string.IsNullOrEmpty(txtPrimerNombre.Text) && string.IsNullOrEmpty(txtSegundoApellido.Text)
+                    && string.IsNullOrEmpty(dtpFechaNac.Text) && string.IsNullOrEmpty(cbxGenero.Text)
+                    && string.IsNullOrEmpty(txtTelefono.Text) && string.IsNullOrEmpty(txtCorreo.Text)
+                    && string.IsNullOrEmpty(txtContraseña.Text) && string.IsNullOrEmpty(txtIdentificacion.Text)
+                    && string.IsNullOrEmpty(txtNombreUsuario.Text))
+            {
+                MessageBox.Show("Por favor complete los campos obligatorios antes de continuar", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             try 
-            { 
-            primerNombre = txtPrimerNombre.Texts;
-            segundoNombre = txtSegundoNombre.Texts;
-            primerApellido = txtSegundoApellido.Texts;
-            segundoApellido = txtSegundoApell.Texts;
-            genero = cbxGenero.Text;
-            telefono = txtTelefono.Texts;
-            correo = txtCorreo.Texts;
-            identiificacion = int.Parse(txtIdentificacion.Texts);
-            contraseña = txtContraseña.Texts;
-            fechaNacimiento = dtpFechaNac.Value.ToString("DD/MM/YYYY");
-            nombreUsuario = txtNombreUsuario.Texts;
+            {
 
-          result = nuevoReg.RegistroUsuarioPrms(primerNombre, segundoNombre, primerApellido,
-          segundoApellido, genero, telefono, correo,
-          identiificacion, contraseña, fechaNacimiento, nombreUsuario);
+               
+                primerNombre = txtPrimerNombre.Texts;
+                segundoNombre = txtSegundoNombre.Texts;
+                primerApellido = txtSegundoApellido.Texts;
+                segundoApellido = txtSegundoApell.Texts;
+                genero = cbxGenero.Text;
+                telefono = txtTelefono.Texts;
+                correo = txtCorreo.Texts;
+                identiificacion = int.Parse(txtIdentificacion.Texts);
+                contraseña = txtContraseña.Texts;
+                fechaNacimiento = dtpFechaNac.Value.ToString("DD/MM/YYYY");
+                nombreUsuario = txtNombreUsuario.Texts;
+
+             
+
+
+                result = nuevoReg.RegistroUsuarioPrms(primerNombre, segundoNombre, primerApellido,
+                                                      segundoApellido, genero, telefono, correo,
+                                                      identiificacion, contraseña, fechaNacimiento, nombreUsuario);
 
 
                 if (result > 0)
@@ -107,11 +121,11 @@ namespace ArriendoPrototipo
             }
             catch (FormatException ex)
             {
-                MessageBox.Show("La creación del usuario ha fallado debido a " + ex.Message, "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("La creación del usuario ha fallado debido a: " + ex.Message, "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             { 
-                 MessageBox.Show("La creación del usuario ha fallado debido a " + ex.Message, "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                 MessageBox.Show("La creación del usuario ha fallado debido a: " + ex.Message, "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {

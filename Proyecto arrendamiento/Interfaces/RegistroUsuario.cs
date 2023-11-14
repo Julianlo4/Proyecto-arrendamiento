@@ -3,6 +3,7 @@ using System.Globalization;
 using ArriendoPrototipo.Logica;
 using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace ArriendoPrototipo
 {
@@ -13,8 +14,60 @@ namespace ArriendoPrototipo
         public RegistroUsuario()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.SizeChanged += new EventHandler(RegistroUsuario_SizeChanged);
+            this.FormClosing += MiFormularioPrincipal_FormClosing;
         }
 
+        private void RegistroUsuario_SizeChanged(object sender, EventArgs e)
+        {
+            // Obtén el tamaño del panel
+            int formularioAncho = panel2.Width;
+            int formularioAlto = panel2.ClientSize.Height;
+
+            // Calcula las coordenadas X e Y para centrar el Label
+            int labelX = (formularioAncho - label2.Width) / 2;
+            int labelX3 = (formularioAncho - tableLayoutPanel2.Width) / 2;
+            int labelY = (formularioAlto - label2.Height) / 2;
+
+            int labelX1 = (formularioAncho - lblTextoSupInicio.Width) / 2;
+            int labelY1 = (formularioAlto - lblTextoSupInicio.Height) / 2;
+            // Calcula las coordenadas X e Y para centrar el logo
+
+            // Establece la posición del Label
+            label2.Location = new Point(labelX, labelY +30);
+            lblTextoSupInicio.Location = new Point(labelX1, labelY1 + 80);
+            pbxLogo.Location = new Point(labelX1 + 240, labelY1 + 60);
+
+            // Calcula las coordenadas X e Y para centrar el logo
+            int labelX2 = (formularioAncho - pictureBox1.Width) / 2;
+            int labelY2 = (formularioAncho - pictureBox1.Height) / 2;
+
+            // Establece la posición del logo
+            pictureBox1.Location = new Point(labelX2, labelY2);
+            btn_RegistrarUsuario.Location = new Point(labelX3, formularioAlto + 390);
+
+        }
+
+        private void MiFormularioPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                // Pregunta al usuario si realmente desea cerrar la aplicación
+                DialogResult resultado = MessageBox.Show("¿Estás seguro de que deseas cerrar la aplicación?", "Cerrar la aplicación", MessageBoxButtons.YesNo);
+
+                if (resultado == DialogResult.No)
+                {
+                    // Cancela el cierre de la aplicación si el usuario elige "No"
+                    e.Cancel = true;
+                }
+                else
+                {
+                    // Cierra la aplicación si el usuario elige "Sí"
+                    Application.Exit();
+                }
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -115,7 +168,7 @@ namespace ArriendoPrototipo
                     MessageBox.Show("La insercion ha sido correcta", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis(primerNombre);
                     homeUsuarioRegis.Show();
-                    this.Close();
+                    this.Hide();
                 }
                 else { MessageBox.Show("La insercion ha sido fallida", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             }
@@ -143,7 +196,12 @@ namespace ArriendoPrototipo
         {
             PaginaPrincipalTodos paginaPrincipalTodos = new PaginaPrincipalTodos();
             paginaPrincipalTodos.Show();
-            this.Close();
+            this.Hide();
+        }
+
+        private void pnlPrincipal_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

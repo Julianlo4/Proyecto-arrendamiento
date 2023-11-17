@@ -114,3 +114,41 @@ C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamien
 C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.pdb
 C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Interfaces.FormularioPrincipal.resources
 C:\Users\lopez\Desktop\Uni\5° Semestre\Proyecto arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Interfaces.FormularioPrincipal.resources
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.AssemblyReference.cache
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.SuggestedBindingRedirects.cache
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.exe.config
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.exe
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.pdb
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Proyecto arrendamiento.exe.config
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Proyecto arrendamiento.exe
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Proyecto arrendamiento.pdb
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Buffers.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Memory.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Numerics.Vectors.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Text.Encodings.Web.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Text.Json.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.ValueTuple.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Buffers.xml
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Memory.xml
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Numerics.Vectors.xml
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Text.Encodings.Web.xml
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Text.Json.xml
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\System.ValueTuple.xml
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Apariencia.CustomComboBox.resources
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Apariencia.CustomTextBox.resources
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Interfaces.FormularioPrincipal.resources
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Interfaces.IniciarSesion.resources
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Properties.Resources.resources
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.GenerateResource.cache
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.CoreCompileInputs.cache
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto arrendamiento.csproj.CopyComplete
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Interfaces.HomeUsuarioRegis.resources
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Interfaces.PaginaPrincipalTodos.resources
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Interfaces.RegistroInmueble.resources
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.RegistroUsuario.resources

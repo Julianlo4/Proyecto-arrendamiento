@@ -113,7 +113,7 @@ namespace ArriendoPrototipo.Interfaces
             {
                 MessageBox.Show("La insercion ha sido correcta", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis("Usuario");
-                this.Close();
+                this.Hide();
                 homeUsuarioRegis.Show();
 
             }

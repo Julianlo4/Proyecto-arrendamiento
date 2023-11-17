@@ -110,12 +110,6 @@ namespace ArriendoPrototipo.Interfaces
                     comando.Parameters.Add("param1", OracleDbType.Varchar2).Value = txbNombreUsuario.Text;
                     comando.Parameters.Add("param2", OracleDbType.Varchar2).Value = txbClaveUsuario.Text;
 
-                    if(string.IsNullOrEmpty(txbNombreUsuario.Text) && string.IsNullOrEmpty(txbClaveUsuario.Text))
-                    {
-                        MessageBox.Show("Por favor complete los campos antes de continuar...", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return;
-                    }
-
                     try
                     {
                         conexion.Open();
@@ -124,14 +118,14 @@ namespace ArriendoPrototipo.Interfaces
 
                         if (verificar > 0)
                         {
-                            MessageBox.Show("Sesión iniciada correctamente", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Datos correctos", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis(txbNombreUsuario.Text);
                             this.Hide();
                             homeUsuarioRegis.Show();
                         }
                         else
                         {
-                            MessageBox.Show("Usuario o contraseña incorrectos.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Datos incorrectos", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                         // Realiza acciones con los datos recuperados

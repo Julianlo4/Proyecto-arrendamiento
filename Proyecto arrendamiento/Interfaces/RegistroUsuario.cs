@@ -152,7 +152,7 @@ namespace ArriendoPrototipo
                 if (result > 0)
                 {
                     MessageBox.Show("La insercion ha sido correcta", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis(primerNombre);
+                    HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis(nombreUsuario);
                     homeUsuarioRegis.Show();
                     this.Hide();
                 }

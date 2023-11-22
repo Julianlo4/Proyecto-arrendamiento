@@ -61,13 +61,13 @@ namespace ArriendoPrototipo
             this.lblSegundoNombre = new System.Windows.Forms.Label();
             this.dtpFechaNac = new System.Windows.Forms.DateTimePicker();
             this.txtIdentificacion = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
-            this.btn_volverMenuPrincipal = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblSugerenciaRegistro = new System.Windows.Forms.Label();
             this.pnlInicioSuperior = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTextoSupInicio = new System.Windows.Forms.Label();
+            this.btn_volverMenuPrincipal = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.pnlPrincipal.SuspendLayout();
@@ -553,21 +553,6 @@ namespace ArriendoPrototipo
             this.txtIdentificacion.Texts = "";
             this.txtIdentificacion.UnderlinedStyle = false;
             // 
-            // btn_volverMenuPrincipal
-            // 
-            this.btn_volverMenuPrincipal.BackColor = System.Drawing.Color.Transparent;
-            this.btn_volverMenuPrincipal.BackgroundImage = global::Proyecto_arrendamiento.Properties.Resources.atras;
-            this.btn_volverMenuPrincipal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_volverMenuPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_volverMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_volverMenuPrincipal.Location = new System.Drawing.Point(181, 587);
-            this.btn_volverMenuPrincipal.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_volverMenuPrincipal.Name = "btn_volverMenuPrincipal";
-            this.btn_volverMenuPrincipal.Size = new System.Drawing.Size(55, 44);
-            this.btn_volverMenuPrincipal.TabIndex = 27;
-            this.btn_volverMenuPrincipal.UseVisualStyleBackColor = false;
-            this.btn_volverMenuPrincipal.Click += new System.EventHandler(this.btn_volverMenuPrincipal_Click_1);
-            // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -641,6 +626,21 @@ namespace ArriendoPrototipo
             this.lblTextoSupInicio.Size = new System.Drawing.Size(301, 29);
             this.lblTextoSupInicio.TabIndex = 0;
             this.lblTextoSupInicio.Text = "REGISTRO DE USUARIO";
+            // 
+            // btn_volverMenuPrincipal
+            // 
+            this.btn_volverMenuPrincipal.BackColor = System.Drawing.Color.Transparent;
+            this.btn_volverMenuPrincipal.BackgroundImage = global::Proyecto_arrendamiento.Properties.Resources.atras;
+            this.btn_volverMenuPrincipal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_volverMenuPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_volverMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_volverMenuPrincipal.Location = new System.Drawing.Point(181, 587);
+            this.btn_volverMenuPrincipal.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_volverMenuPrincipal.Name = "btn_volverMenuPrincipal";
+            this.btn_volverMenuPrincipal.Size = new System.Drawing.Size(55, 44);
+            this.btn_volverMenuPrincipal.TabIndex = 27;
+            this.btn_volverMenuPrincipal.UseVisualStyleBackColor = false;
+            this.btn_volverMenuPrincipal.Click += new System.EventHandler(this.btn_volverMenuPrincipal_Click_1);
             // 
             // pictureBox1
             // 

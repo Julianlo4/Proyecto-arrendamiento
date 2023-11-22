@@ -71,7 +71,6 @@ namespace ArriendoPrototipo.Interfaces
         {
             RegistroUsuario registro = new RegistroUsuario();
             registro.Show();
-
             this.Hide();
         }
 

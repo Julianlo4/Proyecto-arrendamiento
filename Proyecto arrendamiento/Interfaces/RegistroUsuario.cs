@@ -9,7 +9,7 @@ namespace ArriendoPrototipo
 {
     public partial class RegistroUsuario : Form
     {
-        RegistroUsuarioLog nuevoReg = new RegistroUsuarioLog();
+        cliente nuevoReg = new cliente();
         Exception exception = new Exception();
         public RegistroUsuario()
         {

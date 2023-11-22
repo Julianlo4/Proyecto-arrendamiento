@@ -99,7 +99,7 @@ namespace ArriendoPrototipo.Interfaces
            
             String cadenaConexion = "Data Source=localhost;User ID=ProyectoArren;Password=123; Connection Timeout = 120";
             string consultaSql;
-            consultaSql = "SELECT COUNT(*) FROM REGISTRO WHERE REGNOMBREU = :param1 AND RegContrasenia = :param2";
+            consultaSql = "SELECT COUNT(*) FROM REGISTRO WHERE REGNOMBREU = :param1 AND RegContrasenia = :param2 AND RegEstado=1";
 
             using (OracleConnection conexion = new OracleConnection(cadenaConexion))
             {
@@ -120,20 +120,23 @@ namespace ArriendoPrototipo.Interfaces
                         {
                             MessageBox.Show("Datos correctos", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis(txbNombreUsuario.Text);
+                            conexion.Close();
                             this.Hide();
                             homeUsuarioRegis.Show();
                         }
                         else
                         {
+                            conexion.Close();
                             MessageBox.Show("Datos incorrectos", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
-                        // Realiza acciones con los datos recuperados
+         
 
                     }
                     catch (Exception ex)
                     {
                         // Manejo de excepciones
+                        conexion.Close();
                         Console.WriteLine("Error: " + ex.Message);
                         MessageBox.Show("Datos incorrectos " + ex.Message, "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }

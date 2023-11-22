@@ -63,6 +63,16 @@ namespace Proyecto_arrendamiento.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap actualizarClave {
+            get {
+                object obj = ResourceManager.GetObject("actualizarClave", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AgregarPublicacion {
             get {
                 object obj = ResourceManager.GetObject("AgregarPublicacion", resourceCulture);
@@ -83,6 +93,16 @@ namespace Proyecto_arrendamiento.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap configurarCuenta {
+            get {
+                object obj = ResourceManager.GetObject("configurarCuenta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logoArrendamiento {
             get {
                 object obj = ResourceManager.GetObject("logoArrendamiento", resourceCulture);
@@ -96,6 +116,16 @@ namespace Proyecto_arrendamiento.Properties {
         internal static System.Drawing.Bitmap LogoUsuario {
             get {
                 object obj = ResourceManager.GetObject("LogoUsuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap publicaciones {
+            get {
+                object obj = ResourceManager.GetObject("publicaciones", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

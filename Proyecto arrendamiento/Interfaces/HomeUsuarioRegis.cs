@@ -7,20 +7,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ArriendoPrototipo.Logica;
+using Proyecto_arrendamiento.Interfaces;
+using Proyecto_arrendamiento.Logica;
 
 namespace ArriendoPrototipo.Interfaces
 {
     public partial class HomeUsuarioRegis : Form
     {
         private string nombreCliente;
+        cliente cliente1 = new cliente();
         public HomeUsuarioRegis(string nombreCliente)
         {
             InitializeComponent();
+            
             this.nombreCliente = nombreCliente;
             lblNombreUsuario.Text = nombreCliente;
+            if (cliente1.verificarInmuebles(lblNombreUsuario.Text))
+            {
+                btnPublicaciones.Show();
+                lbnPublicaciones.Show();
+            }
+            else
+            {
+                btnPublicaciones.Hide();
+                lbnPublicaciones .Hide();
+            }
+
+            ContextMenuStrip  = new ContextMenuStrip();
+            ToolStripMenuItem configurar = new ToolStripMenuItem("Configurar tu cuenta");
+            ToolStripMenuItem salir = new ToolStripMenuItem("salir de tu cuenta");
+
+            configurar.Click += configurar_Click;
+            salir.Click += salir_Click;
+
+            ContextMenuStrip.Items.Add(configurar);
+            ContextMenuStrip.Items.Add(salir);
+
+            lbConfigurar.ContextMenuStrip = ContextMenuStrip;
+
             this.WindowState = FormWindowState.Maximized;
             this.SizeChanged += new EventHandler(HomeUsuarioRegis_SizeChanged);
             this.FormClosing += MiFormularioPrincipal_FormClosing;
+        }
+
+        private void configurar_Click(object sender, EventArgs e)
+        {
+            ConfiguraciónCuentaUsuario modificar = new ConfiguraciónCuentaUsuario(lblNombreUsuario.Text);
+            this.Hide();
+            modificar.Show();
+        }
+
+        private void salir_Click(object sender,EventArgs e)
+        {
+            PaginaPrincipalTodos main = new PaginaPrincipalTodos();
+            this.Hide();
+            main.Show();
         }
 
         private void HomeUsuarioRegis_SizeChanged(object sender, EventArgs e)
@@ -91,6 +133,26 @@ namespace ArriendoPrototipo.Interfaces
         private void pbxLogo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbConfigurar_Click(object sender, EventArgs e)
+        {
+            ContextMenuStrip.Show(lbConfigurar, lbConfigurar.PointToClient(Cursor.Position));
         }
     }
 }

@@ -152,3 +152,4 @@ D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Deb
 D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Interfaces.PaginaPrincipalTodos.resources
 D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.Interfaces.RegistroInmueble.resources
 D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\ArriendoPrototipo.RegistroUsuario.resources
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Interfaces.ConfiguraciónCuentaUsuario.resources

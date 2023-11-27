@@ -98,6 +98,12 @@
     <Compile Include="Interfaces\ConfiguraciónCuentaUsuario.Designer.cs">
       <DependentUpon>ConfiguraciónCuentaUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\CUCardPublicaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\CUCardPublicaciones.Designer.cs">
+      <DependentUpon>CUCardPublicaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Formulario principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     </Compile>
     <Compile Include="Interfaces\HomeUsuarioRegis.Designer.cs">
       <DependentUpon>HomeUsuarioRegis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\infoPublicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\infoPublicaciones.Designer.cs">
+      <DependentUpon>infoPublicaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IniciarSesion.cs">
       <SubType>Form</SubType>
@@ -134,6 +146,12 @@
     <Compile Include="Interfaces\RegistroUsuario.Designer.cs">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logica\Exeptions.cs" />
     <Compile Include="Logica\RegistrarInmueble.cs" />
     <Compile Include="Logica\cliente.cs" />
@@ -148,11 +166,17 @@
     <EmbeddedResource Include="Interfaces\ConfiguraciónCuentaUsuario.resx">
       <DependentUpon>ConfiguraciónCuentaUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\CUCardPublicaciones.resx">
+      <DependentUpon>CUCardPublicaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Formulario principal.resx">
       <DependentUpon>Formulario principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\HomeUsuarioRegis.resx">
       <DependentUpon>HomeUsuarioRegis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\infoPublicaciones.resx">
+      <DependentUpon>infoPublicaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\IniciarSesion.resx">
       <DependentUpon>IniciarSesion.cs</DependentUpon>
@@ -165,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -197,6 +224,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\wifi.png" />
+    <None Include="Resources\luz.png" />
+    <None Include="Resources\monitor-de-tv.png" />
+    <None Include="Resources\gas.png" />
+    <None Include="Resources\lavadora.png" />
+    <None Include="Resources\muebles.png" />
+    <None Include="Resources\mascotas.png" />
+    <None Include="Resources\vehiculo.png" />
+    <None Include="Resources\casas-modernas-1-1920x1130.jpg" />
+    <None Include="Resources\agua-del-grifo.png" />
+    <Content Include="Resources\casas.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\configurarCuenta.png" />
     <None Include="Resources\publicaciones.png" />
     <None Include="Resources\atras1.png" />

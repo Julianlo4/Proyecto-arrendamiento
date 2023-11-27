@@ -76,5 +76,7 @@ namespace Proyecto_arrendamiento.Logica
                 "WHERE REGNOMBREU =" +"'"+nombreU+"'";
             return Datos.ejecutarSelect(query);
         }
+
+
     }
 }

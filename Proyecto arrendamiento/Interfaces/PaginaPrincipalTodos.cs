@@ -1,9 +1,11 @@
 ﻿
+using Oracle.ManagedDataAccess.Client;
 using Proyecto_arrendamiento.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,13 +16,37 @@ namespace ArriendoPrototipo.Interfaces
 {
     public partial class PaginaPrincipalTodos : Form
     {
+
+        static String cadenaConexion = "Data Source=localhost;User ID=ProyectoArren;Password=123;";
+        OracleConnection conexion = new OracleConnection(cadenaConexion);
         public PaginaPrincipalTodos()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             this.SizeChanged += new EventHandler(PaginaPrincipalTodos_SizeChanged);
             this.FormClosing += MiFormularioPrincipal_FormClosing;
-       
+            traerDatosU();
+
+            //AgregarTarjetaAlPanel(new CUCardPublicaciones());
+            //AgregarTarjetaAlPanel(new UserControl1());
+
+        }
+        public void AgregarTarjetaAlPanel(UserControl tarjeta)
+        {
+            flpPubs.FlowDirection = FlowDirection.LeftToRight;
+            flpPubs.WrapContents = true;
+            flpPubs.Controls.Add(tarjeta);
+        }
+        private void CargarControlUsuario(UserControl controlUsuario)
+        {
+            // Limpiar el panel antes de agregar el nuevo control de usuario
+            pnlContenedorPublicaciones.Controls.Clear();
+
+            // Ajustar el tamaño del control de usuario al tamaño del panel
+            controlUsuario.Dock = DockStyle.Left;
+
+            // Agregar el control de usuario al panel
+            pnlContenedorPublicaciones.Controls.Add(controlUsuario);
         }
 
         private void PaginaPrincipalTodos_SizeChanged(object sender, EventArgs e)
@@ -35,10 +61,10 @@ namespace ArriendoPrototipo.Interfaces
             // Calcula las coordenadas X e Y para centrar el logo
 
             // Establece la posición del Label
-            label2.Location = new Point(labelX, labelY+30);
+            label2.Location = new Point(labelX, labelY + 30);
 
 
-            
+
         }
 
         private void MiFormularioPrincipal_FormClosing(object sender, FormClosingEventArgs e)
@@ -95,6 +121,40 @@ namespace ArriendoPrototipo.Interfaces
             this.Hide();
         }
 
+        public void traerDatosU()
+        {
+            flpPubs.Controls.Clear();
+            conexion.Open();
+            string select = "SELECT InmId,InmTitulo,InmUbicacion,InmPrecio from Inmueble";
+            using (OracleCommand cmd = new OracleCommand(select, conexion))
+            {
+                cmd.CommandType = System.Data.CommandType.Text;
+
+
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        CUCardPublicaciones card = new CUCardPublicaciones();
+                        string titulPub = reader["InmTitulo"].ToString();
+                        string ubicacionPub = reader["InmUbicacion"].ToString();
+                        string InmPrecio = reader["InmPrecio"].ToString();
+
+                        card.lblPubTitulo.Text += titulPub;
+                        card.lblubUbicacion.Text += ubicacionPub;
+                        card.lblPrecioPub.Text += InmPrecio;
+                        flpPubs.Controls.Add(card); 
+                        flpPubs.Refresh();
+
+
+                    }
+                    conexion.Close();
+                }
+            }
+
+        }
+     
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -108,6 +168,21 @@ namespace ArriendoPrototipo.Interfaces
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            flpPubs.VerticalScroll.Value = e.NewValue;
+        }
+        private void flpPubs_SizeChanged(object sender, EventArgs e)
+        {
+            // Ajusta el valor máximo de la barra de desplazamiento según el tamaño del FlowLayoutPanel
+            //vScrollBar1.Maximum = flpPubs.VerticalScroll.Maximum;
+        }
+
+        private void vScrollBar1_Scroll_1(object sender, ScrollEventArgs e)
+        {
+            flpPubs.VerticalScroll.Value = e.NewValue;
         }
     }
 }

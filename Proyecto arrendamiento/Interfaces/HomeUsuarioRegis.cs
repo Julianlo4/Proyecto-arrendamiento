@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ArriendoPrototipo.Logica;
+using Oracle.ManagedDataAccess.Client;
 using Proyecto_arrendamiento.Interfaces;
 using Proyecto_arrendamiento.Logica;
 
@@ -15,6 +17,9 @@ namespace ArriendoPrototipo.Interfaces
 {
     public partial class HomeUsuarioRegis : Form
     {
+
+        static String cadenaConexion = "Data Source=localhost;User ID=ProyectoArren;Password=123;";
+        OracleConnection conexion = new OracleConnection(cadenaConexion);
         private string nombreCliente;
         cliente cliente1 = new cliente();
         public HomeUsuarioRegis(string nombreCliente)
@@ -33,7 +38,7 @@ namespace ArriendoPrototipo.Interfaces
                 btnPublicaciones.Hide();
                 lbnPublicaciones .Hide();
             }
-
+            traerDatosU();
             ContextMenuStrip  = new ContextMenuStrip();
             ToolStripMenuItem configurar = new ToolStripMenuItem("Configurar tu cuenta");
             ToolStripMenuItem salir = new ToolStripMenuItem("salir de tu cuenta");
@@ -47,8 +52,59 @@ namespace ArriendoPrototipo.Interfaces
             lbConfigurar.ContextMenuStrip = ContextMenuStrip;
 
             this.WindowState = FormWindowState.Maximized;
-            this.SizeChanged += new EventHandler(HomeUsuarioRegis_SizeChanged);
             this.FormClosing += MiFormularioPrincipal_FormClosing;
+        }
+        public void traerDatosU()
+        {
+            flpPubs.Controls.Clear();
+            conexion.Open();
+            string select = "SELECT InmId,InmTitulo,InmUbicacion,InmPrecio,InmImagen from Inmueble";
+            using (OracleCommand cmd = new OracleCommand(select, conexion))
+            {
+                cmd.CommandType = System.Data.CommandType.Text;
+
+
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        CUCardPublicaciones card = new CUCardPublicaciones();
+                        string titulPub = reader["InmTitulo"].ToString();
+                        string ubicacionPub = reader["InmUbicacion"].ToString();
+                        string InmPrecio = reader["InmPrecio"].ToString();
+                        byte[] imagenBytes = (byte[])reader["InmImagen"];
+                        if (imagenBytes != null && imagenBytes.Length > 0)
+                        {
+                            Image imagen = ConvertirBytesAImagen(imagenBytes);
+
+                            card.lblPubTitulo.Text += titulPub;
+                            card.lblubUbicacion.Text += ubicacionPub;
+                            card.lblPrecioPub.Text += InmPrecio;
+                            card.pbxPubImagen.Image = imagen;
+                            flpPubs.Controls.Add(card);
+                        }
+                        else
+                        {
+                            card.lblPubTitulo.Text += titulPub;
+                            card.lblubUbicacion.Text += ubicacionPub;
+                            card.lblPrecioPub.Text += InmPrecio;
+                        }
+                        flpPubs.Refresh();
+
+
+                    }
+                    conexion.Close();
+                }
+            }
+
+        }
+
+        private Image ConvertirBytesAImagen(byte[] bytes)
+        {
+            using (MemoryStream ms = new MemoryStream(bytes))
+            {
+                return Image.FromStream(ms);
+            }
         }
 
         private void configurar_Click(object sender, EventArgs e)
@@ -63,28 +119,6 @@ namespace ArriendoPrototipo.Interfaces
             PaginaPrincipalTodos main = new PaginaPrincipalTodos();
             this.Hide();
             main.Show();
-        }
-
-        private void HomeUsuarioRegis_SizeChanged(object sender, EventArgs e)
-        {
-            // Obtén el tamaño del formulario
-            int formularioAncho = panel2.Width;
-            int formularioAlto = panel2.ClientSize.Height;
-
-            // Calcula las coordenadas X e Y para centrar el Label
-            int labelX = (formularioAncho - label2.Width) / 2;
-            int labelY = (formularioAlto - label2.Height) / 2;
-            // Calcula las coordenadas X e Y para centrar el logo
-
-            // Establece la posición del Label
-            label2.Location = new Point(labelX, labelY + 30);
-
-            // Calcula las coordenadas X e Y para centrar el logo
-            int labelX1 = (formularioAncho - pictureBox1.Width) / 2;
-            int labelY1 = (formularioAncho - pictureBox1.Height) / 2;
-
-            // Establece la posición del logo
-            pictureBox1.Location = new Point(labelX1, labelY1);
         }
 
         private void MiFormularioPrincipal_FormClosing(object sender, FormClosingEventArgs e)

@@ -34,7 +34,6 @@ namespace ArriendoPrototipo.Interfaces
             this.lbnAnimales = new System.Windows.Forms.Label();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
             this.btn_volverMenuPrincipal = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.lbnTituloPublicacion = new System.Windows.Forms.Label();
             this.lbnPrecio = new System.Windows.Forms.Label();
@@ -71,7 +70,6 @@ namespace ArriendoPrototipo.Interfaces
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnGuardarInmueble = new ArriendoPrototipo.Apariencia.CustomButton();
             this.pnlInicioSuperior = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -80,9 +78,12 @@ namespace ArriendoPrototipo.Interfaces
             this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.sfvImagenInmueble = new System.Windows.Forms.SaveFileDialog();
+            this.btnGuardarInmueble = new ArriendoPrototipo.Apariencia.CustomButton();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pbxImagenInm = new System.Windows.Forms.PictureBox();
             this.pnlPrincipal.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -91,30 +92,33 @@ namespace ArriendoPrototipo.Interfaces
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagenInm)).BeginInit();
             this.SuspendLayout();
             // 
             // lbnAnimales
             // 
             this.lbnAnimales.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbnAnimales.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lbnAnimales, 2);
-            this.lbnAnimales.Location = new System.Drawing.Point(334, 161);
+            this.lbnAnimales.Location = new System.Drawing.Point(411, 166);
             this.lbnAnimales.Name = "lbnAnimales";
-            this.lbnAnimales.Size = new System.Drawing.Size(151, 19);
+            this.lbnAnimales.Size = new System.Drawing.Size(106, 13);
             this.lbnAnimales.TabIndex = 44;
             this.lbnAnimales.Text = "¿ Permite animales?";
             // 
             // pnlPrincipal
             // 
             this.pnlPrincipal.AutoSize = true;
-            this.pnlPrincipal.Controls.Add(this.btn_volverMenuPrincipal);
             this.pnlPrincipal.Controls.Add(this.tableLayoutPanel1);
+            this.pnlPrincipal.Controls.Add(this.btn_volverMenuPrincipal);
             this.pnlPrincipal.Controls.Add(this.tableLayoutPanel2);
             this.pnlPrincipal.Controls.Add(this.panel6);
             this.pnlPrincipal.Controls.Add(this.tableLayoutPanel3);
             this.pnlPrincipal.Controls.Add(this.label4);
             this.pnlPrincipal.Controls.Add(this.btnGuardarInmueble);
             this.pnlPrincipal.Controls.Add(this.pnlInicioSuperior);
+            this.pnlPrincipal.Controls.Add(this.button1);
+            this.pnlPrincipal.Controls.Add(this.pbxImagenInm);
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrincipal.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.pnlPrincipal.Location = new System.Drawing.Point(0, 0);
@@ -136,77 +140,20 @@ namespace ArriendoPrototipo.Interfaces
             this.btn_volverMenuPrincipal.UseVisualStyleBackColor = false;
             this.btn_volverMenuPrincipal.Click += new System.EventHandler(this.btn_volverMenuPrincipal_Click);
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.ColumnCount = 7;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.txtDireccion, 5, 5);
-            this.tableLayoutPanel1.Controls.Add(this.lbnTituloPublicacion, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lbnPrecio, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.txtNombrePublicacion, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtTelefono, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.rbGas, 6, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lbnTelefono, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.lbnDescripcionPublicacion, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.rbLavadora, 5, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txtDescripcion, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.rbTv, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.cbxParqueadero, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.lblUbicacionInmue, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lbnParqueadero, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.rbWifi, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.cbxAnimales, 5, 4);
-            this.tableLayoutPanel1.Controls.Add(this.cbxUbicacion, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lbnAnimales, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.rbLuz, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.cbxAmoblado, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.rbAgua, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lbnAmoblado, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lblServiciosInclu, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.cbxTipoVivienda, 5, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblTipoVivienda, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblDireccion, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.txtPrecio, 1, 7);
-            this.tableLayoutPanel1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(188, 253);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(814, 305);
-            this.tableLayoutPanel1.TabIndex = 25;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
-            // 
             // txtDireccion
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.txtDireccion, 2);
-            this.txtDireccion.Location = new System.Drawing.Point(491, 190);
+            this.txtDireccion.Location = new System.Drawing.Point(143, 131);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(230, 27);
+            this.txtDireccion.Size = new System.Drawing.Size(94, 22);
             this.txtDireccion.TabIndex = 59;
             // 
             // lbnTituloPublicacion
             // 
             this.lbnTituloPublicacion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbnTituloPublicacion.AutoSize = true;
-            this.lbnTituloPublicacion.Location = new System.Drawing.Point(37, 7);
+            this.lbnTituloPublicacion.Location = new System.Drawing.Point(29, 18);
             this.lbnTituloPublicacion.Name = "lbnTituloPublicacion";
-            this.lbnTituloPublicacion.Size = new System.Drawing.Size(148, 19);
+            this.lbnTituloPublicacion.Size = new System.Drawing.Size(108, 13);
             this.lbnTituloPublicacion.TabIndex = 26;
             this.lbnTituloPublicacion.Text = "* Titulo publicación";
             // 
@@ -214,35 +161,33 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.lbnPrecio.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbnPrecio.AutoSize = true;
-            this.lbnPrecio.Location = new System.Drawing.Point(85, 269);
+            this.lbnPrecio.Location = new System.Drawing.Point(450, 106);
             this.lbnPrecio.Name = "lbnPrecio";
-            this.lbnPrecio.Size = new System.Drawing.Size(100, 19);
+            this.lbnPrecio.Size = new System.Drawing.Size(67, 13);
             this.lbnPrecio.TabIndex = 50;
             this.lbnPrecio.Text = "* Precio     $";
             // 
             // txtNombrePublicacion
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.txtNombrePublicacion, 6);
             this.txtNombrePublicacion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombrePublicacion.Location = new System.Drawing.Point(191, 3);
+            this.txtNombrePublicacion.Location = new System.Drawing.Point(143, 3);
             this.txtNombrePublicacion.Name = "txtNombrePublicacion";
-            this.txtNombrePublicacion.Size = new System.Drawing.Size(516, 27);
+            this.txtNombrePublicacion.Size = new System.Drawing.Size(94, 22);
             this.txtNombrePublicacion.TabIndex = 27;
             // 
             // txtTelefono
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.txtTelefono, 3);
-            this.txtTelefono.Location = new System.Drawing.Point(191, 223);
+            this.txtTelefono.Location = new System.Drawing.Point(143, 221);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(184, 27);
+            this.txtTelefono.Size = new System.Drawing.Size(94, 22);
             this.txtTelefono.TabIndex = 49;
             // 
             // rbGas
             // 
             this.rbGas.AutoSize = true;
-            this.rbGas.Location = new System.Drawing.Point(589, 128);
+            this.rbGas.Location = new System.Drawing.Point(633, 251);
             this.rbGas.Name = "rbGas";
-            this.rbGas.Size = new System.Drawing.Size(54, 23);
+            this.rbGas.Size = new System.Drawing.Size(45, 17);
             this.rbGas.TabIndex = 58;
             this.rbGas.Text = "Gas";
             this.rbGas.UseVisualStyleBackColor = true;
@@ -251,9 +196,9 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.lbnTelefono.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbnTelefono.AutoSize = true;
-            this.lbnTelefono.Location = new System.Drawing.Point(14, 227);
+            this.lbnTelefono.Location = new System.Drawing.Point(13, 226);
             this.lbnTelefono.Name = "lbnTelefono";
-            this.lbnTelefono.Size = new System.Drawing.Size(171, 19);
+            this.lbnTelefono.Size = new System.Drawing.Size(124, 13);
             this.lbnTelefono.TabIndex = 48;
             this.lbnTelefono.Text = "* Telefono de contacto";
             // 
@@ -261,63 +206,61 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.lbnDescripcionPublicacion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbnDescripcionPublicacion.AutoSize = true;
-            this.lbnDescripcionPublicacion.Location = new System.Drawing.Point(95, 53);
+            this.lbnDescripcionPublicacion.Location = new System.Drawing.Point(70, 67);
             this.lbnDescripcionPublicacion.Name = "lbnDescripcionPublicacion";
-            this.lbnDescripcionPublicacion.Size = new System.Drawing.Size(90, 19);
+            this.lbnDescripcionPublicacion.Size = new System.Drawing.Size(67, 13);
             this.lbnDescripcionPublicacion.TabIndex = 28;
             this.lbnDescripcionPublicacion.Text = "Descripción";
             // 
             // rbLavadora
             // 
             this.rbLavadora.AutoSize = true;
-            this.rbLavadora.Location = new System.Drawing.Point(491, 128);
+            this.rbLavadora.Location = new System.Drawing.Point(523, 251);
             this.rbLavadora.Name = "rbLavadora";
-            this.rbLavadora.Size = new System.Drawing.Size(92, 23);
+            this.rbLavadora.Size = new System.Drawing.Size(72, 17);
             this.rbLavadora.TabIndex = 57;
             this.rbLavadora.Text = "Lavadora";
             this.rbLavadora.UseVisualStyleBackColor = true;
             // 
             // txtDescripcion
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.txtDescripcion, 6);
             this.txtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDescripcion.Location = new System.Drawing.Point(191, 36);
+            this.txtDescripcion.Location = new System.Drawing.Point(143, 53);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(516, 53);
+            this.txtDescripcion.Size = new System.Drawing.Size(94, 42);
             this.txtDescripcion.TabIndex = 29;
             // 
             // rbTv
             // 
             this.rbTv.AutoSize = true;
-            this.rbTv.Location = new System.Drawing.Point(395, 128);
+            this.rbTv.Location = new System.Drawing.Point(373, 251);
             this.rbTv.Name = "rbTv";
-            this.rbTv.Size = new System.Drawing.Size(46, 23);
+            this.rbTv.Size = new System.Drawing.Size(36, 17);
             this.rbTv.TabIndex = 56;
             this.rbTv.Text = "Tv";
             this.rbTv.UseVisualStyleBackColor = true;
             // 
             // cbxParqueadero
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.cbxParqueadero, 2);
             this.cbxParqueadero.FormattingEnabled = true;
             this.cbxParqueadero.Items.AddRange(new object[] {
             "Parqueadero para carro",
             "Paqueadero para moto",
             "Parqueadero para carro y moto",
             "No tengo parqueadero"});
-            this.cbxParqueadero.Location = new System.Drawing.Point(191, 190);
+            this.cbxParqueadero.Location = new System.Drawing.Point(143, 191);
             this.cbxParqueadero.Name = "cbxParqueadero";
-            this.cbxParqueadero.Size = new System.Drawing.Size(137, 27);
+            this.cbxParqueadero.Size = new System.Drawing.Size(94, 21);
             this.cbxParqueadero.TabIndex = 47;
             // 
             // lblUbicacionInmue
             // 
             this.lblUbicacionInmue.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblUbicacionInmue.AutoSize = true;
-            this.lblUbicacionInmue.Location = new System.Drawing.Point(88, 99);
+            this.lblUbicacionInmue.Location = new System.Drawing.Point(68, 106);
             this.lblUbicacionInmue.Name = "lblUbicacionInmue";
-            this.lblUbicacionInmue.Size = new System.Drawing.Size(97, 19);
+            this.lblUbicacionInmue.Size = new System.Drawing.Size(69, 13);
             this.lblUbicacionInmue.TabIndex = 30;
             this.lblUbicacionInmue.Text = "* Ubicación:";
             // 
@@ -325,76 +268,73 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.lbnParqueadero.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbnParqueadero.AutoSize = true;
-            this.lbnParqueadero.Location = new System.Drawing.Point(3, 194);
+            this.lbnParqueadero.Location = new System.Drawing.Point(8, 196);
             this.lbnParqueadero.Name = "lbnParqueadero";
-            this.lbnParqueadero.Size = new System.Drawing.Size(182, 19);
+            this.lbnParqueadero.Size = new System.Drawing.Size(129, 13);
             this.lbnParqueadero.TabIndex = 46;
             this.lbnParqueadero.Text = "* ¿ Tiene parqueadero ?";
             // 
             // rbWifi
             // 
             this.rbWifi.AutoSize = true;
-            this.rbWifi.Location = new System.Drawing.Point(334, 128);
+            this.rbWifi.Location = new System.Drawing.Point(308, 251);
             this.rbWifi.Name = "rbWifi";
-            this.rbWifi.Size = new System.Drawing.Size(55, 23);
+            this.rbWifi.Size = new System.Drawing.Size(47, 17);
             this.rbWifi.TabIndex = 55;
             this.rbWifi.Text = "Wifi";
             this.rbWifi.UseVisualStyleBackColor = true;
             // 
             // cbxAnimales
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.cbxAnimales, 2);
             this.cbxAnimales.FormattingEnabled = true;
             this.cbxAnimales.Items.AddRange(new object[] {
             "No",
             "Si"});
-            this.cbxAnimales.Location = new System.Drawing.Point(491, 157);
+            this.cbxAnimales.Location = new System.Drawing.Point(523, 161);
             this.cbxAnimales.Name = "cbxAnimales";
-            this.cbxAnimales.Size = new System.Drawing.Size(230, 27);
+            this.cbxAnimales.Size = new System.Drawing.Size(104, 21);
             this.cbxAnimales.TabIndex = 45;
             // 
             // cbxUbicacion
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.cbxUbicacion, 2);
             this.cbxUbicacion.FormattingEnabled = true;
             this.cbxUbicacion.Items.AddRange(new object[] {
             "Norte",
             "Sur",
             "Oriente",
             "Occidente"});
-            this.cbxUbicacion.Location = new System.Drawing.Point(191, 95);
+            this.cbxUbicacion.Location = new System.Drawing.Point(143, 101);
             this.cbxUbicacion.Name = "cbxUbicacion";
-            this.cbxUbicacion.Size = new System.Drawing.Size(110, 27);
+            this.cbxUbicacion.Size = new System.Drawing.Size(94, 21);
             this.cbxUbicacion.TabIndex = 31;
             // 
             // rbLuz
             // 
             this.rbLuz.AutoSize = true;
-            this.rbLuz.Location = new System.Drawing.Point(262, 128);
+            this.rbLuz.Location = new System.Drawing.Point(243, 251);
             this.rbLuz.Name = "rbLuz";
-            this.rbLuz.Size = new System.Drawing.Size(52, 23);
+            this.rbLuz.Size = new System.Drawing.Size(43, 17);
             this.rbLuz.TabIndex = 54;
             this.rbLuz.Text = "Luz";
             this.rbLuz.UseVisualStyleBackColor = true;
             // 
             // cbxAmoblado
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.cbxAmoblado, 2);
             this.cbxAmoblado.FormattingEnabled = true;
             this.cbxAmoblado.Items.AddRange(new object[] {
             "No",
             "Si"});
-            this.cbxAmoblado.Location = new System.Drawing.Point(191, 157);
+            this.cbxAmoblado.Location = new System.Drawing.Point(143, 161);
             this.cbxAmoblado.Name = "cbxAmoblado";
-            this.cbxAmoblado.Size = new System.Drawing.Size(110, 27);
+            this.cbxAmoblado.Size = new System.Drawing.Size(94, 21);
             this.cbxAmoblado.TabIndex = 43;
             // 
             // rbAgua
             // 
             this.rbAgua.AutoSize = true;
-            this.rbAgua.Location = new System.Drawing.Point(191, 128);
+            this.rbAgua.Location = new System.Drawing.Point(143, 251);
             this.rbAgua.Name = "rbAgua";
-            this.rbAgua.Size = new System.Drawing.Size(65, 23);
+            this.rbAgua.Size = new System.Drawing.Size(53, 17);
             this.rbAgua.TabIndex = 53;
             this.rbAgua.Text = "Agua";
             this.rbAgua.UseVisualStyleBackColor = true;
@@ -403,9 +343,9 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.lbnAmoblado.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbnAmoblado.AutoSize = true;
-            this.lbnAmoblado.Location = new System.Drawing.Point(50, 161);
+            this.lbnAmoblado.Location = new System.Drawing.Point(43, 166);
             this.lbnAmoblado.Name = "lbnAmoblado";
-            this.lbnAmoblado.Size = new System.Drawing.Size(135, 19);
+            this.lbnAmoblado.Size = new System.Drawing.Size(94, 13);
             this.lbnAmoblado.TabIndex = 42;
             this.lbnAmoblado.Text = "* ¿ Es amoblado?";
             // 
@@ -413,15 +353,14 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.lblServiciosInclu.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblServiciosInclu.AutoSize = true;
-            this.lblServiciosInclu.Location = new System.Drawing.Point(30, 130);
+            this.lblServiciosInclu.Location = new System.Drawing.Point(28, 254);
             this.lblServiciosInclu.Name = "lblServiciosInclu";
-            this.lblServiciosInclu.Size = new System.Drawing.Size(155, 19);
+            this.lblServiciosInclu.Size = new System.Drawing.Size(109, 13);
             this.lblServiciosInclu.TabIndex = 34;
             this.lblServiciosInclu.Text = "*Servicios Inlcuidos:";
             // 
             // cbxTipoVivienda
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.cbxTipoVivienda, 2);
             this.cbxTipoVivienda.FormattingEnabled = true;
             this.cbxTipoVivienda.Items.AddRange(new object[] {
             "Habitacion",
@@ -429,19 +368,18 @@ namespace ArriendoPrototipo.Interfaces
             "Casa",
             "Apartaestudio",
             "Otro"});
-            this.cbxTipoVivienda.Location = new System.Drawing.Point(491, 95);
+            this.cbxTipoVivienda.Location = new System.Drawing.Point(523, 3);
             this.cbxTipoVivienda.Name = "cbxTipoVivienda";
-            this.cbxTipoVivienda.Size = new System.Drawing.Size(230, 27);
+            this.cbxTipoVivienda.Size = new System.Drawing.Size(104, 21);
             this.cbxTipoVivienda.TabIndex = 33;
             // 
             // lblTipoVivienda
             // 
             this.lblTipoVivienda.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblTipoVivienda.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblTipoVivienda, 2);
-            this.lblTipoVivienda.Location = new System.Drawing.Point(361, 99);
+            this.lblTipoVivienda.Location = new System.Drawing.Point(431, 18);
             this.lblTipoVivienda.Name = "lblTipoVivienda";
-            this.lblTipoVivienda.Size = new System.Drawing.Size(124, 19);
+            this.lblTipoVivienda.Size = new System.Drawing.Size(86, 13);
             this.lblTipoVivienda.TabIndex = 32;
             this.lblTipoVivienda.Text = "* Tipo vivienda:";
             // 
@@ -449,20 +387,18 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.lblDireccion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblDireccion.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblDireccion, 2);
-            this.lblDireccion.Location = new System.Drawing.Point(397, 194);
+            this.lblDireccion.Location = new System.Drawing.Point(74, 136);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(88, 19);
+            this.lblDireccion.Size = new System.Drawing.Size(63, 13);
             this.lblDireccion.TabIndex = 60;
             this.lblDireccion.Text = "* Dirección";
             // 
             // txtPrecio
             // 
             this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tableLayoutPanel1.SetColumnSpan(this.txtPrecio, 3);
-            this.txtPrecio.Location = new System.Drawing.Point(191, 265);
+            this.txtPrecio.Location = new System.Drawing.Point(523, 102);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(184, 27);
+            this.txtPrecio.Size = new System.Drawing.Size(104, 22);
             this.txtPrecio.TabIndex = 51;
             // 
             // tableLayoutPanel2
@@ -484,7 +420,7 @@ namespace ArriendoPrototipo.Interfaces
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(182, 434);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(146, 434);
             this.tableLayoutPanel2.TabIndex = 27;
             // 
             // label10
@@ -531,12 +467,12 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.label11.AutoSize = true;
             this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Tahoma", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.LightCoral;
             this.label11.Location = new System.Drawing.Point(3, 131);
             this.label11.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(178, 46);
+            this.label11.Size = new System.Drawing.Size(138, 36);
             this.label11.TabIndex = 8;
             this.label11.Text = "Configuración de \r\ntu cuenta";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -598,35 +534,13 @@ namespace ArriendoPrototipo.Interfaces
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(188, 188);
+            this.label4.Location = new System.Drawing.Point(188, 205);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(725, 38);
             this.label4.TabIndex = 25;
             this.label4.Text = "Llene los siguientes campos para crear una publicación sobre un inmueble.\r\nLos ca" +
     "mpos con * son obligatorios\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnGuardarInmueble
-            // 
-            this.btnGuardarInmueble.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnGuardarInmueble.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnGuardarInmueble.BackgroundColor = System.Drawing.Color.SkyBlue;
-            this.btnGuardarInmueble.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGuardarInmueble.BorderRadius = 0;
-            this.btnGuardarInmueble.BorderSize = 0;
-            this.btnGuardarInmueble.FlatAppearance.BorderSize = 0;
-            this.btnGuardarInmueble.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarInmueble.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarInmueble.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarInmueble.Location = new System.Drawing.Point(478, 571);
-            this.btnGuardarInmueble.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
-            this.btnGuardarInmueble.Name = "btnGuardarInmueble";
-            this.btnGuardarInmueble.Size = new System.Drawing.Size(200, 40);
-            this.btnGuardarInmueble.TabIndex = 52;
-            this.btnGuardarInmueble.Text = "Publicar inmueble";
-            this.btnGuardarInmueble.TextColor = System.Drawing.Color.White;
-            this.btnGuardarInmueble.UseVisualStyleBackColor = false;
-            this.btnGuardarInmueble.Click += new System.EventHandler(this.btnGuardarInmueble_Click);
             // 
             // pnlInicioSuperior
             // 
@@ -726,6 +640,103 @@ namespace ArriendoPrototipo.Interfaces
             this.pbxLogo.TabIndex = 1;
             this.pbxLogo.TabStop = false;
             // 
+            // sfvImagenInmueble
+            // 
+            this.sfvImagenInmueble.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos los archivos (*.*)|*.*";
+            this.sfvImagenInmueble.Title = "Seleccionar imágen";
+            // 
+            // btnGuardarInmueble
+            // 
+            this.btnGuardarInmueble.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGuardarInmueble.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnGuardarInmueble.BackgroundColor = System.Drawing.Color.SkyBlue;
+            this.btnGuardarInmueble.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnGuardarInmueble.BorderRadius = 0;
+            this.btnGuardarInmueble.BorderSize = 0;
+            this.btnGuardarInmueble.FlatAppearance.BorderSize = 0;
+            this.btnGuardarInmueble.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarInmueble.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarInmueble.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarInmueble.Location = new System.Drawing.Point(478, 571);
+            this.btnGuardarInmueble.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
+            this.btnGuardarInmueble.Name = "btnGuardarInmueble";
+            this.btnGuardarInmueble.Size = new System.Drawing.Size(200, 40);
+            this.btnGuardarInmueble.TabIndex = 52;
+            this.btnGuardarInmueble.Text = "Publicar inmueble";
+            this.btnGuardarInmueble.TextColor = System.Drawing.Color.White;
+            this.btnGuardarInmueble.UseVisualStyleBackColor = false;
+            this.btnGuardarInmueble.Click += new System.EventHandler(this.btnGuardarInmueble_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 7;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
+            this.tableLayoutPanel1.Controls.Add(this.txtDescripcion, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lbnDescripcionPublicacion, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblUbicacionInmue, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lbnTelefono, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.cbxUbicacion, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lbnAmoblado, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.cbxParqueadero, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.cbxAmoblado, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lbnParqueadero, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lblServiciosInclu, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.rbAgua, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.rbLuz, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.rbGas, 6, 7);
+            this.tableLayoutPanel1.Controls.Add(this.lblDireccion, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtDireccion, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.cbxTipoVivienda, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbnTituloPublicacion, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtNombrePublicacion, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.cbxAnimales, 5, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtPrecio, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.rbWifi, 4, 7);
+            this.tableLayoutPanel1.Controls.Add(this.txtTelefono, 4, 4);
+            this.tableLayoutPanel1.Controls.Add(this.rbTv, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.rbLavadora, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.lbnAnimales, 4, 6);
+            this.tableLayoutPanel1.Controls.Add(this.lbnPrecio, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblTipoVivienda, 3, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(147, 246);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 8;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.5071F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.49291F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(676, 285);
+            this.tableLayoutPanel1.TabIndex = 62;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(660, 535);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 62;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pbxImagenInm
+            // 
+            this.pbxImagenInm.Location = new System.Drawing.Point(820, 352);
+            this.pbxImagenInm.Name = "pbxImagenInm";
+            this.pbxImagenInm.Size = new System.Drawing.Size(100, 50);
+            this.pbxImagenInm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxImagenInm.TabIndex = 63;
+            this.pbxImagenInm.TabStop = false;
+            // 
             // RegistroInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -736,9 +747,6 @@ namespace ArriendoPrototipo.Interfaces
             this.Name = "RegistroInmueble";
             this.Text = "RegistroInmueble";
             this.pnlPrincipal.ResumeLayout(false);
-            this.pnlPrincipal.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -751,6 +759,9 @@ namespace ArriendoPrototipo.Interfaces
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagenInm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -763,7 +774,6 @@ namespace ArriendoPrototipo.Interfaces
         private Label label9;
         private Label label3;
         private Label label11;
-        private TableLayoutPanel tableLayoutPanel1;
         private TextBox txtDireccion;
         private Label lbnTituloPublicacion;
         private Label lbnPrecio;
@@ -806,6 +816,9 @@ namespace ArriendoPrototipo.Interfaces
         private PictureBox pictureBox2;
         private Button btn_volverMenuPrincipal;
         private Label lbnAnimales;
-        private SaveFileDialog saveFileDialog1;
+        private SaveFileDialog sfvImagenInmueble;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button button1;
+        private PictureBox pbxImagenInm;
     }
 }

@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -125,7 +126,7 @@ namespace ArriendoPrototipo.Interfaces
         {
             flpPubs.Controls.Clear();
             conexion.Open();
-            string select = "SELECT InmId,InmTitulo,InmUbicacion,InmPrecio from Inmueble";
+            string select = "SELECT InmId,InmTitulo,InmUbicacion,InmPrecio,InmImagen from Inmueble";
             using (OracleCommand cmd = new OracleCommand(select, conexion))
             {
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -139,11 +140,23 @@ namespace ArriendoPrototipo.Interfaces
                         string titulPub = reader["InmTitulo"].ToString();
                         string ubicacionPub = reader["InmUbicacion"].ToString();
                         string InmPrecio = reader["InmPrecio"].ToString();
+                        byte[] imagenBytes = (byte[])reader["InmImagen"];
+                        if (imagenBytes != null && imagenBytes.Length > 0)
+                        {
+                            Image imagen = ConvertirBytesAImagen(imagenBytes);
 
-                        card.lblPubTitulo.Text += titulPub;
-                        card.lblubUbicacion.Text += ubicacionPub;
-                        card.lblPrecioPub.Text += InmPrecio;
-                        flpPubs.Controls.Add(card); 
+                            card.lblPubTitulo.Text += titulPub;
+                            card.lblubUbicacion.Text += ubicacionPub;
+                            card.lblPrecioPub.Text += InmPrecio;
+                            card.pbxPubImagen.Image = imagen;
+                            flpPubs.Controls.Add(card);
+                        }
+                        else
+                        {
+                            card.lblPubTitulo.Text += titulPub;
+                            card.lblubUbicacion.Text += ubicacionPub;
+                            card.lblPrecioPub.Text += InmPrecio;
+                        }
                         flpPubs.Refresh();
 
 
@@ -153,7 +166,13 @@ namespace ArriendoPrototipo.Interfaces
             }
 
         }
-     
+        private Image ConvertirBytesAImagen(byte[] bytes)
+        {
+            using (MemoryStream ms = new MemoryStream(bytes))
+            {
+                return Image.FromStream(ms);
+            }
+        }
 
         private void label2_Click(object sender, EventArgs e)
         {

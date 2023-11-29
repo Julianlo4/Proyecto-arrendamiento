@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,7 +40,7 @@ namespace ArriendoPrototipo.Interfaces
             // Establece la posición del Label
             label2.Location = new Point(labelX, labelY + 30);
 
-            tableLayoutPanel1.Location = new Point((label4.Width/3)-40, 250);
+            //tableLayoutPanel1.Location = new Point((label4.Width/3)-40, 250);
             btnGuardarInmueble.Location = new Point(formularioAncho/2, 600);
         }
         private void MiFormularioPrincipal_FormClosing(object sender, FormClosingEventArgs e)
@@ -80,6 +81,15 @@ namespace ArriendoPrototipo.Interfaces
             this.Hide();
         }
 
+        private byte[] ConvertirImagenAPBytes(Image imagen)
+        {
+            using (MemoryStream stream = new MemoryStream())
+            {
+                imagen.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                return stream.ToArray();
+            }
+        }
+
         private void btnGuardarInmueble_Click(object sender, EventArgs e)
         {
             string ubicacion, telefono, tipoVivienda, descripcion, tituloPub, InmPrecio ,
@@ -103,10 +113,12 @@ namespace ArriendoPrototipo.Interfaces
             InmAnimales = cbxAnimales.SelectedIndex; 
             InmParqueadero = cbxParqueadero.Text;
 
+            
+
             int regId = reg.consultarId(NombreUsuario);
             result = reg.insertarInmueble(regId,tituloPub, ubicacion, direccion, telefono, InmSerAgua ,InmSerLuz,InmSerWifi,InmSerTv,
                       InmSerLavadora , InmSerGas , InmPrecio , descripcion ,tipoVivienda, 
-                      InmAmoblado,InmAnimales,InmParqueadero);
+                      InmAmoblado,InmAnimales,InmParqueadero, ConvertirImagenAPBytes(pbxImagenInm.Image));
 
 
             if (result > 0)
@@ -135,6 +147,17 @@ namespace ArriendoPrototipo.Interfaces
             HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis(lblNombreUsuario.Text);
             homeUsuarioRegis.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(sfvImagenInmueble.ShowDialog() == DialogResult.OK)
+            {
+                string rutaImagen = sfvImagenInmueble.FileName;
+
+                // Cargar la imagen en el PictureBox
+                pbxImagenInm.Image = Image.FromFile(rutaImagen);
+            }
         }
     }
     

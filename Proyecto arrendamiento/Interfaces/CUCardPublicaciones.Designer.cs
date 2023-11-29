@@ -110,7 +110,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbxPubImagen;
+        public System.Windows.Forms.PictureBox pbxPubImagen;
         public System.Windows.Forms.Label lblubUbicacion;
         public System.Windows.Forms.Label lblPrecioPub;
         public System.Windows.Forms.Label lblPubTitulo;

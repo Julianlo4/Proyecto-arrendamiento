@@ -68,7 +68,6 @@ namespace ArriendoPrototipo.Interfaces
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lbnPrecio = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnGuardarInmueble = new ArriendoPrototipo.Apariencia.CustomButton();
             this.tableLMenuLateral = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -85,6 +84,7 @@ namespace ArriendoPrototipo.Interfaces
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.sfvImagenInmueble = new System.Windows.Forms.SaveFileDialog();
+            this.btnGuardarInmueble = new ArriendoPrototipo.Apariencia.CustomButton();
             this.pnlPrincipal.SuspendLayout();
             this.pContenidoRegistro.SuspendLayout();
             this.pZonaImagen.SuspendLayout();
@@ -404,10 +404,10 @@ namespace ArriendoPrototipo.Interfaces
             this.tableLRegistroIn.SetColumnSpan(this.cbxParqueadero, 3);
             this.cbxParqueadero.FormattingEnabled = true;
             this.cbxParqueadero.Items.AddRange(new object[] {
-            "Para carro",
-            "Para moto",
-            "Para carro y moto",
-            "No tengo"});
+            "Parqueadero para carro",
+            "Paqueadero para moto",
+            "Parqueadero para carro y moto",
+            "No tengo parqueadero"});
             this.cbxParqueadero.Location = new System.Drawing.Point(177, 181);
             this.cbxParqueadero.Name = "cbxParqueadero";
             this.cbxParqueadero.Size = new System.Drawing.Size(226, 27);
@@ -534,28 +534,6 @@ namespace ArriendoPrototipo.Interfaces
             this.label4.Text = "Llene los siguientes campos para crear una publicación sobre un inmueble.\r\nLos ca" +
     "mpos con * son obligatorios\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnGuardarInmueble
-            // 
-            this.btnGuardarInmueble.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnGuardarInmueble.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnGuardarInmueble.BackgroundColor = System.Drawing.Color.SkyBlue;
-            this.btnGuardarInmueble.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGuardarInmueble.BorderRadius = 0;
-            this.btnGuardarInmueble.BorderSize = 0;
-            this.btnGuardarInmueble.FlatAppearance.BorderSize = 0;
-            this.btnGuardarInmueble.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarInmueble.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarInmueble.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarInmueble.Location = new System.Drawing.Point(516, 468);
-            this.btnGuardarInmueble.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
-            this.btnGuardarInmueble.Name = "btnGuardarInmueble";
-            this.btnGuardarInmueble.Size = new System.Drawing.Size(200, 40);
-            this.btnGuardarInmueble.TabIndex = 52;
-            this.btnGuardarInmueble.Text = "Publicar inmueble";
-            this.btnGuardarInmueble.TextColor = System.Drawing.Color.White;
-            this.btnGuardarInmueble.UseVisualStyleBackColor = false;
-            this.btnGuardarInmueble.Click += new System.EventHandler(this.btnGuardarInmueble_Click);
             // 
             // tableLMenuLateral
             // 
@@ -760,6 +738,28 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.sfvImagenInmueble.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos los archivos (*.*)|*.*";
             this.sfvImagenInmueble.Title = "Seleccionar imágen";
+            // 
+            // btnGuardarInmueble
+            // 
+            this.btnGuardarInmueble.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnGuardarInmueble.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnGuardarInmueble.BackgroundColor = System.Drawing.Color.SkyBlue;
+            this.btnGuardarInmueble.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnGuardarInmueble.BorderRadius = 0;
+            this.btnGuardarInmueble.BorderSize = 0;
+            this.btnGuardarInmueble.FlatAppearance.BorderSize = 0;
+            this.btnGuardarInmueble.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarInmueble.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarInmueble.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarInmueble.Location = new System.Drawing.Point(516, 468);
+            this.btnGuardarInmueble.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
+            this.btnGuardarInmueble.Name = "btnGuardarInmueble";
+            this.btnGuardarInmueble.Size = new System.Drawing.Size(200, 40);
+            this.btnGuardarInmueble.TabIndex = 52;
+            this.btnGuardarInmueble.Text = "Publicar inmueble";
+            this.btnGuardarInmueble.TextColor = System.Drawing.Color.White;
+            this.btnGuardarInmueble.UseVisualStyleBackColor = false;
+            this.btnGuardarInmueble.Click += new System.EventHandler(this.btnGuardarInmueble_Click);
             // 
             // RegistroInmueble
             // 

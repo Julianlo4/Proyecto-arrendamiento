@@ -46,7 +46,6 @@ namespace Proyecto_arrendamiento.Interfaces
                 string REGSEGUNDOAPE = reader["REGSEGUNDOAPE"].ToString();
                 string REGTELEFONO = reader["REGTELEFONO"].ToString();
                 string REGCORREO = reader["REGCORREO"].ToString();
-                MessageBox.Show(REGPRIMERNOM);
                 conexion.Close();
 
                 txtPrimerNombreU.Text += REGPRIMERNOM;

@@ -24,7 +24,6 @@ namespace ArriendoPrototipo.Interfaces
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-            this.SizeChanged += new EventHandler(PaginaPrincipalTodos_SizeChanged);
             this.FormClosing += MiFormularioPrincipal_FormClosing;
             traerDatosU();
 
@@ -48,24 +47,6 @@ namespace ArriendoPrototipo.Interfaces
 
             // Agregar el control de usuario al panel
             pnlContenedorPublicaciones.Controls.Add(controlUsuario);
-        }
-
-        private void PaginaPrincipalTodos_SizeChanged(object sender, EventArgs e)
-        {
-            // Obtén el tamaño del formulario
-            int formularioAncho = panel2.Width - panel1.Width;
-            int formularioAlto = panel2.ClientSize.Height;
-
-            // Calcula las coordenadas X e Y para centrar el Label
-            int labelX = (formularioAncho - label2.Width) / 2;
-            int labelY = (formularioAlto - label2.Height) / 2;
-            // Calcula las coordenadas X e Y para centrar el logo
-
-            // Establece la posición del Label
-            label2.Location = new Point(labelX, labelY + 30);
-
-
-
         }
 
         private void MiFormularioPrincipal_FormClosing(object sender, FormClosingEventArgs e)

@@ -18,41 +18,11 @@ namespace ArriendoPrototipo.Interfaces
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-            this.SizeChanged += new EventHandler(PaginaPrincipalTodos_SizeChanged);
             this.FormClosing += MiFormularioPrincipal_FormClosing;
             txbClaveUsuario.PasswordChar = '*';
         }
 
-        private void PaginaPrincipalTodos_SizeChanged(object sender, EventArgs e)
-        {
-            // Obtén el tamaño del panel
-            int formularioAncho = panel2.Width;
-            int formularioAlto = panel2.ClientSize.Height;
-
-            // Calcula las coordenadas X e Y para centrar el Label
-            int labelX = (formularioAncho - label2.Width) / 2;
-            int labelX3 = (formularioAncho - tableLayoutPanel1.Width) / 2;
-            int labelY = (formularioAlto - label2.Height) / 2;
-
-            int labelX1 = (formularioAncho - lblTextoSupIniciar.Width) / 2;
-            int labelY1 = (formularioAlto - lblTextoSupIniciar.Height) / 2;
-            // Calcula las coordenadas X e Y para centrar el logo
-
-            // Establece la posición del Label
-            label2.Location = new Point(labelX, labelY + 30);
-            lblTextoSupIniciar.Location = new Point(labelX1, labelY1 + 80);
-            pbxLogoIniciar.Location = new Point(labelX1 + 170, labelY1 + 60);
-
-            // Calcula las coordenadas X e Y para centrar el logo
-            int labelX2 = (formularioAncho - pbLogo.Width) / 2;
-            int labelY2 = (formularioAncho - pbLogo.Height) / 2;
-
-            // Establece la posición del logo
-            pbLogo.Location = new Point(labelX2, labelY2);
-            btn_RegistrarUsuario.Location = new Point(labelX3, formularioAlto+300);
-      
-        }
-
+     
         private void MiFormularioPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)

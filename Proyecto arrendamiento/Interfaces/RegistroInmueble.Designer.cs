@@ -31,269 +31,227 @@ namespace ArriendoPrototipo.Interfaces
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroInmueble));
             this.lbnAnimales = new System.Windows.Forms.Label();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
+            this.pContenidoRegistro = new System.Windows.Forms.Panel();
+            this.pZonaImagen = new System.Windows.Forms.Panel();
+            this.pbxImagenInm = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblTextoImagen = new System.Windows.Forms.Label();
             this.btn_volverMenuPrincipal = new System.Windows.Forms.Button();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.lbnTituloPublicacion = new System.Windows.Forms.Label();
-            this.lbnPrecio = new System.Windows.Forms.Label();
-            this.txtNombrePublicacion = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.rbGas = new System.Windows.Forms.CheckBox();
-            this.lbnTelefono = new System.Windows.Forms.Label();
-            this.lbnDescripcionPublicacion = new System.Windows.Forms.Label();
-            this.rbLavadora = new System.Windows.Forms.CheckBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.rbTv = new System.Windows.Forms.CheckBox();
-            this.cbxParqueadero = new System.Windows.Forms.ComboBox();
-            this.lblUbicacionInmue = new System.Windows.Forms.Label();
-            this.lbnParqueadero = new System.Windows.Forms.Label();
-            this.rbWifi = new System.Windows.Forms.CheckBox();
-            this.cbxAnimales = new System.Windows.Forms.ComboBox();
+            this.tableLRegistroIn = new System.Windows.Forms.TableLayoutPanel();
             this.cbxUbicacion = new System.Windows.Forms.ComboBox();
-            this.rbLuz = new System.Windows.Forms.CheckBox();
             this.cbxAmoblado = new System.Windows.Forms.ComboBox();
-            this.rbAgua = new System.Windows.Forms.CheckBox();
-            this.lbnAmoblado = new System.Windows.Forms.Label();
-            this.lblServiciosInclu = new System.Windows.Forms.Label();
+            this.lbnTituloPublicacion = new System.Windows.Forms.Label();
+            this.txtNombrePublicacion = new System.Windows.Forms.TextBox();
             this.cbxTipoVivienda = new System.Windows.Forms.ComboBox();
             this.lblTipoVivienda = new System.Windows.Forms.Label();
+            this.cbxAnimales = new System.Windows.Forms.ComboBox();
+            this.lblUbicacionInmue = new System.Windows.Forms.Label();
+            this.lbnAmoblado = new System.Windows.Forms.Label();
+            this.lbnDescripcionPublicacion = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblDireccion = new System.Windows.Forms.Label();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.lbnParqueadero = new System.Windows.Forms.Label();
+            this.cbxParqueadero = new System.Windows.Forms.ComboBox();
+            this.lbnTelefono = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblServiciosInclu = new System.Windows.Forms.Label();
+            this.rbTv = new System.Windows.Forms.CheckBox();
+            this.rbLavadora = new System.Windows.Forms.CheckBox();
+            this.rbWifi = new System.Windows.Forms.CheckBox();
+            this.rbAgua = new System.Windows.Forms.CheckBox();
+            this.rbLuz = new System.Windows.Forms.CheckBox();
+            this.rbGas = new System.Windows.Forms.CheckBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.lbnPrecio = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tableLMenuLateral = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.pRegistroPubli = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.pnlInicioSuperior = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pBienvenida = new System.Windows.Forms.Panel();
             this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.sfvImagenInmueble = new System.Windows.Forms.SaveFileDialog();
             this.btnGuardarInmueble = new ArriendoPrototipo.Apariencia.CustomButton();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pbxImagenInm = new System.Windows.Forms.PictureBox();
             this.pnlPrincipal.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
+            this.pContenidoRegistro.SuspendLayout();
+            this.pZonaImagen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagenInm)).BeginInit();
+            this.tableLRegistroIn.SuspendLayout();
+            this.tableLMenuLateral.SuspendLayout();
+            this.pRegistroPubli.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlInicioSuperior.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pBienvenida.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxImagenInm)).BeginInit();
             this.SuspendLayout();
             // 
             // lbnAnimales
             // 
             this.lbnAnimales.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbnAnimales.AutoSize = true;
-            this.lbnAnimales.Location = new System.Drawing.Point(411, 166);
+            this.lbnAnimales.Location = new System.Drawing.Point(465, 81);
             this.lbnAnimales.Name = "lbnAnimales";
-            this.lbnAnimales.Size = new System.Drawing.Size(106, 13);
+            this.lbnAnimales.Size = new System.Drawing.Size(81, 38);
             this.lbnAnimales.TabIndex = 44;
             this.lbnAnimales.Text = "¿ Permite animales?";
             // 
             // pnlPrincipal
             // 
             this.pnlPrincipal.AutoSize = true;
-            this.pnlPrincipal.Controls.Add(this.tableLayoutPanel1);
-            this.pnlPrincipal.Controls.Add(this.btn_volverMenuPrincipal);
-            this.pnlPrincipal.Controls.Add(this.tableLayoutPanel2);
-            this.pnlPrincipal.Controls.Add(this.panel6);
-            this.pnlPrincipal.Controls.Add(this.tableLayoutPanel3);
-            this.pnlPrincipal.Controls.Add(this.label4);
-            this.pnlPrincipal.Controls.Add(this.btnGuardarInmueble);
+            this.pnlPrincipal.Controls.Add(this.pContenidoRegistro);
+            this.pnlPrincipal.Controls.Add(this.tableLMenuLateral);
+            this.pnlPrincipal.Controls.Add(this.pRegistroPubli);
             this.pnlPrincipal.Controls.Add(this.pnlInicioSuperior);
-            this.pnlPrincipal.Controls.Add(this.button1);
-            this.pnlPrincipal.Controls.Add(this.pbxImagenInm);
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrincipal.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.pnlPrincipal.Location = new System.Drawing.Point(0, 0);
             this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(923, 609);
+            this.pnlPrincipal.Size = new System.Drawing.Size(1130, 710);
             this.pnlPrincipal.TabIndex = 3;
+            // 
+            // pContenidoRegistro
+            // 
+            this.pContenidoRegistro.Controls.Add(this.pZonaImagen);
+            this.pContenidoRegistro.Controls.Add(this.btn_volverMenuPrincipal);
+            this.pContenidoRegistro.Controls.Add(this.tableLRegistroIn);
+            this.pContenidoRegistro.Controls.Add(this.label4);
+            this.pContenidoRegistro.Controls.Add(this.btnGuardarInmueble);
+            this.pContenidoRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pContenidoRegistro.Location = new System.Drawing.Point(146, 192);
+            this.pContenidoRegistro.Name = "pContenidoRegistro";
+            this.pContenidoRegistro.Size = new System.Drawing.Size(984, 518);
+            this.pContenidoRegistro.TabIndex = 65;
+            // 
+            // pZonaImagen
+            // 
+            this.pZonaImagen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pZonaImagen.Controls.Add(this.pbxImagenInm);
+            this.pZonaImagen.Controls.Add(this.button1);
+            this.pZonaImagen.Controls.Add(this.lblTextoImagen);
+            this.pZonaImagen.Location = new System.Drawing.Point(8, 67);
+            this.pZonaImagen.Name = "pZonaImagen";
+            this.pZonaImagen.Size = new System.Drawing.Size(210, 357);
+            this.pZonaImagen.TabIndex = 64;
+            // 
+            // pbxImagenInm
+            // 
+            this.pbxImagenInm.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pbxImagenInm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbxImagenInm.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pbxImagenInm.Image = ((System.Drawing.Image)(resources.GetObject("pbxImagenInm.Image")));
+            this.pbxImagenInm.Location = new System.Drawing.Point(0, 104);
+            this.pbxImagenInm.Name = "pbxImagenInm";
+            this.pbxImagenInm.Size = new System.Drawing.Size(210, 253);
+            this.pbxImagenInm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxImagenInm.TabIndex = 63;
+            this.pbxImagenInm.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Location = new System.Drawing.Point(0, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(210, 58);
+            this.button1.TabIndex = 62;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblTextoImagen
+            // 
+            this.lblTextoImagen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTextoImagen.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextoImagen.Location = new System.Drawing.Point(0, 0);
+            this.lblTextoImagen.Name = "lblTextoImagen";
+            this.lblTextoImagen.Size = new System.Drawing.Size(210, 46);
+            this.lblTextoImagen.TabIndex = 64;
+            this.lblTextoImagen.Text = "Sube una foto de \r\ntu inmueble";
+            this.lblTextoImagen.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btn_volverMenuPrincipal
             // 
+            this.btn_volverMenuPrincipal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btn_volverMenuPrincipal.BackColor = System.Drawing.Color.Transparent;
             this.btn_volverMenuPrincipal.BackgroundImage = global::Proyecto_arrendamiento.Properties.Resources.atras;
             this.btn_volverMenuPrincipal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_volverMenuPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_volverMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_volverMenuPrincipal.Location = new System.Drawing.Point(192, 580);
+            this.btn_volverMenuPrincipal.Location = new System.Drawing.Point(11, 458);
             this.btn_volverMenuPrincipal.Name = "btn_volverMenuPrincipal";
-            this.btn_volverMenuPrincipal.Size = new System.Drawing.Size(41, 36);
+            this.btn_volverMenuPrincipal.Size = new System.Drawing.Size(49, 48);
             this.btn_volverMenuPrincipal.TabIndex = 53;
             this.btn_volverMenuPrincipal.UseVisualStyleBackColor = false;
             this.btn_volverMenuPrincipal.Click += new System.EventHandler(this.btn_volverMenuPrincipal_Click);
             // 
-            // txtDireccion
+            // tableLRegistroIn
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(143, 131);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(94, 22);
-            this.txtDireccion.TabIndex = 59;
-            // 
-            // lbnTituloPublicacion
-            // 
-            this.lbnTituloPublicacion.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lbnTituloPublicacion.AutoSize = true;
-            this.lbnTituloPublicacion.Location = new System.Drawing.Point(29, 18);
-            this.lbnTituloPublicacion.Name = "lbnTituloPublicacion";
-            this.lbnTituloPublicacion.Size = new System.Drawing.Size(108, 13);
-            this.lbnTituloPublicacion.TabIndex = 26;
-            this.lbnTituloPublicacion.Text = "* Titulo publicación";
-            // 
-            // lbnPrecio
-            // 
-            this.lbnPrecio.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lbnPrecio.AutoSize = true;
-            this.lbnPrecio.Location = new System.Drawing.Point(450, 106);
-            this.lbnPrecio.Name = "lbnPrecio";
-            this.lbnPrecio.Size = new System.Drawing.Size(67, 13);
-            this.lbnPrecio.TabIndex = 50;
-            this.lbnPrecio.Text = "* Precio     $";
-            // 
-            // txtNombrePublicacion
-            // 
-            this.txtNombrePublicacion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombrePublicacion.Location = new System.Drawing.Point(143, 3);
-            this.txtNombrePublicacion.Name = "txtNombrePublicacion";
-            this.txtNombrePublicacion.Size = new System.Drawing.Size(94, 22);
-            this.txtNombrePublicacion.TabIndex = 27;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(143, 221);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(94, 22);
-            this.txtTelefono.TabIndex = 49;
-            // 
-            // rbGas
-            // 
-            this.rbGas.AutoSize = true;
-            this.rbGas.Location = new System.Drawing.Point(633, 251);
-            this.rbGas.Name = "rbGas";
-            this.rbGas.Size = new System.Drawing.Size(45, 17);
-            this.rbGas.TabIndex = 58;
-            this.rbGas.Text = "Gas";
-            this.rbGas.UseVisualStyleBackColor = true;
-            // 
-            // lbnTelefono
-            // 
-            this.lbnTelefono.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lbnTelefono.AutoSize = true;
-            this.lbnTelefono.Location = new System.Drawing.Point(13, 226);
-            this.lbnTelefono.Name = "lbnTelefono";
-            this.lbnTelefono.Size = new System.Drawing.Size(124, 13);
-            this.lbnTelefono.TabIndex = 48;
-            this.lbnTelefono.Text = "* Telefono de contacto";
-            // 
-            // lbnDescripcionPublicacion
-            // 
-            this.lbnDescripcionPublicacion.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lbnDescripcionPublicacion.AutoSize = true;
-            this.lbnDescripcionPublicacion.Location = new System.Drawing.Point(70, 67);
-            this.lbnDescripcionPublicacion.Name = "lbnDescripcionPublicacion";
-            this.lbnDescripcionPublicacion.Size = new System.Drawing.Size(67, 13);
-            this.lbnDescripcionPublicacion.TabIndex = 28;
-            this.lbnDescripcionPublicacion.Text = "Descripción";
-            // 
-            // rbLavadora
-            // 
-            this.rbLavadora.AutoSize = true;
-            this.rbLavadora.Location = new System.Drawing.Point(523, 251);
-            this.rbLavadora.Name = "rbLavadora";
-            this.rbLavadora.Size = new System.Drawing.Size(72, 17);
-            this.rbLavadora.TabIndex = 57;
-            this.rbLavadora.Text = "Lavadora";
-            this.rbLavadora.UseVisualStyleBackColor = true;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDescripcion.Location = new System.Drawing.Point(143, 53);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(94, 42);
-            this.txtDescripcion.TabIndex = 29;
-            // 
-            // rbTv
-            // 
-            this.rbTv.AutoSize = true;
-            this.rbTv.Location = new System.Drawing.Point(373, 251);
-            this.rbTv.Name = "rbTv";
-            this.rbTv.Size = new System.Drawing.Size(36, 17);
-            this.rbTv.TabIndex = 56;
-            this.rbTv.Text = "Tv";
-            this.rbTv.UseVisualStyleBackColor = true;
-            // 
-            // cbxParqueadero
-            // 
-            this.cbxParqueadero.FormattingEnabled = true;
-            this.cbxParqueadero.Items.AddRange(new object[] {
-            "Parqueadero para carro",
-            "Paqueadero para moto",
-            "Parqueadero para carro y moto",
-            "No tengo parqueadero"});
-            this.cbxParqueadero.Location = new System.Drawing.Point(143, 191);
-            this.cbxParqueadero.Name = "cbxParqueadero";
-            this.cbxParqueadero.Size = new System.Drawing.Size(94, 21);
-            this.cbxParqueadero.TabIndex = 47;
-            // 
-            // lblUbicacionInmue
-            // 
-            this.lblUbicacionInmue.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblUbicacionInmue.AutoSize = true;
-            this.lblUbicacionInmue.Location = new System.Drawing.Point(68, 106);
-            this.lblUbicacionInmue.Name = "lblUbicacionInmue";
-            this.lblUbicacionInmue.Size = new System.Drawing.Size(69, 13);
-            this.lblUbicacionInmue.TabIndex = 30;
-            this.lblUbicacionInmue.Text = "* Ubicación:";
-            // 
-            // lbnParqueadero
-            // 
-            this.lbnParqueadero.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lbnParqueadero.AutoSize = true;
-            this.lbnParqueadero.Location = new System.Drawing.Point(8, 196);
-            this.lbnParqueadero.Name = "lbnParqueadero";
-            this.lbnParqueadero.Size = new System.Drawing.Size(129, 13);
-            this.lbnParqueadero.TabIndex = 46;
-            this.lbnParqueadero.Text = "* ¿ Tiene parqueadero ?";
-            // 
-            // rbWifi
-            // 
-            this.rbWifi.AutoSize = true;
-            this.rbWifi.Location = new System.Drawing.Point(308, 251);
-            this.rbWifi.Name = "rbWifi";
-            this.rbWifi.Size = new System.Drawing.Size(47, 17);
-            this.rbWifi.TabIndex = 55;
-            this.rbWifi.Text = "Wifi";
-            this.rbWifi.UseVisualStyleBackColor = true;
-            // 
-            // cbxAnimales
-            // 
-            this.cbxAnimales.FormattingEnabled = true;
-            this.cbxAnimales.Items.AddRange(new object[] {
-            "No",
-            "Si"});
-            this.cbxAnimales.Location = new System.Drawing.Point(523, 161);
-            this.cbxAnimales.Name = "cbxAnimales";
-            this.cbxAnimales.Size = new System.Drawing.Size(104, 21);
-            this.cbxAnimales.TabIndex = 45;
+            this.tableLRegistroIn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableLRegistroIn.ColumnCount = 6;
+            this.tableLRegistroIn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174F));
+            this.tableLRegistroIn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tableLRegistroIn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
+            this.tableLRegistroIn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.tableLRegistroIn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
+            this.tableLRegistroIn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 184F));
+            this.tableLRegistroIn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLRegistroIn.Controls.Add(this.cbxUbicacion, 5, 2);
+            this.tableLRegistroIn.Controls.Add(this.cbxAmoblado, 5, 3);
+            this.tableLRegistroIn.Controls.Add(this.lbnTituloPublicacion, 0, 0);
+            this.tableLRegistroIn.Controls.Add(this.txtNombrePublicacion, 1, 0);
+            this.tableLRegistroIn.Controls.Add(this.cbxTipoVivienda, 5, 0);
+            this.tableLRegistroIn.Controls.Add(this.lblTipoVivienda, 4, 0);
+            this.tableLRegistroIn.Controls.Add(this.lbnAnimales, 4, 1);
+            this.tableLRegistroIn.Controls.Add(this.cbxAnimales, 5, 1);
+            this.tableLRegistroIn.Controls.Add(this.lblUbicacionInmue, 4, 2);
+            this.tableLRegistroIn.Controls.Add(this.lbnAmoblado, 4, 3);
+            this.tableLRegistroIn.Controls.Add(this.lbnDescripcionPublicacion, 0, 1);
+            this.tableLRegistroIn.Controls.Add(this.txtDescripcion, 1, 1);
+            this.tableLRegistroIn.Controls.Add(this.lblDireccion, 0, 2);
+            this.tableLRegistroIn.Controls.Add(this.txtDireccion, 1, 2);
+            this.tableLRegistroIn.Controls.Add(this.lbnParqueadero, 0, 3);
+            this.tableLRegistroIn.Controls.Add(this.cbxParqueadero, 1, 3);
+            this.tableLRegistroIn.Controls.Add(this.lbnTelefono, 4, 4);
+            this.tableLRegistroIn.Controls.Add(this.txtPrecio, 5, 4);
+            this.tableLRegistroIn.Controls.Add(this.lblServiciosInclu, 0, 4);
+            this.tableLRegistroIn.Controls.Add(this.rbTv, 1, 4);
+            this.tableLRegistroIn.Controls.Add(this.rbLavadora, 2, 4);
+            this.tableLRegistroIn.Controls.Add(this.rbWifi, 3, 4);
+            this.tableLRegistroIn.Controls.Add(this.rbAgua, 1, 5);
+            this.tableLRegistroIn.Controls.Add(this.rbLuz, 2, 5);
+            this.tableLRegistroIn.Controls.Add(this.rbGas, 3, 5);
+            this.tableLRegistroIn.Controls.Add(this.txtTelefono, 4, 7);
+            this.tableLRegistroIn.Controls.Add(this.lbnPrecio, 2, 7);
+            this.tableLRegistroIn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLRegistroIn.Location = new System.Drawing.Point(239, 76);
+            this.tableLRegistroIn.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
+            this.tableLRegistroIn.Name = "tableLRegistroIn";
+            this.tableLRegistroIn.RowCount = 9;
+            this.tableLRegistroIn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.5071F));
+            this.tableLRegistroIn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.4929F));
+            this.tableLRegistroIn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLRegistroIn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLRegistroIn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            this.tableLRegistroIn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLRegistroIn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLRegistroIn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLRegistroIn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLRegistroIn.Size = new System.Drawing.Size(733, 366);
+            this.tableLRegistroIn.TabIndex = 62;
             // 
             // cbxUbicacion
             // 
@@ -303,20 +261,10 @@ namespace ArriendoPrototipo.Interfaces
             "Sur",
             "Oriente",
             "Occidente"});
-            this.cbxUbicacion.Location = new System.Drawing.Point(143, 101);
+            this.cbxUbicacion.Location = new System.Drawing.Point(552, 136);
             this.cbxUbicacion.Name = "cbxUbicacion";
-            this.cbxUbicacion.Size = new System.Drawing.Size(94, 21);
+            this.cbxUbicacion.Size = new System.Drawing.Size(156, 27);
             this.cbxUbicacion.TabIndex = 31;
-            // 
-            // rbLuz
-            // 
-            this.rbLuz.AutoSize = true;
-            this.rbLuz.Location = new System.Drawing.Point(243, 251);
-            this.rbLuz.Name = "rbLuz";
-            this.rbLuz.Size = new System.Drawing.Size(43, 17);
-            this.rbLuz.TabIndex = 54;
-            this.rbLuz.Text = "Luz";
-            this.rbLuz.UseVisualStyleBackColor = true;
             // 
             // cbxAmoblado
             // 
@@ -324,40 +272,29 @@ namespace ArriendoPrototipo.Interfaces
             this.cbxAmoblado.Items.AddRange(new object[] {
             "No",
             "Si"});
-            this.cbxAmoblado.Location = new System.Drawing.Point(143, 161);
+            this.cbxAmoblado.Location = new System.Drawing.Point(552, 181);
             this.cbxAmoblado.Name = "cbxAmoblado";
-            this.cbxAmoblado.Size = new System.Drawing.Size(94, 21);
+            this.cbxAmoblado.Size = new System.Drawing.Size(156, 27);
             this.cbxAmoblado.TabIndex = 43;
             // 
-            // rbAgua
+            // lbnTituloPublicacion
             // 
-            this.rbAgua.AutoSize = true;
-            this.rbAgua.Location = new System.Drawing.Point(143, 251);
-            this.rbAgua.Name = "rbAgua";
-            this.rbAgua.Size = new System.Drawing.Size(53, 17);
-            this.rbAgua.TabIndex = 53;
-            this.rbAgua.Text = "Agua";
-            this.rbAgua.UseVisualStyleBackColor = true;
+            this.lbnTituloPublicacion.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbnTituloPublicacion.AutoSize = true;
+            this.lbnTituloPublicacion.Location = new System.Drawing.Point(23, 24);
+            this.lbnTituloPublicacion.Name = "lbnTituloPublicacion";
+            this.lbnTituloPublicacion.Size = new System.Drawing.Size(148, 19);
+            this.lbnTituloPublicacion.TabIndex = 26;
+            this.lbnTituloPublicacion.Text = "* Titulo publicación";
             // 
-            // lbnAmoblado
+            // txtNombrePublicacion
             // 
-            this.lbnAmoblado.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lbnAmoblado.AutoSize = true;
-            this.lbnAmoblado.Location = new System.Drawing.Point(43, 166);
-            this.lbnAmoblado.Name = "lbnAmoblado";
-            this.lbnAmoblado.Size = new System.Drawing.Size(94, 13);
-            this.lbnAmoblado.TabIndex = 42;
-            this.lbnAmoblado.Text = "* ¿ Es amoblado?";
-            // 
-            // lblServiciosInclu
-            // 
-            this.lblServiciosInclu.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblServiciosInclu.AutoSize = true;
-            this.lblServiciosInclu.Location = new System.Drawing.Point(28, 254);
-            this.lblServiciosInclu.Name = "lblServiciosInclu";
-            this.lblServiciosInclu.Size = new System.Drawing.Size(109, 13);
-            this.lblServiciosInclu.TabIndex = 34;
-            this.lblServiciosInclu.Text = "*Servicios Inlcuidos:";
+            this.tableLRegistroIn.SetColumnSpan(this.txtNombrePublicacion, 3);
+            this.txtNombrePublicacion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombrePublicacion.Location = new System.Drawing.Point(177, 3);
+            this.txtNombrePublicacion.Name = "txtNombrePublicacion";
+            this.txtNombrePublicacion.Size = new System.Drawing.Size(273, 27);
+            this.txtNombrePublicacion.TabIndex = 27;
             // 
             // cbxTipoVivienda
             // 
@@ -368,60 +305,257 @@ namespace ArriendoPrototipo.Interfaces
             "Casa",
             "Apartaestudio",
             "Otro"});
-            this.cbxTipoVivienda.Location = new System.Drawing.Point(523, 3);
+            this.cbxTipoVivienda.Location = new System.Drawing.Point(552, 3);
             this.cbxTipoVivienda.Name = "cbxTipoVivienda";
-            this.cbxTipoVivienda.Size = new System.Drawing.Size(104, 21);
+            this.cbxTipoVivienda.Size = new System.Drawing.Size(156, 27);
             this.cbxTipoVivienda.TabIndex = 33;
             // 
             // lblTipoVivienda
             // 
             this.lblTipoVivienda.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblTipoVivienda.AutoSize = true;
-            this.lblTipoVivienda.Location = new System.Drawing.Point(431, 18);
+            this.lblTipoVivienda.Location = new System.Drawing.Point(473, 14);
             this.lblTipoVivienda.Name = "lblTipoVivienda";
-            this.lblTipoVivienda.Size = new System.Drawing.Size(86, 13);
+            this.lblTipoVivienda.Size = new System.Drawing.Size(73, 38);
             this.lblTipoVivienda.TabIndex = 32;
-            this.lblTipoVivienda.Text = "* Tipo vivienda:";
+            this.lblTipoVivienda.Text = "*Tipo vivienda:";
+            // 
+            // cbxAnimales
+            // 
+            this.cbxAnimales.FormattingEnabled = true;
+            this.cbxAnimales.Items.AddRange(new object[] {
+            "No",
+            "Si"});
+            this.cbxAnimales.Location = new System.Drawing.Point(552, 70);
+            this.cbxAnimales.Name = "cbxAnimales";
+            this.cbxAnimales.Size = new System.Drawing.Size(156, 27);
+            this.cbxAnimales.TabIndex = 45;
+            // 
+            // lblUbicacionInmue
+            // 
+            this.lblUbicacionInmue.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblUbicacionInmue.AutoSize = true;
+            this.lblUbicacionInmue.Location = new System.Drawing.Point(460, 136);
+            this.lblUbicacionInmue.Name = "lblUbicacionInmue";
+            this.lblUbicacionInmue.Size = new System.Drawing.Size(86, 38);
+            this.lblUbicacionInmue.TabIndex = 30;
+            this.lblUbicacionInmue.Text = "*Ubicación:";
+            // 
+            // lbnAmoblado
+            // 
+            this.lbnAmoblado.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbnAmoblado.AutoSize = true;
+            this.lbnAmoblado.Location = new System.Drawing.Point(459, 179);
+            this.lbnAmoblado.Name = "lbnAmoblado";
+            this.lbnAmoblado.Size = new System.Drawing.Size(87, 38);
+            this.lbnAmoblado.TabIndex = 42;
+            this.lbnAmoblado.Text = "*¿ Es amoblado?";
+            // 
+            // lbnDescripcionPublicacion
+            // 
+            this.lbnDescripcionPublicacion.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbnDescripcionPublicacion.AutoSize = true;
+            this.lbnDescripcionPublicacion.Location = new System.Drawing.Point(81, 90);
+            this.lbnDescripcionPublicacion.Name = "lbnDescripcionPublicacion";
+            this.lbnDescripcionPublicacion.Size = new System.Drawing.Size(90, 19);
+            this.lbnDescripcionPublicacion.TabIndex = 28;
+            this.lbnDescripcionPublicacion.Text = "Descripción";
+            // 
+            // txtDescripcion
+            // 
+            this.tableLRegistroIn.SetColumnSpan(this.txtDescripcion, 3);
+            this.txtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescripcion.Location = new System.Drawing.Point(177, 70);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(273, 60);
+            this.txtDescripcion.TabIndex = 29;
             // 
             // lblDireccion
             // 
             this.lblDireccion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(74, 136);
+            this.lblDireccion.Location = new System.Drawing.Point(83, 146);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(63, 13);
+            this.lblDireccion.Size = new System.Drawing.Size(88, 19);
             this.lblDireccion.TabIndex = 60;
             this.lblDireccion.Text = "* Dirección";
+            // 
+            // txtDireccion
+            // 
+            this.tableLRegistroIn.SetColumnSpan(this.txtDireccion, 3);
+            this.txtDireccion.Location = new System.Drawing.Point(177, 136);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(273, 27);
+            this.txtDireccion.TabIndex = 59;
+            // 
+            // lbnParqueadero
+            // 
+            this.lbnParqueadero.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbnParqueadero.AutoSize = true;
+            this.lbnParqueadero.Location = new System.Drawing.Point(4, 188);
+            this.lbnParqueadero.Name = "lbnParqueadero";
+            this.lbnParqueadero.Size = new System.Drawing.Size(167, 19);
+            this.lbnParqueadero.TabIndex = 46;
+            this.lbnParqueadero.Text = "*¿Tiene parqueadero?";
+            // 
+            // cbxParqueadero
+            // 
+            this.tableLRegistroIn.SetColumnSpan(this.cbxParqueadero, 3);
+            this.cbxParqueadero.FormattingEnabled = true;
+            this.cbxParqueadero.Items.AddRange(new object[] {
+            "Parqueadero para carro",
+            "Paqueadero para moto",
+            "Parqueadero para carro y moto",
+            "No tengo parqueadero"});
+            this.cbxParqueadero.Location = new System.Drawing.Point(177, 181);
+            this.cbxParqueadero.Name = "cbxParqueadero";
+            this.cbxParqueadero.Size = new System.Drawing.Size(226, 27);
+            this.cbxParqueadero.TabIndex = 47;
+            // 
+            // lbnTelefono
+            // 
+            this.lbnTelefono.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbnTelefono.AutoSize = true;
+            this.lbnTelefono.Location = new System.Drawing.Point(456, 223);
+            this.lbnTelefono.Name = "lbnTelefono";
+            this.lbnTelefono.Size = new System.Drawing.Size(90, 38);
+            this.lbnTelefono.TabIndex = 48;
+            this.lbnTelefono.Text = "*Telefono de contacto";
             // 
             // txtPrecio
             // 
             this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtPrecio.Location = new System.Drawing.Point(523, 102);
+            this.txtPrecio.Location = new System.Drawing.Point(552, 229);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(104, 22);
+            this.txtPrecio.Size = new System.Drawing.Size(156, 27);
             this.txtPrecio.TabIndex = 51;
             // 
-            // tableLayoutPanel2
+            // lblServiciosInclu
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.PeachPuff;
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label9, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 3);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 175);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 5;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(146, 434);
-            this.tableLayoutPanel2.TabIndex = 27;
+            this.lblServiciosInclu.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblServiciosInclu.AutoSize = true;
+            this.lblServiciosInclu.Location = new System.Drawing.Point(16, 233);
+            this.lblServiciosInclu.Name = "lblServiciosInclu";
+            this.lblServiciosInclu.Size = new System.Drawing.Size(155, 19);
+            this.lblServiciosInclu.TabIndex = 34;
+            this.lblServiciosInclu.Text = "*Servicios Inlcuidos:";
+            // 
+            // rbTv
+            // 
+            this.rbTv.AutoSize = true;
+            this.rbTv.Location = new System.Drawing.Point(177, 221);
+            this.rbTv.Name = "rbTv";
+            this.rbTv.Size = new System.Drawing.Size(46, 23);
+            this.rbTv.TabIndex = 56;
+            this.rbTv.Text = "Tv";
+            this.rbTv.UseVisualStyleBackColor = true;
+            // 
+            // rbLavadora
+            // 
+            this.rbLavadora.AutoSize = true;
+            this.rbLavadora.Location = new System.Drawing.Point(249, 221);
+            this.rbLavadora.Name = "rbLavadora";
+            this.rbLavadora.Size = new System.Drawing.Size(92, 23);
+            this.rbLavadora.TabIndex = 57;
+            this.rbLavadora.Text = "Lavadora";
+            this.rbLavadora.UseVisualStyleBackColor = true;
+            // 
+            // rbWifi
+            // 
+            this.rbWifi.AutoSize = true;
+            this.rbWifi.Location = new System.Drawing.Point(347, 221);
+            this.rbWifi.Name = "rbWifi";
+            this.rbWifi.Size = new System.Drawing.Size(55, 23);
+            this.rbWifi.TabIndex = 55;
+            this.rbWifi.Text = "Wifi";
+            this.rbWifi.UseVisualStyleBackColor = true;
+            // 
+            // rbAgua
+            // 
+            this.rbAgua.AutoSize = true;
+            this.rbAgua.Location = new System.Drawing.Point(177, 270);
+            this.rbAgua.Name = "rbAgua";
+            this.rbAgua.Size = new System.Drawing.Size(65, 23);
+            this.rbAgua.TabIndex = 53;
+            this.rbAgua.Text = "Agua";
+            this.rbAgua.UseVisualStyleBackColor = true;
+            // 
+            // rbLuz
+            // 
+            this.rbLuz.AutoSize = true;
+            this.rbLuz.Location = new System.Drawing.Point(249, 270);
+            this.rbLuz.Name = "rbLuz";
+            this.rbLuz.Size = new System.Drawing.Size(52, 23);
+            this.rbLuz.TabIndex = 54;
+            this.rbLuz.Text = "Luz";
+            this.rbLuz.UseVisualStyleBackColor = true;
+            // 
+            // rbGas
+            // 
+            this.rbGas.AutoSize = true;
+            this.rbGas.Location = new System.Drawing.Point(347, 270);
+            this.rbGas.Name = "rbGas";
+            this.rbGas.Size = new System.Drawing.Size(54, 23);
+            this.rbGas.TabIndex = 58;
+            this.rbGas.Text = "Gas";
+            this.rbGas.UseVisualStyleBackColor = true;
+            // 
+            // txtTelefono
+            // 
+            this.tableLRegistroIn.SetColumnSpan(this.txtTelefono, 2);
+            this.txtTelefono.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.Location = new System.Drawing.Point(456, 323);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(274, 33);
+            this.txtTelefono.TabIndex = 49;
+            // 
+            // lbnPrecio
+            // 
+            this.lbnPrecio.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbnPrecio.AutoSize = true;
+            this.tableLRegistroIn.SetColumnSpan(this.lbnPrecio, 2);
+            this.lbnPrecio.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnPrecio.Location = new System.Drawing.Point(299, 328);
+            this.lbnPrecio.Name = "lbnPrecio";
+            this.tableLRegistroIn.SetRowSpan(this.lbnPrecio, 2);
+            this.lbnPrecio.Size = new System.Drawing.Size(151, 29);
+            this.lbnPrecio.TabIndex = 50;
+            this.lbnPrecio.Text = "* Precio     $";
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(984, 54);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Llene los siguientes campos para crear una publicación sobre un inmueble.\r\nLos ca" +
+    "mpos con * son obligatorios\r\n";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLMenuLateral
+            // 
+            this.tableLMenuLateral.BackColor = System.Drawing.Color.PeachPuff;
+            this.tableLMenuLateral.ColumnCount = 1;
+            this.tableLMenuLateral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLMenuLateral.Controls.Add(this.label10, 0, 2);
+            this.tableLMenuLateral.Controls.Add(this.label9, 0, 1);
+            this.tableLMenuLateral.Controls.Add(this.label3, 0, 0);
+            this.tableLMenuLateral.Controls.Add(this.label11, 0, 3);
+            this.tableLMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLMenuLateral.Location = new System.Drawing.Point(0, 192);
+            this.tableLMenuLateral.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.tableLMenuLateral.Name = "tableLMenuLateral";
+            this.tableLMenuLateral.RowCount = 5;
+            this.tableLMenuLateral.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLMenuLateral.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLMenuLateral.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLMenuLateral.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLMenuLateral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLMenuLateral.Size = new System.Drawing.Size(146, 518);
+            this.tableLMenuLateral.TabIndex = 27;
             // 
             // label10
             // 
@@ -477,132 +611,92 @@ namespace ArriendoPrototipo.Interfaces
             this.label11.Text = "Configuración de \r\ntu cuenta";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel6
+            // pRegistroPubli
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel6.Location = new System.Drawing.Point(181, 564);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(742, 10);
-            this.panel6.TabIndex = 6;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.PeachPuff;
-            this.tableLayoutPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.61322F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.38678F));
-            this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox2, 1, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 123);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(923, 52);
-            this.tableLayoutPanel3.TabIndex = 25;
+            this.pRegistroPubli.BackColor = System.Drawing.Color.PeachPuff;
+            this.pRegistroPubli.Controls.Add(this.label1);
+            this.pRegistroPubli.Controls.Add(this.pictureBox2);
+            this.pRegistroPubli.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pRegistroPubli.Location = new System.Drawing.Point(0, 120);
+            this.pRegistroPubli.Name = "pRegistroPubli";
+            this.pRegistroPubli.Size = new System.Drawing.Size(1130, 72);
+            this.pRegistroPubli.TabIndex = 64;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightCoral;
-            this.label1.Location = new System.Drawing.Point(283, 15);
+            this.label1.Location = new System.Drawing.Point(401, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 37);
+            this.label1.Size = new System.Drawing.Size(255, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "REGISTRO PUBLICACIÓN";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Proyecto_arrendamiento.Properties.Resources.AgregarPublicacion;
-            this.pictureBox2.Location = new System.Drawing.Point(544, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(662, 18);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(84, 46);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(188, 205);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(725, 38);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Llene los siguientes campos para crear una publicación sobre un inmueble.\r\nLos ca" +
-    "mpos con * son obligatorios\r\n";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pnlInicioSuperior
             // 
-            this.pnlInicioSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(243)))), ((int)(((byte)(204)))));
-            this.pnlInicioSuperior.Controls.Add(this.panel2);
+            this.pnlInicioSuperior.BackColor = System.Drawing.Color.SkyBlue;
+            this.pnlInicioSuperior.Controls.Add(this.label2);
+            this.pnlInicioSuperior.Controls.Add(this.pictureBox1);
+            this.pnlInicioSuperior.Controls.Add(this.pBienvenida);
             this.pnlInicioSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlInicioSuperior.Location = new System.Drawing.Point(0, 0);
             this.pnlInicioSuperior.Name = "pnlInicioSuperior";
-            this.pnlInicioSuperior.Size = new System.Drawing.Size(923, 123);
+            this.pnlInicioSuperior.Size = new System.Drawing.Size(1130, 120);
             this.pnlInicioSuperior.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(923, 123);
-            this.panel2.TabIndex = 2;
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.BackColor = System.Drawing.Color.SkyBlue;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 21.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(263, 77);
+            this.label2.Location = new System.Drawing.Point(419, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(314, 35);
+            this.label2.Size = new System.Drawing.Size(327, 45);
             this.label2.TabIndex = 3;
             this.label2.Text = "Alojamientos Pacho";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = global::Proyecto_arrendamiento.Properties.Resources.logoArrendamiento;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(507, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(766, 75);
+            this.pictureBox1.Size = new System.Drawing.Size(105, 75);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // panel1
+            // pBienvenida
             // 
-            this.panel1.BackColor = System.Drawing.Color.PaleGreen;
-            this.panel1.Controls.Add(this.lblNombreUsuario);
-            this.panel1.Controls.Add(this.lblBienvenido);
-            this.panel1.Controls.Add(this.pbxLogo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(766, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(157, 123);
-            this.panel1.TabIndex = 5;
+            this.pBienvenida.BackColor = System.Drawing.Color.PaleGreen;
+            this.pBienvenida.Controls.Add(this.lblNombreUsuario);
+            this.pBienvenida.Controls.Add(this.lblBienvenido);
+            this.pBienvenida.Controls.Add(this.pbxLogo);
+            this.pBienvenida.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pBienvenida.Location = new System.Drawing.Point(973, 0);
+            this.pBienvenida.Name = "pBienvenida";
+            this.pBienvenida.Size = new System.Drawing.Size(157, 120);
+            this.pBienvenida.TabIndex = 5;
             // 
             // lblNombreUsuario
             // 
@@ -632,7 +726,7 @@ namespace ArriendoPrototipo.Interfaces
             this.pbxLogo.BackColor = System.Drawing.Color.PaleGreen;
             this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbxLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbxLogo.Image = global::Proyecto_arrendamiento.Properties.Resources.usrs;
+            this.pbxLogo.Image = global::Proyecto_arrendamiento.Properties.Resources.LogoUsuario;
             this.pbxLogo.Location = new System.Drawing.Point(0, 0);
             this.pbxLogo.Name = "pbxLogo";
             this.pbxLogo.Size = new System.Drawing.Size(157, 75);
@@ -647,7 +741,7 @@ namespace ArriendoPrototipo.Interfaces
             // 
             // btnGuardarInmueble
             // 
-            this.btnGuardarInmueble.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGuardarInmueble.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnGuardarInmueble.BackColor = System.Drawing.Color.SkyBlue;
             this.btnGuardarInmueble.BackgroundColor = System.Drawing.Color.SkyBlue;
             this.btnGuardarInmueble.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -657,7 +751,7 @@ namespace ArriendoPrototipo.Interfaces
             this.btnGuardarInmueble.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarInmueble.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarInmueble.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarInmueble.Location = new System.Drawing.Point(478, 571);
+            this.btnGuardarInmueble.Location = new System.Drawing.Point(516, 468);
             this.btnGuardarInmueble.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.btnGuardarInmueble.Name = "btnGuardarInmueble";
             this.btnGuardarInmueble.Size = new System.Drawing.Size(200, 40);
@@ -667,101 +761,31 @@ namespace ArriendoPrototipo.Interfaces
             this.btnGuardarInmueble.UseVisualStyleBackColor = false;
             this.btnGuardarInmueble.Click += new System.EventHandler(this.btnGuardarInmueble_Click);
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 7;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
-            this.tableLayoutPanel1.Controls.Add(this.txtDescripcion, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lbnDescripcionPublicacion, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lblUbicacionInmue, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lbnTelefono, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.cbxUbicacion, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lbnAmoblado, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.cbxParqueadero, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.cbxAmoblado, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lbnParqueadero, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.lblServiciosInclu, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.rbAgua, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.rbLuz, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.rbGas, 6, 7);
-            this.tableLayoutPanel1.Controls.Add(this.lblDireccion, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txtDireccion, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.cbxTipoVivienda, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lbnTituloPublicacion, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtNombrePublicacion, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.cbxAnimales, 5, 4);
-            this.tableLayoutPanel1.Controls.Add(this.txtPrecio, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.rbWifi, 4, 7);
-            this.tableLayoutPanel1.Controls.Add(this.txtTelefono, 4, 4);
-            this.tableLayoutPanel1.Controls.Add(this.rbTv, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.rbLavadora, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.lbnAnimales, 4, 6);
-            this.tableLayoutPanel1.Controls.Add(this.lbnPrecio, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblTipoVivienda, 3, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(147, 246);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.5071F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.49291F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(676, 285);
-            this.tableLayoutPanel1.TabIndex = 62;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(660, 535);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 62;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pbxImagenInm
-            // 
-            this.pbxImagenInm.Location = new System.Drawing.Point(820, 352);
-            this.pbxImagenInm.Name = "pbxImagenInm";
-            this.pbxImagenInm.Size = new System.Drawing.Size(100, 50);
-            this.pbxImagenInm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxImagenInm.TabIndex = 63;
-            this.pbxImagenInm.TabStop = false;
-            // 
             // RegistroInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(923, 609);
+            this.ClientSize = new System.Drawing.Size(1130, 710);
             this.Controls.Add(this.pnlPrincipal);
             this.MinimumSize = new System.Drawing.Size(938, 591);
             this.Name = "RegistroInmueble";
             this.Text = "RegistroInmueble";
             this.pnlPrincipal.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
+            this.pContenidoRegistro.ResumeLayout(false);
+            this.pZonaImagen.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagenInm)).EndInit();
+            this.tableLRegistroIn.ResumeLayout(false);
+            this.tableLRegistroIn.PerformLayout();
+            this.tableLMenuLateral.ResumeLayout(false);
+            this.tableLMenuLateral.PerformLayout();
+            this.pRegistroPubli.ResumeLayout(false);
+            this.pRegistroPubli.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlInicioSuperior.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pBienvenida.ResumeLayout(false);
+            this.pBienvenida.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxImagenInm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -769,7 +793,7 @@ namespace ArriendoPrototipo.Interfaces
 
         #endregion
         private Panel pnlPrincipal;
-        private TableLayoutPanel tableLayoutPanel2;
+        private TableLayoutPanel tableLMenuLateral;
         private Label label10;
         private Label label9;
         private Label label3;
@@ -800,25 +824,26 @@ namespace ArriendoPrototipo.Interfaces
         private Label lblTipoVivienda;
         private Label lblDireccion;
         private TextBox txtPrecio;
-        private Panel panel6;
         private Label label4;
         private Panel pnlInicioSuperior;
-        private Panel panel2;
         private Label label2;
         private PictureBox pictureBox1;
-        private Panel panel1;
+        private Panel pBienvenida;
         private Label lblNombreUsuario;
         private Label lblBienvenido;
         private PictureBox pbxLogo;
-        private TableLayoutPanel tableLayoutPanel3;
         private Apariencia.CustomButton btnGuardarInmueble;
         private Label label1;
         private PictureBox pictureBox2;
         private Button btn_volverMenuPrincipal;
         private Label lbnAnimales;
         private SaveFileDialog sfvImagenInmueble;
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel tableLRegistroIn;
         private Button button1;
         private PictureBox pbxImagenInm;
+        private Panel pRegistroPubli;
+        private Panel pContenidoRegistro;
+        private Panel pZonaImagen;
+        private Label lblTextoImagen;
     }
 }

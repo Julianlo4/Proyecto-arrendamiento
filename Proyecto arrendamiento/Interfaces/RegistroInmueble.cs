@@ -22,27 +22,9 @@ namespace ArriendoPrototipo.Interfaces
             this.NombreUsuario = nombreU;
             lblNombreUsuario.Text = nombreU;
             this.WindowState = FormWindowState.Maximized;
-            this.SizeChanged += new EventHandler (RegistroInmueble_SizeChanged);
             this.FormClosing += MiFormularioPrincipal_FormClosing;
         }
 
-        private void RegistroInmueble_SizeChanged(object sender, EventArgs e)
-        {
-            // Obtén el tamaño del formulario
-            int formularioAncho = panel2.Width - panel1.Width;
-            int formularioAlto = panel2.ClientSize.Height;
-
-            // Calcula las coordenadas X e Y para centrar el Label
-            int labelX = (formularioAncho - label2.Width) / 2;
-            int labelY = (formularioAlto - label2.Height) / 2;
-            // Calcula las coordenadas X e Y para centrar el logo
-
-            // Establece la posición del Label
-            label2.Location = new Point(labelX, labelY + 30);
-
-            //tableLayoutPanel1.Location = new Point((label4.Width/3)-40, 250);
-            btnGuardarInmueble.Location = new Point(formularioAncho/2, 600);
-        }
         private void MiFormularioPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
@@ -124,7 +106,7 @@ namespace ArriendoPrototipo.Interfaces
             if (result > 0)
             {
                 MessageBox.Show("La insercion ha sido correcta", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis("Usuario");
+                HomeUsuarioRegis homeUsuarioRegis = new HomeUsuarioRegis(lblNombreUsuario.Text);
                 this.Hide();
                 homeUsuarioRegis.Show();
 

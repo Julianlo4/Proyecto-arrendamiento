@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.customButton1 = new ArriendoPrototipo.Apariencia.CustomButton();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblPubTitulo = new System.Windows.Forms.Label();
             this.lblubUbicacion = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.customButton1 = new ArriendoPrototipo.Apariencia.CustomButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblTItuloAnfitrión = new System.Windows.Forms.Label();
             this.lblNombreArrendatario = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblAgua = new System.Windows.Forms.Label();
             this.lblTv = new System.Windows.Forms.Label();
             this.lblWifi = new System.Windows.Forms.Label();
             this.lblLuz = new System.Windows.Forms.Label();
@@ -70,7 +70,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxImageInm = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -82,34 +82,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImageInm)).BeginInit();
             this.SuspendLayout();
-            // 
-            // customButton1
-            // 
-            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.customButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.customButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.customButton1.BorderRadius = 5;
-            this.customButton1.BorderSize = 0;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(77, 151);
-            this.customButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(200, 58);
-            this.customButton1.TabIndex = 2;
-            this.customButton1.Text = "Reservar";
-            this.customButton1.TextColor = System.Drawing.Color.White;
-            this.customButton1.UseVisualStyleBackColor = false;
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(53, 16);
+            this.lblPrecio.Location = new System.Drawing.Point(93, 102);
             this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(180, 26);
@@ -144,17 +124,37 @@
             this.panel2.Controls.Add(this.lblPrecio);
             this.panel2.Controls.Add(this.customButton1);
             this.panel2.Location = new System.Drawing.Point(697, 279);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(353, 253);
             this.panel2.TabIndex = 8;
+            // 
+            // customButton1
+            // 
+            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.customButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.customButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customButton1.BorderRadius = 5;
+            this.customButton1.BorderSize = 0;
+            this.customButton1.FlatAppearance.BorderSize = 0;
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton1.ForeColor = System.Drawing.Color.White;
+            this.customButton1.Location = new System.Drawing.Point(77, 151);
+            this.customButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Size = new System.Drawing.Size(200, 58);
+            this.customButton1.TabIndex = 2;
+            this.customButton1.Text = "Reservar";
+            this.customButton1.TextColor = System.Drawing.Color.White;
+            this.customButton1.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel5.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel5.Location = new System.Drawing.Point(501, 186);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(563, 1);
             this.panel5.TabIndex = 8;
@@ -327,15 +327,15 @@
             this.label12.TabIndex = 26;
             this.label12.Text = "¿Permite animales?:";
             // 
-            // label3
+            // lblAgua
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(102, 544);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 19);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "Si";
+            this.lblAgua.AutoSize = true;
+            this.lblAgua.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgua.Location = new System.Drawing.Point(102, 544);
+            this.lblAgua.Name = "lblAgua";
+            this.lblAgua.Size = new System.Drawing.Size(21, 19);
+            this.lblAgua.TabIndex = 36;
+            this.lblAgua.Text = "Si";
             // 
             // lblTv
             // 
@@ -518,16 +518,17 @@
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // pbxImageInm
             // 
-            this.pictureBox1.Image = global::Proyecto_arrendamiento.Properties.Resources.casas_modernas_1_1920x1130;
-            this.pictureBox1.Location = new System.Drawing.Point(39, 18);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(424, 265);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbxImageInm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbxImageInm.Image = global::Proyecto_arrendamiento.Properties.Resources.casas_modernas_1_1920x1130;
+            this.pbxImageInm.Location = new System.Drawing.Point(39, 18);
+            this.pbxImageInm.Margin = new System.Windows.Forms.Padding(4);
+            this.pbxImageInm.Name = "pbxImageInm";
+            this.pbxImageInm.Size = new System.Drawing.Size(424, 265);
+            this.pbxImageInm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxImageInm.TabIndex = 0;
+            this.pbxImageInm.TabStop = false;
             // 
             // infoPublicaciones
             // 
@@ -542,7 +543,7 @@
             this.Controls.Add(this.lblLuz);
             this.Controls.Add(this.lblWifi);
             this.Controls.Add(this.lblTv);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblAgua);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
@@ -574,9 +575,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblPubTitulo);
             this.Controls.Add(this.lblubUbicacion);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbxImageInm);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "infoPublicaciones";
             this.Text = "infoPublicaciones";
             this.panel2.ResumeLayout(false);
@@ -591,7 +592,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImageInm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -599,48 +600,48 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private ArriendoPrototipo.Apariencia.CustomButton customButton1;
-        private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.Label lblPubTitulo;
-        private System.Windows.Forms.Label lblubUbicacion;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblTItuloAnfitrión;
-        private System.Windows.Forms.Label lblNombreArrendatario;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblOfertaTitulo;
-        private System.Windows.Forms.Label lblTituloAgua;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblTipoCasa;
-        private System.Windows.Forms.Label lblTelTitulo;
-        private System.Windows.Forms.Label lblTelefono;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblTv;
-        private System.Windows.Forms.Label lblWifi;
-        private System.Windows.Forms.Label lblLuz;
-        private System.Windows.Forms.Label lblAnimales;
-        private System.Windows.Forms.Label lblAmoblado;
-        private System.Windows.Forms.Label lblGas;
-        private System.Windows.Forms.Label lblLavadora;
+        public System.Windows.Forms.PictureBox pbxImageInm;
+        public  ArriendoPrototipo.Apariencia.CustomButton customButton1;
+        public System.Windows.Forms.Label lblPrecio;
+        public System.Windows.Forms.Label lblPubTitulo;
+        public System.Windows.Forms.Label lblubUbicacion;
+        public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Panel panel5;
+        public System.Windows.Forms.Label lblTItuloAnfitrión;
+        public System.Windows.Forms.Label lblNombreArrendatario;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.Label lblDescripcion;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Label lblOfertaTitulo;
+        public System.Windows.Forms.Label lblTituloAgua;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label lblTipoCasa;
+        public System.Windows.Forms.Label lblTelTitulo;
+        public System.Windows.Forms.Label lblTelefono;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.PictureBox pictureBox5;
+        public System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.PictureBox pictureBox7;
+        public System.Windows.Forms.PictureBox pictureBox8;
+        public System.Windows.Forms.PictureBox pictureBox9;
+        public System.Windows.Forms.PictureBox pictureBox10;
+        public System.Windows.Forms.PictureBox pictureBox11;
+        public System.Windows.Forms.Label lblAgua;
+        public System.Windows.Forms.Label lblTv;
+        public System.Windows.Forms.Label lblWifi;
+        public System.Windows.Forms.Label lblLuz;
+        public System.Windows.Forms.Label lblAnimales;
+        public System.Windows.Forms.Label lblAmoblado;
+        public System.Windows.Forms.Label lblGas;
+        public System.Windows.Forms.Label lblLavadora;
         private System.Windows.Forms.Label lblParqueadero;
     }
 }

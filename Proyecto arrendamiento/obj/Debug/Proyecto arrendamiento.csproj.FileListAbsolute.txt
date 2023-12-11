@@ -161,3 +161,9 @@ D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Deb
 D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Interfaces.infoPublicaciones.resources
 D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\obj\Debug\Proyecto_arrendamiento.Interfaces.UserControl1.resources
 D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\Resources\casas.jpg
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\DevExpress.Data.v23.1.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\MaterialSkin.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\MetroFramework.Design.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\MetroFramework.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\DevExpress.Data.v23.1.xml

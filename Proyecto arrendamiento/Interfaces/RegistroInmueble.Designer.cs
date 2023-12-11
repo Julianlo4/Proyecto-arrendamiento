@@ -57,7 +57,7 @@ namespace ArriendoPrototipo.Interfaces
             this.lbnParqueadero = new System.Windows.Forms.Label();
             this.cbxParqueadero = new System.Windows.Forms.ComboBox();
             this.lbnTelefono = new System.Windows.Forms.Label();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblServiciosInclu = new System.Windows.Forms.Label();
             this.rbTv = new System.Windows.Forms.CheckBox();
             this.rbLavadora = new System.Windows.Forms.CheckBox();
@@ -65,9 +65,10 @@ namespace ArriendoPrototipo.Interfaces
             this.rbAgua = new System.Windows.Forms.CheckBox();
             this.rbLuz = new System.Windows.Forms.CheckBox();
             this.rbGas = new System.Windows.Forms.CheckBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.lbnPrecio = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnGuardarInmueble = new ArriendoPrototipo.Apariencia.CustomButton();
             this.tableLMenuLateral = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -84,7 +85,6 @@ namespace ArriendoPrototipo.Interfaces
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.sfvImagenInmueble = new System.Windows.Forms.SaveFileDialog();
-            this.btnGuardarInmueble = new ArriendoPrototipo.Apariencia.CustomButton();
             this.pnlPrincipal.SuspendLayout();
             this.pContenidoRegistro.SuspendLayout();
             this.pZonaImagen.SuspendLayout();
@@ -226,7 +226,7 @@ namespace ArriendoPrototipo.Interfaces
             this.tableLRegistroIn.Controls.Add(this.lbnParqueadero, 0, 3);
             this.tableLRegistroIn.Controls.Add(this.cbxParqueadero, 1, 3);
             this.tableLRegistroIn.Controls.Add(this.lbnTelefono, 4, 4);
-            this.tableLRegistroIn.Controls.Add(this.txtPrecio, 5, 4);
+            this.tableLRegistroIn.Controls.Add(this.txtTelefono, 5, 4);
             this.tableLRegistroIn.Controls.Add(this.lblServiciosInclu, 0, 4);
             this.tableLRegistroIn.Controls.Add(this.rbTv, 1, 4);
             this.tableLRegistroIn.Controls.Add(this.rbLavadora, 2, 4);
@@ -234,7 +234,7 @@ namespace ArriendoPrototipo.Interfaces
             this.tableLRegistroIn.Controls.Add(this.rbAgua, 1, 5);
             this.tableLRegistroIn.Controls.Add(this.rbLuz, 2, 5);
             this.tableLRegistroIn.Controls.Add(this.rbGas, 3, 5);
-            this.tableLRegistroIn.Controls.Add(this.txtTelefono, 4, 7);
+            this.tableLRegistroIn.Controls.Add(this.txtPrecio, 4, 7);
             this.tableLRegistroIn.Controls.Add(this.lbnPrecio, 2, 7);
             this.tableLRegistroIn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLRegistroIn.Location = new System.Drawing.Point(239, 76);
@@ -423,13 +423,13 @@ namespace ArriendoPrototipo.Interfaces
             this.lbnTelefono.TabIndex = 48;
             this.lbnTelefono.Text = "*Telefono de contacto";
             // 
-            // txtPrecio
+            // txtTelefono
             // 
-            this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtPrecio.Location = new System.Drawing.Point(552, 229);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(156, 27);
-            this.txtPrecio.TabIndex = 51;
+            this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTelefono.Location = new System.Drawing.Point(552, 229);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(156, 27);
+            this.txtTelefono.TabIndex = 51;
             // 
             // lblServiciosInclu
             // 
@@ -501,14 +501,14 @@ namespace ArriendoPrototipo.Interfaces
             this.rbGas.Text = "Gas";
             this.rbGas.UseVisualStyleBackColor = true;
             // 
-            // txtTelefono
+            // txtPrecio
             // 
-            this.tableLRegistroIn.SetColumnSpan(this.txtTelefono, 2);
-            this.txtTelefono.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(456, 323);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(274, 33);
-            this.txtTelefono.TabIndex = 49;
+            this.tableLRegistroIn.SetColumnSpan(this.txtPrecio, 2);
+            this.txtPrecio.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.Location = new System.Drawing.Point(456, 323);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(274, 33);
+            this.txtPrecio.TabIndex = 49;
             // 
             // lbnPrecio
             // 
@@ -534,6 +534,28 @@ namespace ArriendoPrototipo.Interfaces
             this.label4.Text = "Llene los siguientes campos para crear una publicación sobre un inmueble.\r\nLos ca" +
     "mpos con * son obligatorios\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnGuardarInmueble
+            // 
+            this.btnGuardarInmueble.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnGuardarInmueble.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnGuardarInmueble.BackgroundColor = System.Drawing.Color.SkyBlue;
+            this.btnGuardarInmueble.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnGuardarInmueble.BorderRadius = 0;
+            this.btnGuardarInmueble.BorderSize = 0;
+            this.btnGuardarInmueble.FlatAppearance.BorderSize = 0;
+            this.btnGuardarInmueble.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarInmueble.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarInmueble.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarInmueble.Location = new System.Drawing.Point(516, 459);
+            this.btnGuardarInmueble.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
+            this.btnGuardarInmueble.Name = "btnGuardarInmueble";
+            this.btnGuardarInmueble.Size = new System.Drawing.Size(200, 40);
+            this.btnGuardarInmueble.TabIndex = 52;
+            this.btnGuardarInmueble.Text = "Publicar inmueble";
+            this.btnGuardarInmueble.TextColor = System.Drawing.Color.White;
+            this.btnGuardarInmueble.UseVisualStyleBackColor = false;
+            this.btnGuardarInmueble.Click += new System.EventHandler(this.btnGuardarInmueble_Click);
             // 
             // tableLMenuLateral
             // 
@@ -739,28 +761,6 @@ namespace ArriendoPrototipo.Interfaces
             this.sfvImagenInmueble.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Todos los archivos (*.*)|*.*";
             this.sfvImagenInmueble.Title = "Seleccionar imágen";
             // 
-            // btnGuardarInmueble
-            // 
-            this.btnGuardarInmueble.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnGuardarInmueble.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnGuardarInmueble.BackgroundColor = System.Drawing.Color.SkyBlue;
-            this.btnGuardarInmueble.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGuardarInmueble.BorderRadius = 0;
-            this.btnGuardarInmueble.BorderSize = 0;
-            this.btnGuardarInmueble.FlatAppearance.BorderSize = 0;
-            this.btnGuardarInmueble.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarInmueble.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarInmueble.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarInmueble.Location = new System.Drawing.Point(516, 468);
-            this.btnGuardarInmueble.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
-            this.btnGuardarInmueble.Name = "btnGuardarInmueble";
-            this.btnGuardarInmueble.Size = new System.Drawing.Size(200, 40);
-            this.btnGuardarInmueble.TabIndex = 52;
-            this.btnGuardarInmueble.Text = "Publicar inmueble";
-            this.btnGuardarInmueble.TextColor = System.Drawing.Color.White;
-            this.btnGuardarInmueble.UseVisualStyleBackColor = false;
-            this.btnGuardarInmueble.Click += new System.EventHandler(this.btnGuardarInmueble_Click);
-            // 
             // RegistroInmueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -802,7 +802,7 @@ namespace ArriendoPrototipo.Interfaces
         private Label lbnTituloPublicacion;
         private Label lbnPrecio;
         private TextBox txtNombrePublicacion;
-        private TextBox txtTelefono;
+        private TextBox txtPrecio;
         private CheckBox rbGas;
         private Label lbnTelefono;
         private Label lbnDescripcionPublicacion;
@@ -823,7 +823,7 @@ namespace ArriendoPrototipo.Interfaces
         private ComboBox cbxTipoVivienda;
         private Label lblTipoVivienda;
         private Label lblDireccion;
-        private TextBox txtPrecio;
+        private TextBox txtTelefono;
         private Label label4;
         private Panel pnlInicioSuperior;
         private Label label2;

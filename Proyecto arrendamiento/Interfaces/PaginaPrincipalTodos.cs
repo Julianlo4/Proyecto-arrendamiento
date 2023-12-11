@@ -1,4 +1,5 @@
 ﻿
+using DevExpress.Data.Filtering.Helpers;
 using Oracle.ManagedDataAccess.Client;
 using Proyecto_arrendamiento.Interfaces;
 using System;
@@ -20,6 +21,7 @@ namespace ArriendoPrototipo.Interfaces
 
         static String cadenaConexion = "Data Source=localhost;User ID=ProyectoArren;Password=123;";
         OracleConnection conexion = new OracleConnection(cadenaConexion);
+        private int id  = 0;
         public PaginaPrincipalTodos()
         {
             InitializeComponent();
@@ -107,7 +109,7 @@ namespace ArriendoPrototipo.Interfaces
         {
             flpPubs.Controls.Clear();
             conexion.Open();
-            string select = "SELECT InmId,InmTitulo,InmUbicacion,InmPrecio,InmImagen from Inmueble";
+            string select = "SELECT * from Inmueble";
             using (OracleCommand cmd = new OracleCommand(select, conexion))
             {
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -118,18 +120,26 @@ namespace ArriendoPrototipo.Interfaces
                     while (reader.Read())
                     {
                         CUCardPublicaciones card = new CUCardPublicaciones();
+                        
+                        string idPub = reader["InmId"].ToString();
                         string titulPub = reader["InmTitulo"].ToString();
                         string ubicacionPub = reader["InmUbicacion"].ToString();
                         string InmPrecio = reader["InmPrecio"].ToString();
                         byte[] imagenBytes = (byte[])reader["InmImagen"];
+
+
                         if (imagenBytes != null && imagenBytes.Length > 0)
                         {
                             Image imagen = ConvertirBytesAImagen(imagenBytes);
 
+
+                            
                             card.lblPubTitulo.Text += titulPub;
                             card.lblubUbicacion.Text += ubicacionPub;
                             card.lblPrecioPub.Text += InmPrecio;
                             card.pbxPubImagen.Image = imagen;
+                            card.inmuebleId = Int32.Parse(idPub);
+                           
                             flpPubs.Controls.Add(card);
                         }
                         else
@@ -155,20 +165,6 @@ namespace ArriendoPrototipo.Interfaces
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbLogo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
@@ -184,5 +180,24 @@ namespace ArriendoPrototipo.Interfaces
         {
             flpPubs.VerticalScroll.Value = e.NewValue;
         }
+
+        private void flpPubs_Click(object sender, EventArgs e)
+        {
+            Point mousePosition = flpPubs.PointToClient(MousePosition);
+
+            // Buscar el control en la posición del ratón
+            Control controlClicked = flpPubs.GetChildAtPoint(mousePosition);
+
+            if (controlClicked is CUCardPublicaciones)
+            {
+                // Si el control clicado es una CUCardPublicaciones, manejar el evento de clic
+                CUCardPublicaciones clickedCard = (CUCardPublicaciones)controlClicked;
+                //clickedCard.setClickedId(clickedCard.getIdInmueble());                  
+                //MostrarDetallesInmueble(inmuebleId);
+            }
+        }
+
+        public int  getId()
+        { return id; }
     }
 }

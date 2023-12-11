@@ -167,3 +167,9 @@ C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamien
 C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\MetroFramework.dll
 C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Equipo\Documents\GitProject\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\DevExpress.Data.v23.1.xml
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\DevExpress.Data.v23.1.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\MaterialSkin.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\MetroFramework.Design.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\MetroFramework.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\MetroFramework.Fonts.dll
+D:\Uni\5° semestre\GitHub\Proyecto-arrendamiento\Proyecto arrendamiento\bin\Debug\DevExpress.Data.v23.1.xml

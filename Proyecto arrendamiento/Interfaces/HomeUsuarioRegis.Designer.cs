@@ -38,14 +38,6 @@ namespace ArriendoPrototipo.Interfaces
             this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
             this.pnlContenedorPublicaciones = new System.Windows.Forms.Panel();
-            this.flpPubs = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPBarraBusqueda = new System.Windows.Forms.TableLayoutPanel();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.lblUbicación = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblusuarioBuscar = new System.Windows.Forms.Label();
             this.tableLayoutPMenuLateral = new System.Windows.Forms.TableLayoutPanel();
             this.btnAgregarArriendo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,20 +53,30 @@ namespace ArriendoPrototipo.Interfaces
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.customTextBox1 = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
-            this.customTextBox2 = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.flpPubs = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblSinCoinci = new System.Windows.Forms.Label();
+            this.tableLayoutPBarraBusqueda = new System.Windows.Forms.TableLayoutPanel();
+            this.buscarTitulo = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.lblPrecioMinimo = new System.Windows.Forms.Label();
+            this.txtPrecioMinimo = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.lblPrecioMaximo = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtPropietario = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.lblusuarioBuscar = new System.Windows.Forms.Label();
+            this.cbUbi = new System.Windows.Forms.ComboBox();
+            this.lblUbicación = new System.Windows.Forms.Label();
+            this.txtPrecioMaximo = new Proyecto_arrendamiento.Apariencia.CustomTextBox();
+            this.lblTituloPubli = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.pnlPrincipal.SuspendLayout();
             this.pnlContenedorPublicaciones.SuspendLayout();
-            this.flpPubs.SuspendLayout();
-            this.tableLayoutPBarraBusqueda.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.tableLayoutPMenuLateral.SuspendLayout();
             this.tableLayoutPMenuTop.SuspendLayout();
             this.pnlInicioSuperior.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPBarraBusqueda.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -122,7 +124,7 @@ namespace ArriendoPrototipo.Interfaces
             this.pbxLogo.BackColor = System.Drawing.Color.PaleGreen;
             this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbxLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbxLogo.Image = global::Proyecto_arrendamiento.Properties.Resources.LogoUsuario;
+            this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
             this.pbxLogo.Location = new System.Drawing.Point(0, 0);
             this.pbxLogo.Name = "pbxLogo";
             this.pbxLogo.Size = new System.Drawing.Size(158, 76);
@@ -133,6 +135,7 @@ namespace ArriendoPrototipo.Interfaces
             // 
             // pnlPrincipal
             // 
+            this.pnlPrincipal.Controls.Add(this.tableLayoutPBarraBusqueda);
             this.pnlPrincipal.Controls.Add(this.pnlContenedorPublicaciones);
             this.pnlPrincipal.Controls.Add(this.tableLayoutPMenuLateral);
             this.pnlPrincipal.Controls.Add(this.tableLayoutPMenuTop);
@@ -146,111 +149,13 @@ namespace ArriendoPrototipo.Interfaces
             // 
             // pnlContenedorPublicaciones
             // 
+            this.pnlContenedorPublicaciones.Controls.Add(this.lblSinCoinci);
             this.pnlContenedorPublicaciones.Controls.Add(this.flpPubs);
             this.pnlContenedorPublicaciones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedorPublicaciones.Location = new System.Drawing.Point(142, 177);
             this.pnlContenedorPublicaciones.Name = "pnlContenedorPublicaciones";
             this.pnlContenedorPublicaciones.Size = new System.Drawing.Size(818, 488);
-            this.pnlContenedorPublicaciones.TabIndex = 27;
-            // 
-            // flpPubs
-            // 
-            this.flpPubs.Controls.Add(this.tableLayoutPBarraBusqueda);
-            this.flpPubs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpPubs.Location = new System.Drawing.Point(0, 0);
-            this.flpPubs.Name = "flpPubs";
-            this.flpPubs.Size = new System.Drawing.Size(818, 488);
-            this.flpPubs.TabIndex = 0;
-            // 
-            // tableLayoutPBarraBusqueda
-            // 
-            this.tableLayoutPBarraBusqueda.AutoSize = true;
-            this.tableLayoutPBarraBusqueda.ColumnCount = 9;
-            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.803922F));
-            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.19608F));
-            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
-            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
-            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67F));
-            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126F));
-            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
-            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
-            this.tableLayoutPBarraBusqueda.Controls.Add(this.customTextBox1, 1, 0);
-            this.tableLayoutPBarraBusqueda.Controls.Add(this.btnBuscar, 2, 0);
-            this.tableLayoutPBarraBusqueda.Controls.Add(this.lblPrecio, 3, 0);
-            this.tableLayoutPBarraBusqueda.Controls.Add(this.trackBar1, 4, 0);
-            this.tableLayoutPBarraBusqueda.Controls.Add(this.lblUbicación, 5, 0);
-            this.tableLayoutPBarraBusqueda.Controls.Add(this.comboBox1, 6, 0);
-            this.tableLayoutPBarraBusqueda.Controls.Add(this.lblusuarioBuscar, 7, 0);
-            this.tableLayoutPBarraBusqueda.Controls.Add(this.customTextBox2, 8, 0);
-            this.tableLayoutPBarraBusqueda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPBarraBusqueda.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPBarraBusqueda.Name = "tableLayoutPBarraBusqueda";
-            this.tableLayoutPBarraBusqueda.RowCount = 1;
-            this.tableLayoutPBarraBusqueda.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPBarraBusqueda.Size = new System.Drawing.Size(812, 51);
-            this.tableLayoutPBarraBusqueda.TabIndex = 3;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(202, 3);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(39, 41);
-            this.btnBuscar.TabIndex = 1;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(247, 0);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(38, 13);
-            this.lblPrecio.TabIndex = 2;
-            this.lblPrecio.Text = "Precio";
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.Location = new System.Drawing.Point(309, 3);
-            this.trackBar1.Minimum = 5;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(87, 45);
-            this.trackBar1.SmallChange = 2;
-            this.trackBar1.TabIndex = 3;
-            this.trackBar1.TickFrequency = 2;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trackBar1.Value = 5;
-            // 
-            // lblUbicación
-            // 
-            this.lblUbicación.AutoSize = true;
-            this.lblUbicación.Location = new System.Drawing.Point(402, 0);
-            this.lblUbicación.Name = "lblUbicación";
-            this.lblUbicación.Size = new System.Drawing.Size(58, 13);
-            this.lblUbicación.TabIndex = 4;
-            this.lblUbicación.Text = "Ubicación";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(469, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(120, 21);
-            this.comboBox1.TabIndex = 5;
-            // 
-            // lblusuarioBuscar
-            // 
-            this.lblusuarioBuscar.AutoSize = true;
-            this.lblusuarioBuscar.Location = new System.Drawing.Point(595, 0);
-            this.lblusuarioBuscar.Name = "lblusuarioBuscar";
-            this.lblusuarioBuscar.Size = new System.Drawing.Size(47, 13);
-            this.lblusuarioBuscar.TabIndex = 6;
-            this.lblusuarioBuscar.Text = "Usuario";
+            this.pnlContenedorPublicaciones.TabIndex = 25;
             // 
             // tableLayoutPMenuLateral
             // 
@@ -278,7 +183,7 @@ namespace ArriendoPrototipo.Interfaces
             // btnAgregarArriendo
             // 
             this.btnAgregarArriendo.AutoSize = true;
-            this.btnAgregarArriendo.BackgroundImage = global::Proyecto_arrendamiento.Properties.Resources.AgregarPublicacion;
+            this.btnAgregarArriendo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarArriendo.BackgroundImage")));
             this.btnAgregarArriendo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAgregarArriendo.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnAgregarArriendo.Location = new System.Drawing.Point(3, 82);
@@ -316,7 +221,7 @@ namespace ArriendoPrototipo.Interfaces
             // 
             // btnPublicaciones
             // 
-            this.btnPublicaciones.BackgroundImage = global::Proyecto_arrendamiento.Properties.Resources.publicaciones;
+            this.btnPublicaciones.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPublicaciones.BackgroundImage")));
             this.btnPublicaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPublicaciones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPublicaciones.Location = new System.Drawing.Point(2, 305);
@@ -449,7 +354,7 @@ namespace ArriendoPrototipo.Interfaces
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::Proyecto_arrendamiento.Properties.Resources.logoArrendamiento;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(457, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
@@ -470,43 +375,213 @@ namespace ArriendoPrototipo.Interfaces
             this.label2.TabIndex = 3;
             this.label2.Text = "Alojamientos Pacho";
             // 
-            // customTextBox1
+            // flpPubs
             // 
-            this.customTextBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.customTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox1.BorderRadius = 0;
-            this.customTextBox1.BorderSize = 2;
-            this.customTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.customTextBox1.Location = new System.Drawing.Point(22, 3);
-            this.customTextBox1.Multiline = false;
-            this.customTextBox1.Name = "customTextBox1";
-            this.customTextBox1.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
-            this.customTextBox1.PasswordChar = false;
-            this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBox1.PlaceholderText = "";
-            this.customTextBox1.Size = new System.Drawing.Size(174, 29);
-            this.customTextBox1.TabIndex = 0;
-            this.customTextBox1.Texts = "";
-            this.customTextBox1.UnderlinedStyle = false;
+            this.flpPubs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpPubs.Location = new System.Drawing.Point(0, 0);
+            this.flpPubs.Name = "flpPubs";
+            this.flpPubs.Size = new System.Drawing.Size(818, 488);
+            this.flpPubs.TabIndex = 0;
+            this.flpPubs.Click += new System.EventHandler(this.flpPubs_Click);
             // 
-            // customTextBox2
+            // lblSinCoinci
             // 
-            this.customTextBox2.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.customTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox2.BorderRadius = 0;
-            this.customTextBox2.BorderSize = 2;
-            this.customTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.customTextBox2.Location = new System.Drawing.Point(705, 3);
-            this.customTextBox2.Multiline = false;
-            this.customTextBox2.Name = "customTextBox2";
-            this.customTextBox2.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
-            this.customTextBox2.PasswordChar = false;
-            this.customTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBox2.PlaceholderText = "";
-            this.customTextBox2.Size = new System.Drawing.Size(99, 28);
-            this.customTextBox2.TabIndex = 7;
-            this.customTextBox2.Texts = "";
-            this.customTextBox2.UnderlinedStyle = false;
+            this.lblSinCoinci.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSinCoinci.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSinCoinci.Location = new System.Drawing.Point(0, 0);
+            this.lblSinCoinci.Name = "lblSinCoinci";
+            this.lblSinCoinci.Size = new System.Drawing.Size(818, 488);
+            this.lblSinCoinci.TabIndex = 1;
+            this.lblSinCoinci.Text = "Sin coincidencias";
+            this.lblSinCoinci.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSinCoinci.Visible = false;
+            // 
+            // tableLayoutPBarraBusqueda
+            // 
+            this.tableLayoutPBarraBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPBarraBusqueda.ColumnCount = 11;
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPBarraBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.buscarTitulo, 1, 0);
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.lblPrecioMinimo, 2, 0);
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.txtPrecioMinimo, 3, 0);
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.lblPrecioMaximo, 4, 0);
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.btnBuscar, 10, 0);
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.txtPropietario, 9, 0);
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.lblusuarioBuscar, 8, 0);
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.cbUbi, 7, 0);
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.lblUbicación, 6, 0);
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.txtPrecioMaximo, 5, 0);
+            this.tableLayoutPBarraBusqueda.Controls.Add(this.lblTituloPubli, 0, 0);
+            this.tableLayoutPBarraBusqueda.Location = new System.Drawing.Point(142, 177);
+            this.tableLayoutPBarraBusqueda.Name = "tableLayoutPBarraBusqueda";
+            this.tableLayoutPBarraBusqueda.RowCount = 1;
+            this.tableLayoutPBarraBusqueda.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPBarraBusqueda.Size = new System.Drawing.Size(818, 50);
+            this.tableLayoutPBarraBusqueda.TabIndex = 3;
+            // 
+            // buscarTitulo
+            // 
+            this.buscarTitulo.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.buscarTitulo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.buscarTitulo.BorderRadius = 0;
+            this.buscarTitulo.BorderSize = 2;
+            this.buscarTitulo.ForeColor = System.Drawing.Color.DimGray;
+            this.buscarTitulo.Location = new System.Drawing.Point(77, 4);
+            this.buscarTitulo.Margin = new System.Windows.Forms.Padding(4);
+            this.buscarTitulo.Multiline = false;
+            this.buscarTitulo.Name = "buscarTitulo";
+            this.buscarTitulo.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.buscarTitulo.PasswordChar = false;
+            this.buscarTitulo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.buscarTitulo.PlaceholderText = "";
+            this.buscarTitulo.Size = new System.Drawing.Size(82, 29);
+            this.buscarTitulo.TabIndex = 0;
+            this.buscarTitulo.Texts = "";
+            this.buscarTitulo.UnderlinedStyle = false;
+            // 
+            // lblPrecioMinimo
+            // 
+            this.lblPrecioMinimo.AutoSize = true;
+            this.lblPrecioMinimo.Location = new System.Drawing.Point(185, 0);
+            this.lblPrecioMinimo.Name = "lblPrecioMinimo";
+            this.lblPrecioMinimo.Size = new System.Drawing.Size(45, 26);
+            this.lblPrecioMinimo.TabIndex = 2;
+            this.lblPrecioMinimo.Text = "Precio minimo";
+            // 
+            // txtPrecioMinimo
+            // 
+            this.txtPrecioMinimo.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtPrecioMinimo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtPrecioMinimo.BorderRadius = 0;
+            this.txtPrecioMinimo.BorderSize = 2;
+            this.txtPrecioMinimo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPrecioMinimo.Location = new System.Drawing.Point(237, 3);
+            this.txtPrecioMinimo.Multiline = false;
+            this.txtPrecioMinimo.Name = "txtPrecioMinimo";
+            this.txtPrecioMinimo.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtPrecioMinimo.PasswordChar = false;
+            this.txtPrecioMinimo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPrecioMinimo.PlaceholderText = "";
+            this.txtPrecioMinimo.Size = new System.Drawing.Size(93, 29);
+            this.txtPrecioMinimo.TabIndex = 8;
+            this.txtPrecioMinimo.Texts = "";
+            this.txtPrecioMinimo.UnderlinedStyle = false;
+            // 
+            // lblPrecioMaximo
+            // 
+            this.lblPrecioMaximo.AutoSize = true;
+            this.lblPrecioMaximo.Location = new System.Drawing.Point(349, 0);
+            this.lblPrecioMaximo.Name = "lblPrecioMaximo";
+            this.lblPrecioMaximo.Size = new System.Drawing.Size(47, 26);
+            this.lblPrecioMaximo.TabIndex = 9;
+            this.lblPrecioMaximo.Text = "Precio Maximo";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Location = new System.Drawing.Point(781, 3);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(31, 41);
+            this.btnBuscar.TabIndex = 1;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
+            // 
+            // txtPropietario
+            // 
+            this.txtPropietario.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtPropietario.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtPropietario.BorderRadius = 0;
+            this.txtPropietario.BorderSize = 2;
+            this.txtPropietario.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPropietario.Location = new System.Drawing.Point(699, 4);
+            this.txtPropietario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPropietario.Multiline = false;
+            this.txtPropietario.Name = "txtPropietario";
+            this.txtPropietario.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtPropietario.PasswordChar = false;
+            this.txtPropietario.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPropietario.PlaceholderText = "";
+            this.txtPropietario.Size = new System.Drawing.Size(75, 29);
+            this.txtPropietario.TabIndex = 7;
+            this.txtPropietario.Texts = "";
+            this.txtPropietario.UnderlinedStyle = false;
+            // 
+            // lblusuarioBuscar
+            // 
+            this.lblusuarioBuscar.AutoSize = true;
+            this.lblusuarioBuscar.Location = new System.Drawing.Point(642, 0);
+            this.lblusuarioBuscar.Name = "lblusuarioBuscar";
+            this.lblusuarioBuscar.Size = new System.Drawing.Size(50, 26);
+            this.lblusuarioBuscar.TabIndex = 6;
+            this.lblusuarioBuscar.Text = "Propietario";
+            // 
+            // cbUbi
+            // 
+            this.cbUbi.FormattingEnabled = true;
+            this.cbUbi.Items.AddRange(new object[] {
+            "Todo",
+            "Centro",
+            "Sur",
+            "Norte",
+            "Oriente",
+            "Occidente"});
+            this.cbUbi.Location = new System.Drawing.Point(538, 3);
+            this.cbUbi.Name = "cbUbi";
+            this.cbUbi.Size = new System.Drawing.Size(98, 21);
+            this.cbUbi.TabIndex = 5;
+            // 
+            // lblUbicación
+            // 
+            this.lblUbicación.AutoSize = true;
+            this.lblUbicación.Location = new System.Drawing.Point(502, 0);
+            this.lblUbicación.Name = "lblUbicación";
+            this.lblUbicación.Size = new System.Drawing.Size(30, 39);
+            this.lblUbicación.TabIndex = 4;
+            this.lblUbicación.Text = "Ubicación";
+            // 
+            // txtPrecioMaximo
+            // 
+            this.txtPrecioMaximo.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtPrecioMaximo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtPrecioMaximo.BorderRadius = 0;
+            this.txtPrecioMaximo.BorderSize = 2;
+            this.txtPrecioMaximo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPrecioMaximo.Location = new System.Drawing.Point(408, 3);
+            this.txtPrecioMaximo.Multiline = false;
+            this.txtPrecioMaximo.Name = "txtPrecioMaximo";
+            this.txtPrecioMaximo.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtPrecioMaximo.PasswordChar = false;
+            this.txtPrecioMaximo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPrecioMaximo.PlaceholderText = "";
+            this.txtPrecioMaximo.Size = new System.Drawing.Size(88, 29);
+            this.txtPrecioMaximo.TabIndex = 10;
+            this.txtPrecioMaximo.Texts = "";
+            this.txtPrecioMaximo.UnderlinedStyle = false;
+            // 
+            // lblTituloPubli
+            // 
+            this.lblTituloPubli.AutoSize = true;
+            this.lblTituloPubli.Location = new System.Drawing.Point(3, 0);
+            this.lblTituloPubli.Name = "lblTituloPubli";
+            this.lblTituloPubli.Size = new System.Drawing.Size(66, 26);
+            this.lblTituloPubli.TabIndex = 11;
+            this.lblTituloPubli.Text = "Titulo Publicacion";
             // 
             // HomeUsuarioRegis
             // 
@@ -523,11 +598,6 @@ namespace ArriendoPrototipo.Interfaces
             this.pnlPrincipal.ResumeLayout(false);
             this.pnlPrincipal.PerformLayout();
             this.pnlContenedorPublicaciones.ResumeLayout(false);
-            this.flpPubs.ResumeLayout(false);
-            this.flpPubs.PerformLayout();
-            this.tableLayoutPBarraBusqueda.ResumeLayout(false);
-            this.tableLayoutPBarraBusqueda.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.tableLayoutPMenuLateral.ResumeLayout(false);
             this.tableLayoutPMenuLateral.PerformLayout();
             this.tableLayoutPMenuTop.ResumeLayout(false);
@@ -536,6 +606,8 @@ namespace ArriendoPrototipo.Interfaces
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPBarraBusqueda.ResumeLayout(false);
+            this.tableLayoutPBarraBusqueda.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -563,14 +635,18 @@ namespace ArriendoPrototipo.Interfaces
         private Label lbConfigurar;
         private Panel pnlContenedorPublicaciones;
         private FlowLayoutPanel flpPubs;
+        private Label lblSinCoinci;
         private TableLayoutPanel tableLayoutPBarraBusqueda;
-        private Proyecto_arrendamiento.Apariencia.CustomTextBox customTextBox1;
+        private Proyecto_arrendamiento.Apariencia.CustomTextBox buscarTitulo;
+        private Label lblPrecioMinimo;
+        private Proyecto_arrendamiento.Apariencia.CustomTextBox txtPrecioMinimo;
+        private Label lblPrecioMaximo;
         private Button btnBuscar;
-        private Label lblPrecio;
-        private TrackBar trackBar1;
-        private Label lblUbicación;
-        private ComboBox comboBox1;
+        private Proyecto_arrendamiento.Apariencia.CustomTextBox txtPropietario;
         private Label lblusuarioBuscar;
-        private Proyecto_arrendamiento.Apariencia.CustomTextBox customTextBox2;
+        private ComboBox cbUbi;
+        private Label lblUbicación;
+        private Proyecto_arrendamiento.Apariencia.CustomTextBox txtPrecioMaximo;
+        private Label lblTituloPubli;
     }
 }

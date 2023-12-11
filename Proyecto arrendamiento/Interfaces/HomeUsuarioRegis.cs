@@ -58,7 +58,7 @@ namespace ArriendoPrototipo.Interfaces
         {
             flpPubs.Controls.Clear();
             conexion.Open();
-            string select = "SELECT InmId,InmTitulo,InmUbicacion,InmPrecio,InmImagen from Inmueble";
+            string select = "SELECT * from Inmueble";
             using (OracleCommand cmd = new OracleCommand(select, conexion))
             {
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -69,18 +69,26 @@ namespace ArriendoPrototipo.Interfaces
                     while (reader.Read())
                     {
                         CUCardPublicaciones card = new CUCardPublicaciones();
+
+                        string idPub = reader["InmId"].ToString();
                         string titulPub = reader["InmTitulo"].ToString();
                         string ubicacionPub = reader["InmUbicacion"].ToString();
                         string InmPrecio = reader["InmPrecio"].ToString();
                         byte[] imagenBytes = (byte[])reader["InmImagen"];
+
+
                         if (imagenBytes != null && imagenBytes.Length > 0)
                         {
                             Image imagen = ConvertirBytesAImagen(imagenBytes);
+
+
 
                             card.lblPubTitulo.Text += titulPub;
                             card.lblubUbicacion.Text += ubicacionPub;
                             card.lblPrecioPub.Text += InmPrecio;
                             card.pbxPubImagen.Image = imagen;
+                            card.inmuebleId = Int32.Parse(idPub);
+
                             flpPubs.Controls.Add(card);
                         }
                         else
@@ -140,6 +148,9 @@ namespace ArriendoPrototipo.Interfaces
                 }
             }
         }
+
+
+
         private void btnAgregarPublicacion_Click(object sender, EventArgs e)
         {
             
@@ -187,6 +198,187 @@ namespace ArriendoPrototipo.Interfaces
         private void lbConfigurar_Click(object sender, EventArgs e)
         {
             ContextMenuStrip.Show(lbConfigurar, lbConfigurar.PointToClient(Cursor.Position));
+        }
+
+        private void flpPubs_Click(object sender, EventArgs e)
+        {
+            Point mousePosition = flpPubs.PointToClient(MousePosition);
+            // Buscar el control en la posición del ratón
+            Control controlClicked = flpPubs.GetChildAtPoint(mousePosition);
+
+            if (controlClicked is CUCardPublicaciones)
+            {
+                // Si el control clicado es una CUCardPublicaciones, manejar el evento de clic
+                CUCardPublicaciones clickedCard = (CUCardPublicaciones)controlClicked;
+                //clickedCard.setClickedId(clickedCard.getIdInmueble());                  
+                //MostrarDetallesInmueble(inmuebleId);
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            lblSinCoinci.Visible = false;
+            flpPubs.Controls.Clear();
+            conexion.Open();
+            string titulo = buscarTitulo.Texts;
+            string select = "SELECT * FROM INMUEBLE WHERE UPPER(INMTITULO) LIKE UPPER('%" + titulo + "%')";
+            using (OracleCommand cmd = new OracleCommand(select, conexion))
+            {
+                cmd.CommandType = System.Data.CommandType.Text;
+
+
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+
+                    if (!reader.HasRows)
+                    {
+                        lblSinCoinci.Text = "sin coincidencias para \"" + buscarTitulo.Texts + "\"";
+                        lblSinCoinci.Visible = true;
+                    }
+                    while (reader.Read())
+                    {
+                        CUCardPublicaciones card = new CUCardPublicaciones();
+
+                        string idPub = reader["InmId"].ToString();
+                        string titulPub = reader["InmTitulo"].ToString();
+                        string ubicacionPub = reader["InmUbicacion"].ToString();
+                        string InmPrecio = reader["InmPrecio"].ToString();
+                        byte[] imagenBytes = (byte[])reader["InmImagen"];
+
+
+                        if (imagenBytes != null && imagenBytes.Length > 0)
+                        {
+                            Image imagen = ConvertirBytesAImagen(imagenBytes);
+
+
+
+                            card.lblPubTitulo.Text += titulPub;
+                            card.lblubUbicacion.Text += ubicacionPub;
+                            card.lblPrecioPub.Text += InmPrecio;
+                            card.pbxPubImagen.Image = imagen;
+                            card.inmuebleId = Int32.Parse(idPub);
+
+                            flpPubs.Controls.Add(card);
+                        }
+                        else
+                        {
+                            card.lblPubTitulo.Text += titulPub;
+                            card.lblubUbicacion.Text += ubicacionPub;
+                            card.lblPrecioPub.Text += InmPrecio;
+                        }
+                        flpPubs.Refresh();
+
+
+                    }
+                    conexion.Close();
+                }
+            }
+        }
+
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+            lblSinCoinci.Visible = false;
+            flpPubs.Controls.Clear();
+            conexion.Open();
+            bool and = false;
+
+            string select = "SELECT * FROM INMUEBLE NATURAL JOIN REGISTRO";
+
+            if (buscarTitulo.Texts != string.Empty)
+            {
+                select += " WHERE UPPER(INMTITULO) LIKE UPPER('%" + buscarTitulo.Texts + "%')";
+                and = true;
+            }
+
+            if (txtPrecioMinimo.Texts != string.Empty)
+            {
+                if (and) select += " AND ";
+                else select += " WHERE ";
+
+                select += "  INMPRECIO > " + txtPrecioMinimo.Texts;
+                and = true;
+
+
+            }
+
+
+            if (txtPrecioMaximo.Texts != string.Empty)
+            {
+                if (and) select += " AND ";
+                else select += " WHERE ";
+
+                select += "  INMPRECIO < " + txtPrecioMaximo.Texts;
+                and = true;
+            }
+
+            if (cbUbi.SelectedIndex > 0)
+            {
+                if (and) select += " AND ";
+                else select += " WHERE ";
+
+                select += "  UPPER(INMUBICACION) = UPPER('" + cbUbi.SelectedItem.ToString() + "')";
+                and = true;
+            }
+
+            if (txtPropietario.Texts != string.Empty)
+            {
+                if (and) select += " AND ";
+                else select += " WHERE ";
+
+                select += "  UPPER(REGNOMBREU) = UPPER('" + txtPropietario.Texts + "')";
+            }
+
+            using (OracleCommand cmd = new OracleCommand(select, conexion))
+            {
+                cmd.CommandType = System.Data.CommandType.Text;
+
+
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+
+                    if (!reader.HasRows)
+                    {
+                        lblSinCoinci.Text = "sin coincidencias";
+                        lblSinCoinci.Visible = true;
+                    }
+                    while (reader.Read())
+                    {
+                        CUCardPublicaciones card = new CUCardPublicaciones();
+
+                        string idPub = reader["InmId"].ToString();
+                        string titulPub = reader["InmTitulo"].ToString();
+                        string ubicacionPub = reader["InmUbicacion"].ToString();
+                        string InmPrecio = reader["InmPrecio"].ToString();
+                        byte[] imagenBytes = (byte[])reader["InmImagen"];
+
+
+                        if (imagenBytes != null && imagenBytes.Length > 0)
+                        {
+                            Image imagen = ConvertirBytesAImagen(imagenBytes);
+
+
+
+                            card.lblPubTitulo.Text += titulPub;
+                            card.lblubUbicacion.Text += ubicacionPub;
+                            card.lblPrecioPub.Text += InmPrecio;
+                            card.pbxPubImagen.Image = imagen;
+                            card.inmuebleId = Int32.Parse(idPub);
+
+                            flpPubs.Controls.Add(card);
+                        }
+                        else
+                        {
+                            card.lblPubTitulo.Text += titulPub;
+                            card.lblubUbicacion.Text += ubicacionPub;
+                            card.lblPrecioPub.Text += InmPrecio;
+                        }
+                        flpPubs.Refresh();
+
+
+                    }
+                    conexion.Close();
+                }
+            }
         }
     }
 }

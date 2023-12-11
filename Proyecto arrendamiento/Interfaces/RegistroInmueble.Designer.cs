@@ -191,7 +191,7 @@ namespace ArriendoPrototipo.Interfaces
             this.btn_volverMenuPrincipal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_volverMenuPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_volverMenuPrincipal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_volverMenuPrincipal.Location = new System.Drawing.Point(11, 458);
+            this.btn_volverMenuPrincipal.Location = new System.Drawing.Point(11, 457);
             this.btn_volverMenuPrincipal.Name = "btn_volverMenuPrincipal";
             this.btn_volverMenuPrincipal.Size = new System.Drawing.Size(49, 48);
             this.btn_volverMenuPrincipal.TabIndex = 53;
@@ -661,7 +661,7 @@ namespace ArriendoPrototipo.Interfaces
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Image = global::Proyecto_arrendamiento.Properties.Resources.AgregarPublicacion;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(662, 18);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(84, 46);
@@ -699,7 +699,7 @@ namespace ArriendoPrototipo.Interfaces
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.Image = global::Proyecto_arrendamiento.Properties.Resources.logoArrendamiento;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(507, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
@@ -748,7 +748,7 @@ namespace ArriendoPrototipo.Interfaces
             this.pbxLogo.BackColor = System.Drawing.Color.PaleGreen;
             this.pbxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbxLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbxLogo.Image = global::Proyecto_arrendamiento.Properties.Resources.LogoUsuario;
+            this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
             this.pbxLogo.Location = new System.Drawing.Point(0, 0);
             this.pbxLogo.Name = "pbxLogo";
             this.pbxLogo.Size = new System.Drawing.Size(157, 75);

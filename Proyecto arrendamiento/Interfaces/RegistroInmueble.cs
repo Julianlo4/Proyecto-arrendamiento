@@ -80,7 +80,7 @@ namespace ArriendoPrototipo.Interfaces
 
             ubicacion = cbxUbicacion.Text;
             direccion = txtDireccion.Text;
-            telefono = txtPrecio.Text;
+            telefono = txtTelefono.Text;
             tipoVivienda = cbxTipoVivienda.Text;
             descripcion = txtDescripcion.Text;
             tituloPub = txtNombrePublicacion.Text;
@@ -90,7 +90,7 @@ namespace ArriendoPrototipo.Interfaces
             InmSerTv = rbTv.Checked ? 1 : 0;
             InmSerLavadora = rbLavadora.Checked ? 1 : 0;
             InmSerGas = rbGas.Checked ? 1 : 0;
-            InmPrecio = txtTelefono.Text;
+            InmPrecio = txtPrecio.Text;
             InmAmoblado = cbxAmoblado.SelectedIndex;
             InmAnimales = cbxAnimales.SelectedIndex; 
             InmParqueadero = cbxParqueadero.Text;

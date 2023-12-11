@@ -73,7 +73,7 @@ namespace Proyecto_arrendamiento.Interfaces
         {
             conexion.Open();
 
-            string select = "SELECT * FROM Inmueble Join Registro ON InmId =" + id;
+            string select = "SELECT * FROM Inmueble NATURAL Join Registro WHERE INMID =" + id;
 
             using (OracleCommand cmd = new OracleCommand(select, conexion))
             {
